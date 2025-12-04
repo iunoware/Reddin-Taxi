@@ -2,8 +2,21 @@
 
 body {
   font-family: "Funnel Display", sans-serif;
+  overflow-x: clip;
 }
 
 .heading {
   font-family: "Audiowide", sans-serif;
+}
+
+.cinzel {
+  font-family: "Cinzel", serif;
+}
+
+.marcellus {
+  font-family: "Marcellus SC", serif;
+}
+
+.spectral {
+  font-family: "Spectral SC", serif;
 }
