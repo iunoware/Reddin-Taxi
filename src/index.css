@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+  font-family: "Funnel Display", sans-serif;
+}
+
+.heading {
+  font-family: "Audiowide", sans-serif;
+}
