@@ -45,9 +45,16 @@ export default function Navbar() {
       >
         <div className=" px-6 flex justify-between items-center">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold text-(--c-navy) tracking-tight">
+          <a
+            href="#"
+            className="text-2xl font-bold text-(--c-navy) tracking-tight"
+          >
             {/* Sabari<span className="text-(--c-yellow)">Taxi</span> */}
-            <img src="/images/logo.png" alt="Reddin Taxi" className="h-12 w-auto" />
+            <img
+              src="/images/logo.png"
+              alt="Reddin Taxi"
+              className="h-12 w-auto"
+            />
           </a>
 
           {/* Desktop Menu */}
