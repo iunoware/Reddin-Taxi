@@ -20,3 +20,8 @@ body {
 .spectral {
   font-family: "Spectral SC", serif;
 }
+
+/* remove scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
