@@ -1,6 +1,11 @@
 import ServicesSection from "../components/ServicesSection";
 import FleetSection from "../components/FleetSection";
 import OurServices from "../components/OurServices";
+import WhyChooseUs from "../components/WhyChooseUs";
+import ExpCarousel from "../components/ExpCarousel";
+import Packages from "../components/Packages";
+import Testimonial from "../components/Testimonial";
+import Cta from "../components/Cta";
 
 export default function Home() {
   return (
@@ -63,7 +68,22 @@ export default function Home() {
 
         {/* Our services */}
         <OurServices />
+
+        {/* Why Choose Us */}
+        <WhyChooseUs />
       </div>
+
+      {/* Interior Experience */}
+      <ExpCarousel />
+
+      {/* packages */}
+      <Packages />
+
+      {/* testimonial */}
+      <Testimonial />
+
+      {/* CTA */}
+      <Cta />
     </>
   );
 }
