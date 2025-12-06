@@ -60,26 +60,19 @@ export default function Navbar() {
       <nav
         className={`fixed w-[94%] sm:w-[96%] md:w-[97.5%] z-50 m-3 rounded-full transition-all duration-700 ${
           isScrolled
-            ? "sm:w-[70%] md:w-[70%] lg:w-[70%] bg-white/1 backdrop-blur-xs py-2 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]"
+            ? "sm:w-[70%] md:w-[70%] lg:w-[70%] bg-black/40 backdrop-blur-md py-2 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]"
             : "bg-transparent py-4"
         }`}
       >
         <div className=" px-6 flex justify-between items-center">
           {/* Logo */}
-          <a
-            href="#"
-            className="text-2xl font-bold text-(--c-navy) tracking-tight"
-          >
+          <a href="#" className="text-2xl font-bold text-(--c-navy) tracking-tight">
             {/* Sabari<span className="text-(--c-yellow)">Taxi</span> */}
-            <img
-              src="/images/logo.png"
-              alt="Reddin Taxi"
-              className="h-12 w-auto"
-            />
+            <img src="/images/logo.png" alt="Reddin Taxi" className="h-12 w-auto" />
           </a>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex h-5 mt-1.5 overflow-hidden items-center space-x-8">
+          <div className="hidden md:flex h-6 mt-1.5 overflow-hidden items-center space-x-8">
             {navLinks.map((link, i) => (
               <Link
                 key={link.name}
@@ -87,7 +80,7 @@ export default function Navbar() {
                 // ref={(e) => (wordRef.current[i] = e)}
                 // onMouseEnter={() => handleEnter(i)}
                 // onMouseLeave={() => handleLeave(i)}
-                className="text-gray-300 flex flex-col translate-y-2 hover:-translate-y-4 hover:text-white duration-300 transition-all font-medium"
+                className="text-white/90 text-lg flex flex-col translate-y-2 hover:-translate-y-5 duration-400 transition-all font-medium"
               >
                 <span>{link.name}</span>
                 <span>{link.name}</span>
@@ -104,20 +97,22 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-(--c-navy)"
+            className={`${
+              isScrolled ? "pointer-events-auto" : "pointer-events-none"
+            } md:hidden text-(--c-navy)`}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? (
               <X
                 size={28}
-                className={`text-white transition-all duration-500 ${
+                className={`text-white text-lg transition-all duration-500 ${
                   isScrolled ? "translate-x-0" : "translate-x-20"
                 }`}
               />
             ) : (
               <Menu
                 size={28}
-                className={`text-white transition-all duration-700 ${
+                className={`text-white text-lg transition-all duration-700 ${
                   isScrolled ? "translate-x-0" : "translate-x-20"
                 }`}
               />
@@ -132,13 +127,13 @@ export default function Navbar() {
         <div
           className={`${
             isOpen ? "translate-y-0" : "-translate-y-80"
-          } transition-all duration-400 md:hidden absolute top-22 left-0 w-full rounded-3xl text-white backdrop-blur-md shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] py-6 px-6 flex flex-col space-y-4`}
+          } transition-all duration-400 md:hidden absolute top-22 left-0 w-full rounded-3xl bg-black/40 text-white backdrop-blur-md shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] py-6 px-6 flex flex-col space-y-4`}
         >
           {navLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="text-(--c-navy) text-lg font-medium"
+              className="text-(--c-navy) text-lg font-medium "
               onClick={() => setIsOpen(false)}
             >
               {link.name}
