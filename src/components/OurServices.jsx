@@ -42,16 +42,16 @@ const services = [
 
 const OurServices = () => {
   return (
-    <section className="relative w-full py-24 px-4 md:px-10 lg:px-20 bg-white overflow-hidden">
+    <section className="relative w-full py-24 px-4 md:px-10 lg:px-20 bg-black overflow-hidden">
       {/* Cinematic Background */}
-      {/* <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0">
         <img
-          src="/images/luxury-bg.png"
+          src="/images/luxury-wbg.png"
           alt="Luxury Background"
           className="w-full h-full object-cover opacity-30"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div>
-      </div> */}
+        {/* <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div> */}
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
