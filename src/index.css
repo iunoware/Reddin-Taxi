@@ -21,6 +21,11 @@ body {
   font-family: "Spectral SC", serif;
 }
 
+/* remove scroll bar */
+::-webkit-scrollbar {
+  display: none;
+}
+
 /* html,
 body {
     margin: 0;
