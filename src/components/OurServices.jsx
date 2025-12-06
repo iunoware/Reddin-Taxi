@@ -6,58 +6,61 @@ const services = [
     title: "Corporate Travel & Business Trips",
     icon: <Briefcase size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-2",
-    img: "bg-[url('/images/as-1.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/corporate-tour.png')] bg-cover bg-center",
   },
   {
     title: "Airport Transfers",
     icon: <Plane size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-neutral-800",
+    img: "bg-[url('/images/Airport-transfers.png')] bg-cover bg-center",
   },
   {
     title: "Wedding & VIP Events",
     icon: <Crown size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-neutral-900",
+    img: "bg-[url('/images/wedding.png')] bg-cover bg-center",
   },
   {
     title: "Outstation Luxury Tours",
     icon: <MapPin size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-neutral-800",
+    img: "bg-[url('/images/outstation-trips.png')] bg-cover bg-center",
   },
   {
     title: "Group & Family Trips",
     icon: <Users size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-1",
-    img: "bg-[url('/images/as-2.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/grouptrip.png')] bg-cover bg-center",
   },
   {
     title: "Celebrity / Executive Shuttle",
     icon: <Star size={28} />,
     size: "col-span-1 md:col-span-3 md:row-span-1",
-    img: "bg-neutral-900",
+    img: "bg-[url('/images/celebrety.png')] bg-cover bg-center ",
   },
 ];
 
 const OurServices = () => {
   return (
-    <section className="relative w-full py-24 px-4 md:px-10 lg:px-20 bg-white overflow-hidden">
+    <section className="relative w-full py-24 px-4 md:px-10 lg:px-20  overflow-hidden">
       {/* Cinematic Background */}
-      {/* <div className="absolute inset-0 z-0">
-        <img
-          src="/images/luxury-bg.png"
+      <div className="absolute inset-0 z-0">
+        {/* <img
+          src="/images/luxury-wbg.png"
           alt="Luxury Background"
-          className="w-full h-full object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div>
-      </div> */}
+          className="w-full h-full object-cover opacity-80"
+        /> */}
+        {/* <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div> */}
+      </div>
 
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl text-transparent bg-clip-text bg-linear-to-r from-black via-red-400 to-red-600 md:text-6xl font-serif font-bold mb-4 tracking-wide drop-shadow-xl relative inline-block">
-            Services We Offer
+          <h2 className="text-4xl cinzel md:text-6xl font-serif font-bold mb-4 tracking-wide drop-shadow-xl relative inline-block">
+            Services{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600">
+              We Offer
+            </span>
             <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-0.5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent"></span>
           </h2>
           <p className="text-black text-lg md:text-xl font-light tracking-wide mt-6 max-w-2xl mx-auto">
@@ -75,7 +78,7 @@ const OurServices = () => {
             >
               {/* Background with Zoom Effect */}
               <div
-                className={`absolute inset-0 ${service.img} transition-transform duration-700 ease-out group-hover:scale-105 opacity-60 group-hover:opacity-40`}
+                className={`absolute inset-0 ${service.img} transition-transform duration-700 ease-out group-hover:scale-105 `}
               >
                 {/* Fallback gradient if not an image url */}
                 {!service.img.includes("url") && (
@@ -84,7 +87,7 @@ const OurServices = () => {
               </div>
 
               {/* Dark Overlay Gradient */}
-              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent"></div>
+              {/* <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent"></div> */}
 
               {/* Content */}
               <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex items-end justify-between transition-all duration-500 group-hover:-translate-y-2">
