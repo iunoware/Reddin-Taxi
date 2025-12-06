@@ -129,7 +129,7 @@ const FleetSection = () => {
               >
                 {/* Image Container */}
                 <div className="relative p-2 h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-linear-to-t transition-all from-black/60 group-hover:from-black/0  rounded-lg via-transparent to-transparent z-10"></div>
+                  <div className="absolute inset-0 bg-linear-to-t transition-opacity ease-in from-black/60 group-hover:from-black/30  rounded-lg via-transparent to-transparent z-10"></div>
                   <img
                     src="/images/urbania-fleet.png"
                     alt="Luxury Urbania"
@@ -137,7 +137,7 @@ const FleetSection = () => {
                   />
                   <div className="absolute top-4 right-4 z-20 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                     <div className="flex items-center gap-1">
-                      <Star className="w-3 h-3 text-red-400 fill-red-400" />
+                      <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
                       <span className="text-xs font-bold text-white">
                         Premium
                       </span>
