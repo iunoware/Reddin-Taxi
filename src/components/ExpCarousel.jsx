@@ -4,28 +4,28 @@ import { ChevronLeft, ChevronRight, Star, ArrowRight } from "lucide-react";
 const slides = [
   {
     id: 1,
-    image: "/images/interior-seat.png",
+    image: "/images/interior-seat.webp",
     title: "Ultra-Comfort Seating",
     description:
       "Plush reclining leather captain seats with diamond-stitched patterns and ambient lighting.",
   },
   {
     id: 2,
-    image: "/images/interior-design.png",
+    image: "/images/interior-design.webp",
     title: "Modern Interior Design",
     description:
       "Sleek wood-finish panels and minimalistic ceiling design for a premium feel.",
   },
   {
     id: 3,
-    image: "/images/interior-ambience.png",
+    image: "/images/interior-ambience.webp",
     title: "Cinematic Ambience",
     description:
       "Soft LED mood lighting and warm golden glows for a relaxing journey.",
   },
   {
     id: 4,
-    image: "/images/spacious.png", // Reuse for demonstration due to generation limit
+    image: "/images/spacious.webp", // Reuse for demonstration due to generation limit
     title: "Spacious VIP Cabin",
     description:
       "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
