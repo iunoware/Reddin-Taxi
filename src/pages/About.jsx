@@ -2,7 +2,8 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import GlassButton from "../components/GlassButton";
-import { GraduationCap, Star } from "lucide-react";
+import { Shield, Star, Car, Timer, MousePointerClick } from "lucide-react";
+import Heading from "../components/Heading";
 
 export default function About() {
   useEffect(() => {
@@ -62,6 +63,33 @@ export default function About() {
     },
   ];
 
+  const differences = [
+    {
+      svg: <Shield size={30} className="text-red-600" />,
+      title: "Skilled Travel Drivers",
+      content:
+        "Professional, polite, and experienced drivers who ensure a smooth and safe journey from start to finish.",
+    },
+    {
+      svg: <Car size={30} className="text-red-600" />,
+      title: "Well-Maintained Vehicles",
+      content:
+        "Every vehicle is cleaned, sanitized, and serviced regularly to deliver a spotless, comfortable travel experience.",
+    },
+    {
+      svg: <Timer size={30} className="text-red-600" />,
+      title: "On-Time Reliability",
+      content:
+        "We value your time. We arrive as promised, ensuring timely pickups and smooth, delay-free travel.",
+    },
+    {
+      svg: <MousePointerClick size={30} className="text-red-600" />,
+      title: "Seamless Booking",
+      content:
+        "Simple, fast, and transparent booking with clear communication from your first inquiry to your final stop.",
+    },
+  ];
+
   return (
     <div className="bg-[#e0e0e0]">
       {/* hero section */}
@@ -79,7 +107,7 @@ export default function About() {
 
         {/* Content Container */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
-          <h1 className="text-3xl md:text-4xl tracking-wider text-white drop-shadow-lg cinzel font-semibold">
+          <h1 className="text-3xl md:text-4xl tracking-wider text-white drop-shadow-lg basker font-semibold">
             <span className="text-red-500">Reddin Tours & Travels</span> - Redefining
             Luxury Travel in India
           </h1>
@@ -109,7 +137,7 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="text-left z-10 order-2 lg:order-1">
-              <h2 className="text-5xl md:text-6xl cinzel font-semibold text-red-600 tracking-tight mb-8 cinzel drop-shadow-lg">
+              <h2 className="text-5xl md:text-6xl basker text-red-600 font-semibold tracking-tight mb-8 basker drop-shadow-lg">
                 Who We Are
               </h2>
               <div className="w-44 h-1 bg-linear-to-r from-red-600 to-transparent mb-10 opacity-80"></div>
@@ -186,8 +214,8 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center p-10">
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
                   {/* 2 floating cards */}
-                  <div className="absolute top-12 right-8 w-3/4 h-2/3 bg-[url('/images/interior-seat.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
-                  <div className="absolute bottom-12 left-8 w-2/3 h-1/2 bg-[url('/images/interior-ambience.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
+                  <div className="absolute top-12 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.png')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
+                  <div className="absolute bottom-12 left-8 w-2/3 h-1/2 bg-[url('/images/interior-ambience.png')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-8 right-8 flex items-center gap-3 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-full border border-white/10 shadow-xl z-20 transition-all duration-300 hover:bg-black/80 hover:scale-105 cursor-default">
@@ -203,22 +231,54 @@ export default function About() {
         </div>
       </section>
 
+      {/* Vision & Mission Section */}
+      <section className="relative w-full py-24 px-6 overflow-hidden">
+        <div className="container mx-auto max-w-6xl relative z-10">
+          {/* Heading */}
+          {/* <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-semibold uppercase drop-shadow-sm basker">
+              Our Vision & Mission
+            </h2>
+            <div className="w-64 h-1 mx-auto mt-6 rounded-full bg-linear-to-r from-red-100 via-red-500 to-red-100 opacity-80"></div>
+          </div> */}
+          <Heading title="Our Vision & Mission" />
+
+          {/* Cards Container */}
+          <div className="flex flex-col md:flex-row gap-8 lg:gap-12 justify-center items-stretch">
+            {/* Vision Card */}
+            <div className="flex-1 p-10 lg:p-12 rounded-3xl hover:scale-103 bg-white/70 shadow-lg transition-all duration-500 flex flex-col justify-center text-center items-center group relative overflow-hidden">
+              <div className="absolute inset-0 bg-linear-to-br from-white/40 to-transparent opacity-50 pointer-events-none"></div>
+              <h3 className="text-3xl md:text-4xl font-medium mb-6 tracking-wide text-transparent bg-clip-text bg-linear-to-r from-yellow-500 to-yellow-600 drop-shadow-sm relative z-10">
+                Our Vision
+              </h3>
+              <p className="text-[#111111] leading-relaxed text-lg md:text-xl font-light tracking-wide max-w-md relative z-10">
+                To redefine premium travel by delivering unmatched luxury, comfort, and
+                safety in every journey.
+              </p>
+            </div>
+
+            {/* Mission Card */}
+            <div className="flex-1 p-10 lg:p-12 rounded-3xl hover:scale-103 bg-white/70 shadow-lg transition-all duration-500 hover:shadow-[0_0_40px_rgba(201,163,92,0.25)] flex flex-col justify-center text-center items-center group relative overflow-hidden">
+              <div className="absolute inset-0 bg-linear-to-br from-white/40 to-transparent opacity-50 pointer-events-none"></div>
+              <h3 className="text-3xl md:text-4xl font-medium mb-6 tracking-wide text-transparent bg-clip-text bg-linear-to-r from-yellow-500 to-yellow-600 drop-shadow-sm relative z-10">
+                Our Mission
+              </h3>
+              <p className="text-[#111111] leading-relaxed text-lg md:text-xl font-light tracking-wide max-w-md relative z-10">
+                Our mission is to offer luxury travel with top-quality service, premium
+                comfort, and warm hospitality on every trip.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Premium Fleet Section */}
       <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
         <div className="px-4 lg:px-12 relative z-10">
-          {/* Header */}
-          <div className="text-center mb-10">
-            <h2 className="text-4xl md:text-6xl cinzel font-semibold tracking-widest cinzel mb-4 drop-shadow-2xl">
-              Our{" "}
-              <span className="text-transparent bg-linear-to-r from-yellow-400 to-yellow-600 bg-clip-text">
-                Premium
-              </span>{" "}
-              Fleet
-            </h2>
-            <p className="text-gray-700 font-light tracking-wide text-lg">
-              Choose the perfect chariot for your journey.
-            </p>
-          </div>
+          <Heading title="Our Premium Fleet" className="mb-3!" />
+          <p className="text-gray-700 font-light tracking-wide text-lg mb-10 text-center">
+            Choose the perfect chariot for your journey.
+          </p>
 
           {/* new fleet card */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
@@ -226,7 +286,7 @@ export default function About() {
             {fleets.map((fleet, i) => (
               <div
                 key={fleet.title}
-                className="rounded-2xl h-fit shadow-[5px_5px_20px_#b5b5b5,-5px_-5px_20px_#ffffff] m-4"
+                className="rounded-2xl h-fit shadow-[3px_3px_10px_#8d8d8d,-3px_-3px_10px_#ffffff] m-4"
               >
                 <div className="rounded-xl shadow-[inset_5px_5px_10px_#8d8d8d,inset_-5px_-5px_10px_#ffffff] m-2 flex align-bottom overflow-hidden">
                   <img
@@ -252,120 +312,171 @@ export default function About() {
                     ))}
                   </ul>
 
-                  <GlassButton
+                  {/* <GlassButton
                     text1="Book this fleet"
                     text2="Experience Luxury"
-                    glass={true}
-                    textColor="text-black"
-                    // bg="bg-amber-500"
+                    // glass={true}
+                    textColor="text-white"
+                    bg="bg-black"
                     link="/contact"
-                    className="mt-10 shadow-2xl w-full block text-center"
-                  />
-
-                  {/* <Link
-                    to="/contact"
-                    className="w-full mt-5 text-white bg-amber-400 text-center hover:-translate-y-1 backdrop-blur-sm shadow-[2px_4px_8px_rgba(0,0,0,0.25)] border-t border-white/20 block px-8 py-3 rounded-xl transition-all duration-300"
-                  >
-                    Book this fleet
-                  </Link> */}
-
-                  {/* <Link
-                    className="group mt-3 w-full relative inline-flex items-center overflow-hidden rounded-xl new-primary-bg px-8 py-4 text-white"
-                    to="/courses/online-course"
-                  >
-                    <span className="absolute -start-full transition-all group-hover:start-4">
-                      <GraduationCap size={25} />
-                    </span>
-
-                    <span className="text-lg w-full text-center font-medium transition-all group-hover:ms-4">
-                      Explore online courses
-                    </span>
-                  </Link> */}
+                    className="mt-10 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] transition-shadow duration-300 w-full block text-center"
+                  /> */}
+                  <Link to="/contact">
+                    <button className="mt-10 rounded-2xl px-8 py-3 bg-black text-white cursor-pointer hover:scale-102 transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] w-full block text-center">
+                      Experience luxury
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}
-
-            {/* new offline courses */}
-            {/* <div className="rounded-2xl h-fit bg-white shadow-xl m-12 ml-8 lg:mr-50">
-              <div className="rounded-xl m-2 flex align-bottom overflow-hidden">
-                <img
-                  src="/images/offline-course.png"
-                  alt="course-img"
-                  className="rounded-xl w-full h-100 object-cover object-center hover:scale-104 transition-all duration-200"
-                />
-              </div>
-              <div className="p-5 w-full">
-                <h2 className="font-semibold text-2xl ">Offline Courses</h2>
-                <p className="">Experience in-person training with expert instructors.</p>
-                <div className="space-y-1 my-2">
-                  <div className="flex items-center ">
-                    <div className="w-2 h-2 rounded-full new-primary-bg mr-3"></div>
-                    <span className="">Face-to-face interaction</span>
-                  </div>
-                  <div className="flex items-center ">
-                    <div className="w-2 h-2 rounded-full new-primary-bg mr-3"></div>
-                    <span className="">Hands-on practical sessions</span>
-                  </div>
-                  <div className="flex items-center ">
-                    <div className="w-2 h-2 rounded-full new-primary-bg mr-3"></div>
-                    <span className="">Networking opportunities</span>
-                  </div>
-                </div>
-
-                <Link
-                  className="group mt-3 w-full relative inline-flex items-center overflow-hidden rounded-xl new-primary-bg px-8 py-4 text-white"
-                  to="/courses/offline-course"
-                >
-                  <span className="absolute -start-full transition-all group-hover:start-4">
-                    <GraduationCap size={25} />
-                  </span>
-
-                  <span className="text-lg w-full text-center font-medium transition-all group-hover:ms-4">
-                    Explore online courses
-                  </span>
-                </Link>
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
 
-      {/* Cinematic CTA Section */}
-      {/* <section className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-fixed bg-cover bg-center"
-          style={{ backgroundImage: "url('/images/hero-bg.jpg')" }}
-        ></div>
+      {/* Why Choose Us Section */}
+      <section className="relative w-full py-24 px-6 overflow-hidden bg-[linear-gradient(180deg,#000000_0%,#111111_60%,#0D0F14_100%)]">
+        {/* Decorative Glows */}
+        <div className="absolute top-[-20%] left-[20%] w-[500px] h-[500px] bg-[#C9A35C] opacity-[0.05] blur-[150px] rounded-full pointer-events-none"></div>
+        <div className="absolute bottom-[-10%] right-[10%] w-[400px] h-[400px] bg-[#C9A35C] opacity-[0.04] blur-[120px] rounded-full pointer-events-none"></div>
 
-        <div className="absolute inset-0 bg-linear-to-t from-black via-black/60 to-black/30"></div>
+        <div className="container mx-auto relative z-10 max-w-7xl">
+          {/* Heading */}
+          {/* <div className="text-center mb-20">
+            <h2 className="text-4xl md:text-5xl font-semibold text-white uppercase drop-shadow-2xl basker">
+              Why Choose Us
+            </h2>
+            <div className="w-64 h-1 mx-auto mt-6 rounded-full bg-linear-to-r from-transparent via-red-500 to-transparent opacity-80"></div>
+          </div> */}
+          <Heading title="Why Choose Us" className="text-white" />
 
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto">
-          <h2 className="text-5xl md:text-7xl text-white font-serif cinzel font-bold tracking-tight mb-8 drop-shadow-[0_10px_30px_rgba(0,0,0,0.8)] leading-tight">
-            Experience the <span className="text-amber-500">Art</span> of Travel
-          </h2>
+          {/* Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
+            {/* Card 1 */}
+            <div className="group shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] relative p-8 md:p-10 rounded-3xl border bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] border-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#C9A35C]/30 flex flex-col items-center text-center">
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
-          <div className="w-32 h-1 bg-linear-to-r from-transparent via-amber-500 to-transparent mx-auto mb-10"></div>
+              {/* Icon */}
+              <div className="w-20 h-20 mb-8 rounded-full flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#C9A35C]/50 group-hover:bg-[#C9A35C]/10 transition-all duration-500 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+                <svg
+                  className="w-9 h-9 text-[#C9A35C] drop-shadow-[0_0_8px_rgba(201,163,92,0.6)]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z"
+                  />
+                </svg>
+              </div>
 
-          <p className="text-xl md:text-2xl text-gray-200 font-light tracking-wide mb-12 leading-relaxed opacity-90">
-            Your journey deserves more than just a destination.{" "}
-            <br className="hidden md:block" />
-            Step into a world of unmatched elegance and comfort.
-          </p>
+              <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
+                Premium Luxury Experience
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans">
+                Indulge in our exquisite fleet, where every detail is crafted for your
+                ultimate comfort and sophistication.
+              </p>
+            </div>
 
-          <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-            <Link to="/booking">
-              <button className="px-12 py-5 bg-amber-600 text-white text-lg font-semibold rounded-full shadow-[0_0_40px_rgba(217,119,6,0.4)] hover:shadow-[0_0_60px_rgba(217,119,6,0.6)] hover:bg-amber-500 transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-widest border border-amber-400/50">
-                Book Your Journey
-              </button>
-            </Link>
-            <Link to="/contact">
-              <button className="px-12 py-5 bg-transparent border border-white/30 text-white text-lg font-semibold rounded-full backdrop-blur-md hover:bg-white/10 hover:border-white transition-all duration-300 transform hover:-translate-y-1 uppercase tracking-widest">
-                Contact Concierge
-              </button>
-            </Link>
+            {/* Card 2 */}
+            <div className="group shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] relative p-8 md:p-10 rounded-3xl border bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] border-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#C9A35C]/30 flex flex-col items-center text-center">
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
+
+              <div className="w-20 h-20 mb-8 rounded-full flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#C9A35C]/50 group-hover:bg-[#C9A35C]/10 transition-all duration-500 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+                <svg
+                  className="w-9 h-9 text-[#C9A35C] drop-shadow-[0_0_8px_rgba(201,163,92,0.6)]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+                  />
+                </svg>
+              </div>
+
+              <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
+                Skilled Travel Drivers
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans">
+                Our verified, elite chauffeurs guarantee a discreet, safe, and impeccably
+                smooth journey.
+              </p>
+            </div>
+
+            {/* Card 3 */}
+            <div className="group shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] relative p-8 md:p-10 rounded-3xl border bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] border-white/5 backdrop-blur-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#C9A35C]/30 flex flex-col items-center text-center">
+              <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
+
+              <div className="w-20 h-20 mb-8 rounded-full flex items-center justify-center bg-white/5 border border-white/10 group-hover:border-[#C9A35C]/50 group-hover:bg-[#C9A35C]/10 transition-all duration-500 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+                <svg
+                  className="w-9 h-9 text-[#C9A35C] drop-shadow-[0_0_8px_rgba(201,163,92,0.6)]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={1.5}
+                  stroke="currentColor"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+
+              <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
+                On-Time and Reliable
+              </h3>
+              <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans">
+                Punctuality is our signature. We value your time with prompt arrivals and
+                seamless execution.
+              </p>
+            </div>
           </div>
         </div>
-      </section> */}
+      </section>
+
+      {/* What Makes Us Different Section */}
+      <section className="relative w-full py-24 px-3 overflow-hidden">
+        <div className="px-6 lg:px-12 relative z-10">
+          <Heading title="What Makes Us Different" className="mb-2!" />
+          <p className="text-lg text-center mb-10 text-[#444] font-light max-w-2xl mx-auto">
+            Setting the benchmark for luxury travel with standards that exceed
+            expectations.
+          </p>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 place-items-center h-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {differences.map((d, i) => (
+                <div className="p-8 rounded-3xl backdrop-blur-md shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group">
+                  <div className="mb-3 p-3 rounded-full shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff]">
+                    {d.svg}
+                  </div>
+                  <h3 className="text-xl font-bold text-[#111] mb-3">{d.title}</h3>
+                  <p className="text-[#333] text-sm leading-relaxed">{d.content}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="order-1 lg:order-2" data-aos="fade-left">
+              <img
+                loading="lazy"
+                src="/images/interior-ambience.png"
+                alt=""
+                className="h-70 rounded-3xl sm:h-90 md:h-[420px] lg:h-[520px] w-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* new why we're different section */}
     </div>
   );
 }
