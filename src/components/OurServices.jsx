@@ -6,37 +6,37 @@ const services = [
     title: "Corporate Travel & Business Trips",
     icon: <Briefcase size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-2",
-    img: "bg-[url('/images/corporate-tour.png')] bg-cover bg-center",
+    img: "bg-[url('/images/corporate-tour.webp')] bg-cover bg-center",
   },
   {
     title: "Airport Transfers",
     icon: <Plane size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/Airport-transfers.png')] bg-cover bg-center",
+    img: "bg-[url('/images/Airport-transfers.webp')] bg-cover bg-center",
   },
   {
     title: "Wedding & VIP Events",
     icon: <Crown size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/wedding.png')] bg-cover bg-center",
+    img: "bg-[url('/images/wedding.webp')] bg-cover bg-center",
   },
   {
     title: "Outstation Luxury Tours",
     icon: <MapPin size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/outstation-trips.png')] bg-cover bg-center",
+    img: "bg-[url('/images/outstation-trips.webp')] bg-cover bg-center",
   },
   {
     title: "Group & Family Trips",
     icon: <Users size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-1",
-    img: "bg-[url('/images/grouptrip.png')] bg-cover bg-center",
+    img: "bg-[url('/images/grouptrip.webp')] bg-cover bg-center",
   },
   {
     title: "Celebrity / Executive Shuttle",
     icon: <Star size={28} />,
     size: "col-span-1 md:col-span-3 md:row-span-1",
-    img: "bg-[url('/images/celebrety.png')] bg-cover bg-center ",
+    img: "bg-[url('/images/celebrety.webp')] bg-cover bg-center ",
   },
 ];
 
@@ -46,7 +46,7 @@ const OurServices = () => {
       {/* Cinematic Background */}
       <div className="absolute inset-0 z-0">
         {/* <img
-          src="/images/luxury-wbg.png"
+          src="/images/luxury-wbg.webp"
           alt="Luxury Background"
           className="w-full h-full object-cover opacity-80"
         /> */}

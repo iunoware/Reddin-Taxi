@@ -1,4 +1,4 @@
-import React from "react";
+import GlassButton from "../components/GlassButton";
 import { Users, Gauge, Armchair, Star, Check, Shield } from "lucide-react";
 
 const FleetSection = () => {
@@ -115,9 +115,13 @@ const FleetSection = () => {
               <div className="h-px w-full bg-linear-to-r from-yellow-500/50 to-transparent"></div>
             </div>
 
-            <button className="hover:scale-96 transition-all  bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
-              View Full Specifications
-            </button>
+            <GlassButton
+              text1="View Full Specifications"
+              text2="Experience the Luxury"
+              glass={true}
+              link="/contact"
+              className="text-center"
+            />
           </div>
 
           {/* Right Side: Fleet Grid */}
@@ -131,7 +135,7 @@ const FleetSection = () => {
                 <div className="relative p-2 h-48 overflow-hidden">
                   <div className="absolute inset-0 bg-linear-to-t transition-opacity ease-in from-black/60 group-hover:from-black/30  rounded-lg via-transparent to-transparent z-10"></div>
                   <img
-                    src="/images/urbania-fleet.png"
+                    src="/images/urbania-fleet.webp"
                     alt="Luxury Urbania"
                     className="w-full h-full rounded-lg object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
@@ -166,9 +170,15 @@ const FleetSection = () => {
                     ))}
                   </div>
 
-                  <button className="w-full py-3 bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] hover:scale-96  text-gray-300 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider">
+                  {/* <button className="w-full py-3 bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] hover:scale-96  text-gray-300 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider">
                     Book This Vehicle
-                  </button>
+                  </button> */}
+                  <GlassButton
+                    text1="Book Your Vehicle"
+                    glass={true}
+                    link="/contact"
+                    className="text-center inline-block w-full py-[7px]"
+                  />
                 </div>
               </div>
             ))}

@@ -1,4 +1,4 @@
-import React from "react";
+import GlassButton from "../components/GlassButton";
 import { Check, Star, Crown, Zap } from "lucide-react";
 
 const packages = [
@@ -72,7 +72,7 @@ export default function Packages() {
         </div>
 
         {/* Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {packages.map((pkg, index) => (
             <div
               key={index}
@@ -145,7 +145,7 @@ export default function Packages() {
                 </ul>
 
                 {/* Button */}
-                <button
+                {/* <button
                   className={`w-full py-4 px-6 rounded-lg text-sm font-semibold tracking-wide uppercase transition-all duration-300 ${
                     pkg.highlight
                       ? "bg-white text-black hover:bg-white/5 hover:text-white hover:shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] "
@@ -153,7 +153,24 @@ export default function Packages() {
                   }`}
                 >
                   Book Now
-                </button>
+                </button> */}
+                {pkg.highlight ? (
+                  <GlassButton
+                    text1="Book Now"
+                    bg="bg-white"
+                    textColor="text-black"
+                    // glass={true}
+                    link="/contact"
+                    className="text-center"
+                  />
+                ) : (
+                  <GlassButton
+                    text1="Book Now"
+                    glass={true}
+                    link="/contact"
+                    className="text-center"
+                  />
+                )}
               </div>
             </div>
           ))}

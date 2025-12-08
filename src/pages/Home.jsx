@@ -6,13 +6,14 @@ import ExpCarousel from "../components/ExpCarousel";
 import Packages from "../components/Packages";
 import Testimonial from "../components/Testimonial";
 import Cta from "../components/Cta";
+import GlassButton from "../components/GlassButton";
 
 export default function Home() {
   return (
     <>
       <div className="overflow-x-clip">
         {/* hero section */}
-        <div className="relative w-screen h-screen bg-[url(/images/hero-3.png)] bg-cover bg-center">
+        <div className="relative w-screen h-screen bg-[url(/images/hero-white.jpg)] bg-cover bg-center">
           {/* Gradient Overlay */}
           <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/30 to-transparent"></div>
 
@@ -30,12 +31,19 @@ export default function Home() {
 
             {/* links */}
             <div className="flex flex-row items-center gap-6">
-              <button className="relative hover:scale-96 transition-all  bg-white/1 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
-                Book Your Trip
-              </button>
-              <button className=" hover:scale-96 bg-white/80 text-black px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg transition-all cursor-pointer">
-                Explore Services
-              </button>
+              <GlassButton
+                text1="Book Your Trip"
+                glass={true}
+                link="/contact"
+                className="text-center"
+              />
+              <GlassButton
+                text1="Explore Services"
+                textColor="text-black"
+                bg="bg-white"
+                link="/contact"
+                className="text-center"
+              />
             </div>
 
             {/* stats */}
@@ -71,19 +79,19 @@ export default function Home() {
 
         {/* Why Choose Us */}
         <WhyChooseUs />
+
+        {/* Interior Experience */}
+        <ExpCarousel />
+
+        {/* packages */}
+        <Packages />
+
+        {/* testimonial */}
+        <Testimonial />
+
+        {/* CTA */}
+        <Cta />
       </div>
-
-      {/* Interior Experience */}
-      <ExpCarousel />
-
-      {/* packages */}
-      <Packages />
-
-      {/* testimonial */}
-      <Testimonial />
-
-      {/* CTA */}
-      <Cta />
     </>
   );
 }

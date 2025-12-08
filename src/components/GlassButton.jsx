@@ -17,9 +17,11 @@ export default function GlassButton({
           glass
             ? `backdrop-blur-xs shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]`
             : `${bg}`
-        } group/btn rounded-2xl px-8 py-3 ${className}`}
+        } inline-block group/btn rounded-2xl px-8 py-3 ${className}`}
       >
-        <div className={`flex h-6 mt-1.5 overflow-hidden items-center space-x-8 `}>
+        <div
+          className={`flex h-6 mt-1.5 overflow-hidden items-center space-x-8 `}
+        >
           <div
             className={`${
               textColor ? textColor : "text-white/90"

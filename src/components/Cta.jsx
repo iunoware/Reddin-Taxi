@@ -1,69 +1,77 @@
-import React from "react";
-import { MapPin, Calendar, ArrowRight } from "lucide-react";
+import GlassButton from "../components/GlassButton";
 
-export default function Cta() {
-    return (
-        <div className="fixed bottom-0 md:bottom-8 left-0 right-0 z-50 px-4 md:px-8 pointer-events-none">
-            <div className="pointer-events-auto max-w-7xl mx-auto bg-[#0a0a0a]/90 backdrop-blur-xl border border-white/10 rounded-t-2xl md:rounded-2xl shadow-[0_-10px_40px_-5px_rgba(0,0,0,0.5)] overflow-hidden">
+const Cta = () => {
+  return (
+    // <section className="w-full max-w-7xl  mx-auto px-4 py-16 sm:px-6 lg:px-8">
+    //   <div className="flex flex-col md:flex-row bg-red-50 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300">
+    //     {/* Left Side: Content */}
+    //     <div className="w-full md:w-1/2 p-10 md:p-16 flex flex-col justify-center items-start space-y-6">
+    //       <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight leading-tight">
+    //         Plan Your Trip
+    //       </h2>
+    //       <p className="text-lg text-gray-700 leading-relaxed font-medium">
+    //         Your next premium journey begins with a single click.
+    //       </p>
+    //       <button
+    //         type="button"
+    //         className="inline-flex items-center justify-center px-8 py-3 text-base md:text-lg font-semibold text-white bg-red-600 rounded-full hover:bg-red-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 shadow-md"
+    //       >
+    //         Get Started
+    //       </button>
+    //     </div>
 
-                {/* Subtle top highlight */}
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-yellow-500/50 to-transparent"></div>
-
-                <div className="flex flex-col lg:flex-row items-center justify-between p-6 gap-6 md:gap-8">
-
-                    {/* Left: Text Content */}
-                    <div className="text-center lg:text-left shrink-0">
-                        <h3 className="text-xl md:text-2xl font-serif text-white mb-1 tracking-wide">
-                            Ready to Book Your <span className="text-yellow-500 italic">Luxury Journey?</span>
-                        </h3>
-                        <p className="text-sm text-gray-400 font-light">
-                            Experience comfort, style, and premium service.
-                        </p>
-                    </div>
-
-                    {/* Middle: Inputs */}
-                    <div className="flex flex-col md:flex-row gap-3 w-full lg:max-w-3xl bg-white/5 p-2 rounded-xl border border-white/5">
-                        {/* Pickup */}
-                        <div className="flex items-center gap-3 bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 flex-1 focus-within:border-yellow-500/50 transition-colors">
-                            <MapPin className="w-4 h-4 text-yellow-500 shrink-0" />
-                            <input
-                                type="text"
-                                placeholder="Pickup Location"
-                                className="bg-transparent border-none outline-none text-sm text-white placeholder-gray-500 w-full"
-                            />
-                        </div>
-
-                        {/* Drop-off */}
-                        <div className="flex items-center gap-3 bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 flex-1 focus-within:border-yellow-500/50 transition-colors">
-                            <MapPin className="w-4 h-4 text-zinc-600 shrink-0" />
-                            <input
-                                type="text"
-                                placeholder="Drop-off Destination"
-                                className="bg-transparent border-none outline-none text-sm text-white placeholder-gray-500 w-full"
-                            />
-                        </div>
-
-                        {/* Date Start */}
-                        <div className="flex items-center gap-3 bg-[#0f0f0f] border border-white/10 rounded-lg px-4 py-3 flex-1 md:max-w-[180px] focus-within:border-yellow-500/50 transition-colors">
-                            <Calendar className="w-4 h-4 text-gray-400 shrink-0" />
-                            <input
-                                type="text"
-                                placeholder="Date"
-                                className="bg-transparent border-none outline-none text-sm text-white placeholder-gray-500 w-full"
-                                onFocus={(e) => e.target.type = 'date'}
-                                onBlur={(e) => e.target.type = 'text'}
-                            />
-                        </div>
-                    </div>
-
-                    {/* Right: Button */}
-                    <button className="w-full lg:w-auto shrink-0 bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-black font-semibold py-4 px-8 rounded-xl shadow-[0_0_20px_-5px_rgba(234,179,8,0.4)] hover:shadow-[0_0_30px_-5px_rgba(234,179,8,0.6)] transition-all flex items-center justify-center gap-2 group">
-                        <span>Book Now</span>
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
-
-                </div>
-            </div>
+    //     {/* Right Side: Illustration */}
+    //     <div className="w-full md:w-1/2 relative overflow-visible bg-red-100 min-h-[300px]">
+    //       {/* Note: In a real scenario, this would be the AI generated image.
+    //           Using a placeholder from public/images as fallback since AI generation is currently rate limited. */}
+    //       <img
+    //         src="/images/cta.png"
+    //         alt="Cheerful family ready for a travel journey"
+    //         className="absolute inset-0 w-full h-full object-cover object-center"
+    //         loading="lazy"
+    //       />
+    //     </div>
+    //   </div>
+    // </section>
+    <section className="flex items-center justify-center pb-10">
+      <div className="bg-black/40 md:h-100 min-w-[90vw] rounded-2xl absolute z-10"></div>
+      <div className="bg-[url('/images/luxury-bg.png')] relative rounded-2xl m-25 h-200 md:h-100 place-content-center grid grid-cols-1 gap-5 md:grid-cols-2 min-w-[90vw] ">
+        {/* Right side */}
+        <div className="flex flex-col items-center justify-center z-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight">
+            Plan Your Trip
+          </h2>
+          <p className="text-lg pt-2 text-white leading-relaxed font-medium">
+            Your next premium journey begins with a single click.
+          </p>
+          {/* <button
+            type="button"
+            className="inline-flex items-center justify-center px-8 py-3 text-base md:text-lg font-semibold text-white bg-red-600 rounded-full hover:bg-red-700 transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-600 shadow-md"
+          >
+            Get Started
+          </button> */}
+          <GlassButton
+            text1="Book this fleet"
+            // text2="Experience Luxury"
+            glass={true}
+            // textColor="text-white"
+            // bg="bg-black"
+            link="/contact"
+            className="mt-5"
+          />
         </div>
-    );
-}
+        <div className="relative">
+          {/* <div className="bg-red-200/40 absolute right-0 -top-30 w-60 h-60 rounded-full"></div> */}
+          {/* IMG Side */}
+          <img
+            src="/images/cta-fam.png"
+            alt=""
+            className="md:h-[650px] z-10 object-center md:absolute -top-80 "
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Cta;
