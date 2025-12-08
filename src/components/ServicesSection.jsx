@@ -1,4 +1,4 @@
-import React, { version } from "react";
+import GlassButton from "../components/GlassButton";
 import { Briefcase, Users, Crown, Armchair, ArrowRight } from "lucide-react";
 
 const ServicesSection = () => {
@@ -37,26 +37,21 @@ const ServicesSection = () => {
               airport transfers, or private charters — our services are designed
               to deliver a seamless, premium travel experience.
             </p>
-            <button className="relative hover:scale-96 transition-all  bg-black backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
+            {/* <button className="relative hover:scale-96 transition-all  bg-black backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
               <span className="relative z-10 flex items-center gap-3">
                 Explore Our Premium Services
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </span>
-            </button>
+            </button> */}
+            <GlassButton
+              text1="Explore Our Premium Services "
+              textColor="text-white"
+              bg="bg-black"
+              link="/contact"
+              className="block text-center w-fit"
+            />
           </div>
 
-          {/* Ai Image */}
-          {/* <div className="relative group perspective-1000">
-            <div className="absolute inset-0 bg-linear-to-tr from-red-500 to-white transform translate-x-4 translate-y-4 -z-10 rounded-2xl transition-transform group-hover:translate-x-6 group-hover:translate-y-6 duration-500"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/10 group-hover:rotate-y-2 transition-transform duration-700">
-              <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent z-10"></div>
-              <img
-                src="/images/luxury-bus.png"
-                alt="Luxury Bus"
-                className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
-              />
-            </div>
-          </div> */}
           {/* my images side */}
           <div className="grid space-x-4 md:grid-cols-12 grid-cols-1 gap-5">
             <div className="md:col-span-5 md:-translate-y-4">
