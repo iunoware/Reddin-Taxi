@@ -91,7 +91,7 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-[#e0e0e0]">
+    <div className="bg-[#111111]">
       {/* hero section */}
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Image */}
@@ -132,18 +132,18 @@ export default function About() {
       </div>
 
       {/* Who We Are Section - Redesigned */}
-      <section className="relative w-full bg-[#e0e0e0] py-24 overflow-hidden">
+      <section className="relative w-full bg-[#111111] py-24 overflow-hidden">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="text-left z-10 order-2 lg:order-1">
-              <h2 className="text-5xl md:text-6xl basker text-red-600 font-semibold tracking-tight mb-8 basker drop-shadow-lg">
+              <h2 className="text-5xl md:text-6xl basker text-[#CC0022] font-semibold tracking-tight mb-8 basker drop-shadow-lg">
                 Who We Are
               </h2>
-              <div className="w-44 h-1 bg-linear-to-r from-red-600 to-transparent mb-10 opacity-80"></div>
+              <div className="w-44 h-1 bg-linear-to-r from-red-500 to-transparent mb-10 opacity-80"></div>
 
-              <p className="text-lg font-light leading-relaxed mb-12 max-w-lg">
-                <strong className="text-red-600 font-semibold">
+              <p className="text-lg font-light text-white leading-relaxed mb-12 max-w-lg">
+                <strong className="text-red-500 font-semibold">
                   Reddin Tours & Travels
                 </strong>{" "}
                 is the embodiment of premium mobility. We don't just transport; we curate
@@ -152,8 +152,8 @@ export default function About() {
 
               <div className="space-y-10">
                 {/* Highlight 1 */}
-                <div className="flex items-start gap-5 shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] p-3 rounded-2xl group">
-                  <div className="p-3 rounded-xl text-red-600 shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-500">
+                <div className="flex items-start gap-5 shadow-[5px_5px_10px_#0b0b0b,-5px_-5px_10px_#171717] p-3 rounded-2xl group">
+                  <div className="p-3 rounded-xl text-red-500 shadow-[5px_5px_10px_#0b0b0b,-5px_-5px_10px_#171717] transition-all duration-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -170,18 +170,18 @@ export default function About() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="md:text-xl text-lg text-red-700 font-medium mb-1 cinzel tracking-wide">
+                    <h3 className="md:text-xl text-lg text-red-500 font-medium mb-1 cinzel tracking-wide">
                       Cinematic Comfort
                     </h3>
-                    <p className="text-sm text-gray-900 font-light tracking-wide">
+                    <p className="text-sm text-white/80 font-light tracking-wide">
                       Bespoke interiors designed for silence and serenity.
                     </p>
                   </div>
                 </div>
 
                 {/* Highlight 2 */}
-                <div className="flex items-start p-3 rounded-2xl shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] gap-5 group">
-                  <div className="p-3 rounded-xl text-red-600 shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-500">
+                <div className="flex items-start p-3 rounded-2xl shadow-[5px_5px_10px_#0c0c0c,-5px_-5px_10px_#161616] gap-5 group">
+                  <div className="p-3 rounded-xl text-red-500 shadow-[5px_5px_10px_#0c0c0c,-5px_-5px_10px_#161616] transition-all duration-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
@@ -198,10 +198,10 @@ export default function About() {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="md:text-xl text-lg text-red-700 font-medium mb-1 cinzel tracking-wide">
+                    <h3 className="md:text-xl text-lg text-red-500 font-medium mb-1 cinzel tracking-wide">
                       Safety & Privacy
                     </h3>
-                    <p className="text-sm text-gray-900 font-light tracking-wide">
+                    <p className="text-sm text-white/80 font-light tracking-wide">
                       Discreet service with top-tier safety standards.
                     </p>
                   </div>
@@ -347,7 +347,7 @@ export default function About() {
             </h2>
             <div className="w-64 h-1 mx-auto mt-6 rounded-full bg-linear-to-r from-transparent via-red-500 to-transparent opacity-80"></div>
           </div> */}
-          <Heading title="Why Choose Us" className="text-white" />
+          <Heading title="Why Choose Us" className="text-white!" />
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
