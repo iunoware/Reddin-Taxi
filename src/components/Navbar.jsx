@@ -49,13 +49,6 @@ export default function Navbar() {
   // }
 
   return (
-    // <nav
-    //   className={`fixed w-full z-50 m-3 w-[94%] sm:w-[96%] md:w-[97.5%] rounded-full transition-all duration-300 ${
-    //     isScrolled
-    //       ? "bg-white/1 backdrop-blur-xs shadow-[0_8px_32px_rgba(0,0,0,0.1),inset_0_1px_0_rgba(255,255,255,0.5),inset_0_-1px_0_rgba(255,255,255,0.1),inset_0_0_6px_3px_rgba(255,255,255,0.3)] py-4"
-    //       : "bg-transparent py-6"
-    //   }`}
-    // >
     <div className="flex justify-center items-start">
       <nav
         className={`fixed w-[94%] sm:w-[96%] md:w-[97.5%] z-50 m-3 rounded-full transition-all duration-700 ${
@@ -66,10 +59,16 @@ export default function Navbar() {
       >
         <div className=" px-6 flex justify-between items-center">
           {/* Logo */}
-          <a href="#" className="text-2xl font-bold text-(--c-navy) tracking-tight">
-            {/* Sabari<span className="text-(--c-yellow)">Taxi</span> */}
-            <img src="/images/logo.png" alt="Reddin Taxi" className="h-12 w-auto" />
-          </a>
+          <Link
+            to="/"
+            className="text-2xl font-bold text-(--c-navy) tracking-tight"
+          >
+            <img
+              src="/images/logo-w.png"
+              alt="Reddin Taxi"
+              className="h-12 w-auto"
+            />
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex h-6 mt-1.5 overflow-hidden items-center space-x-8">
