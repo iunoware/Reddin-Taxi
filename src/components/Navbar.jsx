@@ -106,14 +106,14 @@ export default function Navbar() {
               <X
                 size={28}
                 className={`text-white text-lg transition-all duration-500 ${
-                  isScrolled ? "translate-x-0" : "translate-x-20"
+                  isScrolled ? "opacity-100" : "opacity-0"
                 }`}
               />
             ) : (
               <Menu
                 size={28}
                 className={`text-white text-lg transition-all duration-700 ${
-                  isScrolled ? "translate-x-0" : "translate-x-20"
+                  isScrolled ? "opacity-100" : "opacity-0"
                 }`}
               />
             )}
