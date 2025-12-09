@@ -5,6 +5,8 @@ import Contact from "./pages/Contact";
 import Packages from "./pages/Packages";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
+import Enquiry from "./components/Enquiry";
 
 // gsap scroll smoother
 import { gsap } from "gsap";
@@ -28,6 +30,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
+      <Enquiry />
       <div id="smoothWrapper">
         <div id="smoothContainer">
           <Routes>
@@ -36,6 +39,7 @@ function App() {
             <Route path="/packages" element={<Packages />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </Router>
