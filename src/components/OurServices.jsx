@@ -86,9 +86,6 @@ const OurServices = () => {
                 )}
               </div>
 
-              {/* Dark Overlay Gradient */}
-              {/* <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent"></div> */}
-
               {/* Content */}
               <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex items-end justify-between transition-all duration-500 group-hover:-translate-y-2">
                 <div>

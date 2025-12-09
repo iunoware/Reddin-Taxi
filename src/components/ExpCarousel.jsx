@@ -25,7 +25,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "/images/spacious.webp", // Reuse for demonstration due to generation limit
+    image: "/images/spacious.webp",
     title: "Spacious VIP Cabin",
     description:
       "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
