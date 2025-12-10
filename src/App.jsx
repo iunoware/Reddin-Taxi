@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -8,6 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Enquiry from "./components/Enquiry";
 import { Toaster } from "react-hot-toast";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // gsap scroll smoother
 import { gsap } from "gsap";
@@ -18,6 +21,14 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      once: false,
+      mirror: true,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   useGSAP(() => {
     ScrollSmoother.create({
       wrapper: "#smoothWrapper",
