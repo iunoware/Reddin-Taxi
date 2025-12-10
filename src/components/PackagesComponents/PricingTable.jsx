@@ -44,15 +44,24 @@ export default function PricingTable() {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-16 space-y-4">
-          <span className="text-red-500 font-semibold tracking-[0.2em] text-sm uppercase">
+          <span
+            data-aos="fade-up"
+            className="text-red-500 font-semibold tracking-[0.2em] text-sm uppercase"
+          >
             Transparent Pricing
           </span>
-          <h2 className="cinzel text-4xl  md:text-5xl font-bold text-black drop-shadow-lg">
+          <h2
+            data-aos="fade-up"
+            className="cinzel text-4xl  md:text-5xl font-bold text-black drop-shadow-lg"
+          >
             Exclusive Rate Card
           </h2>
-          <p className="text-gray-800 max-w-2xl mx-auto font-light leading-relaxed">
-            Experience premium travel with our transparent, all-inclusive
-            pricing structure. No hidden costs, just pure luxury.
+          <p
+            data-aos="fade-up"
+            className="text-gray-800 max-w-2xl mx-auto font-light leading-relaxed"
+          >
+            Experience premium travel with our transparent, all-inclusive pricing
+            structure. No hidden costs, just pure luxury.
           </p>
         </div>
 
@@ -79,6 +88,7 @@ export default function PricingTable() {
             {pricingData.map((item, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
                 className="grid grid-cols-1 md:grid-cols-4 p-6 md:p-8 hover:bg-gray-50 transition-colors duration-300 items-center group"
               >
                 {/* Variant Name */}
@@ -131,9 +141,9 @@ export default function PricingTable() {
           <div className="p-6 bg-gray-50 border-t border-gray-100 flex items-start gap-3">
             <Info size={18} className="text-[#C9A35C] mt-0.5 shrink-0" />
             <p className="text-sm text-gray-500 leading-relaxed">
-              * Pricing excludes tolls, parking fees, and interstate taxes.
-              Minimum billing criteria applies for hourly rentals. Rates valid
-              for 2024-2025 season.
+              * Pricing excludes tolls, parking fees, and interstate taxes. Minimum
+              billing criteria applies for hourly rentals. Rates valid for 2024-2025
+              season.
             </p>
           </div>
         </div>

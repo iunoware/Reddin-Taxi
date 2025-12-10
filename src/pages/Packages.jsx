@@ -11,7 +11,7 @@ export default function Packages() {
     document.title = "Redinn Tours & Travels | Packages";
   }, []);
   return (
-    <>
+    <div className="overflow-x-hidden">
       {/* hero section */}
       <HeroPack />
 
@@ -26,6 +26,6 @@ export default function Packages() {
 
       {/* Add ons */}
       <AddOn />
-    </>
+    </div>
   );
 }

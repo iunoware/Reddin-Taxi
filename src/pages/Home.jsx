@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 import React, { useState, useEffect } from "react";
 import ServicesSection from "../components/HomeComponents/ServicesSection";
 import FleetSection from "../components/HomeComponents/FleetSection";
@@ -58,8 +60,7 @@ export default function Home() {
       id: 3,
       image: "/images/interior-ambience.webp",
       title: "Cinematic Ambience",
-      description:
-        "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+      description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
     },
     {
       id: 4,
@@ -181,9 +182,7 @@ export default function Home() {
                     to="/packages"
                     className="group w-fit relative overflow-hidden rounded-full py-3 px-8 bg-transparent border border-white/20 text-white transition-all hover:bg-white/10 hover:border-white/40 hover:scale-105 active:scale-95 flex items-center gap-2"
                   >
-                    <span className="relative z-10 font-medium">
-                      Explore Details
-                    </span>
+                    <span className="relative z-10 font-medium">Explore Details</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>

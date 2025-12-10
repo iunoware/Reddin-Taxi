@@ -13,7 +13,7 @@ import {
   Clock,
 } from "lucide-react";
 import Heading from "../components/Heading";
-// import Cta from "../components/Cta";
+import Cta from "../components/Cta";
 
 export default function About() {
   useEffect(() => {
@@ -224,12 +224,21 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left Content */}
             <div className="text-left z-10 order-2 lg:order-1">
-              <h2 className="text-5xl md:text-6xl basker text-red-600/90 font-semibold tracking-tight mb-8 basker drop-shadow-lg">
+              <h2
+                data-aos="fade-up"
+                className="text-5xl md:text-6xl basker text-red-600/90 font-semibold tracking-tight mb-8 basker drop-shadow-lg"
+              >
                 Who We Are
               </h2>
-              <div className="w-44 h-1 bg-linear-to-r from-red-500 to-transparent mb-10 opacity-80"></div>
+              <div
+                data-aos="fade-up"
+                className="w-44 h-1 bg-linear-to-r from-red-500 to-transparent mb-10 opacity-80"
+              ></div>
 
-              <p className="text-lg font-light leading-relaxed mb-12 max-w-lg">
+              <p
+                data-aos="fade-up"
+                className="text-lg font-light leading-relaxed mb-12 max-w-lg"
+              >
                 <strong className="text-red-500 font-semibold">
                   Reddin Tours & Travels
                 </strong>{" "}
@@ -269,7 +278,10 @@ export default function About() {
                 </div>
 
                 {/* Highlight 2 */}
-                <div className="flex items-start p-3 rounded-2xl shadow-[3px_3px_10px_#8d8d8d,-3px_-3px_10px_#ffffff] gap-5 group">
+                <div
+                  data-aos="fade-up"
+                  className="flex items-start p-3 rounded-2xl shadow-[3px_3px_10px_#8d8d8d,-3px_-3px_10px_#ffffff] gap-5 group"
+                >
                   <div className="p-3 rounded-xl text-red-500 shadow-[3px_3px_10px_#8d8d8d,-3px_-3px_10px_#ffffff] transition-all duration-500">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -299,12 +311,15 @@ export default function About() {
             </div>
 
             {/* Right Abstract Visual */}
-            <div className="relative h-[500px] w-full bg-linear-to-br from-zinc-900 via-zinc-800 to-black rounded-[40px] border border-white/5 overflow-hidden shadow-2xl order-1 lg:order-2 group">
+            <div
+              data-aos="fade-left"
+              className="relative h-[500px] w-full bg-linear-to-br from-zinc-900 via-zinc-800 to-black rounded-[40px] border border-white/5 overflow-hidden shadow-2xl order-1 lg:order-2 group"
+            >
               <div className="absolute inset-0 flex items-center justify-center p-10">
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
                   {/* 2 floating cards */}
-                  <div className="absolute top-12 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
-                  <div className="absolute bottom-12 left-8 w-2/3 h-1/2 bg-[url('/images/interior-ambience.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
+                  <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
+                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/interior-ambience.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-8 right-8 flex items-center gap-3 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-full border border-white/10 shadow-xl z-20 transition-all duration-300 hover:bg-black/80 hover:scale-105 cursor-default">
@@ -354,8 +369,13 @@ export default function About() {
       {/* Premium Fleet */}
       <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
         <div className="px-4 lg:px-12 relative z-10">
-          <Heading title="Our Premium Fleet" className="mb-3!" />
-          <p className="text-gray-700 font-light tracking-wide text-lg mb-10 text-center">
+          <div data-aos="fade-up">
+            <Heading title="Our Premium Fleet" className="mb-3!" />
+          </div>
+          <p
+            data-aos="fade-up"
+            className="text-gray-700 font-light tracking-wide text-lg mb-10 text-center"
+          >
             Choose the perfect chariot for your journey.
           </p>
 
@@ -365,6 +385,7 @@ export default function About() {
             {fleets.map((fleet, i) => (
               <div
                 key={fleet.title}
+                data-aos="fade-up"
                 className="rounded-2xl h-fit shadow-[3px_3px_10px_#8d8d8d,-3px_-3px_10px_#ffffff] m-4"
               >
                 <div className="rounded-xl shadow-[inset_5px_5px_10px_#8d8d8d,inset_-5px_-5px_10px_#ffffff] m-2 flex align-bottom overflow-hidden">
@@ -415,29 +436,42 @@ export default function About() {
 
       {/* Why Choose Us */}
       <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/luxury-bg-red.webp')] bg-center bg-cover">
-        <div className="absolute inset-0 h-full w-full bg-black/20"></div>
+        <div className="absolute inset-0 bg-linear-to-br from-black/90 via-black/60 to-transparent z-0"></div>
         <div className="container mx-auto relative z-10 max-w-7xl">
-          <Heading title="Why Choose Us" className="text-white!" />
+          {/* <div data-aos="fade-up">
+            <Heading title="Why Choose Us" className="text-white!" />
+          </div> */}
+          <h2
+            data-aos="fade-up"
+            className="text-4xl md:text-5xl text-center lg:text-6xl basker text-white mb-15 drop-shadow-2xl"
+          >
+            Why{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-200 to-gray-500">
+              Choose Us
+            </span>
+          </h2>
 
           {/* Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             {whyChoose.map((c, i) => (
               <div
+                // data-aos="fade-up"
                 key={i}
-                className="group shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center"
               >
-                <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
+                <div className="group shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center">
+                  <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
-                <div className="w-20 h-20 mb-8 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
-                  {c.svg}
+                  <div className="w-20 h-20 mb-8 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
+                    {c.svg}
+                  </div>
+
+                  <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
+                    {c.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans">
+                    {c.content}
+                  </p>
                 </div>
-
-                <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
-                  {c.title}
-                </h3>
-                <p className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans">
-                  {c.content}
-                </p>
               </div>
             ))}
           </div>
@@ -447,8 +481,13 @@ export default function About() {
       {/* What Makes Us Different */}
       <section className="relative w-full py-24 px-3 overflow-hidden">
         <div className="px-6 lg:px-12 relative z-10">
-          <Heading title="What Makes Us Different" className="mb-2!" />
-          <p className="text-lg text-center mb-10 text-[#444] font-light max-w-2xl mx-auto">
+          <div data-aos="fade-up">
+            <Heading title="What Makes Us Different" className="mb-2!" />
+          </div>
+          <p
+            data-aos="fade-up"
+            className="text-lg text-center mb-10 text-[#444] font-light max-w-2xl mx-auto"
+          >
             Setting the benchmark for luxury travel with standards that exceed
             expectations.
           </p>
@@ -456,15 +495,14 @@ export default function About() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 place-items-center h-full">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {differences.map((d, i) => (
-                <div
-                  key={i}
-                  className="p-8 rounded-3xl backdrop-blur-md shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group"
-                >
-                  <div className="mb-3 p-3 rounded-full shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff]">
-                    {d.svg}
+                <div data-aos="fade-right" key={i}>
+                  <div className="p-8 rounded-3xl backdrop-blur-md shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group">
+                    <div className="mb-3 p-3 rounded-full shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff]">
+                      {d.svg}
+                    </div>
+                    <h3 className="text-xl font-bold text-[#111] mb-3">{d.title}</h3>
+                    <p className="text-[#333] text-sm leading-relaxed">{d.content}</p>
                   </div>
-                  <h3 className="text-xl font-bold text-[#111] mb-3">{d.title}</h3>
-                  <p className="text-[#333] text-sm leading-relaxed">{d.content}</p>
                 </div>
               ))}
             </div>
@@ -520,14 +558,20 @@ export default function About() {
               </span>
             </div>
 
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 drop-shadow-2xl">
+            <h2
+              data-aos="fade-up"
+              className="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6 drop-shadow-2xl"
+            >
               Coverage Across{" "}
               <span className="text-transparent bg-clip-text bg-linear-to-r from-gray-200 to-gray-600">
                 India
               </span>
             </h2>
 
-            <p className="text-lg md:text-xl text-gray-300 font-light tracking-wide mb-12 max-w-2xl leading-relaxed">
+            <p
+              data-aos="fade-up"
+              className="text-lg md:text-xl text-gray-300 font-light tracking-wide mb-12 max-w-2xl leading-relaxed"
+            >
               Serving customers across every state with reliable,{" "}
               <strong className="text-red-400 font-normal">
                 premium travel solutions
@@ -634,7 +678,7 @@ export default function About() {
       </section> */}
 
       {/* cta */}
-      {/* <Cta /> */}
+      <Cta />
     </div>
   );
 }

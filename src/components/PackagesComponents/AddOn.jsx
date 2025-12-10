@@ -46,17 +46,26 @@ export default function AddOn() {
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         {/* Header */}
         <div className="mb-16 space-y-4">
-          <span className="text-yellow-500 font-semibold tracking-[0.2em] text-sm uppercase">
+          <span
+            data-aos="fade-up"
+            className="text-yellow-500 font-semibold tracking-[0.2em] text-sm uppercase"
+          >
             Elevate Your Experience
           </span>
-          <h2 className="cinzel text-4xl md:text-5xl pt-3 text-white drop-shadow-lg">
+          <h2
+            data-aos="fade-up"
+            className="cinzel text-4xl md:text-5xl pt-3 text-white drop-shadow-lg"
+          >
             Premium
             <span span className="text-gray-500 italic">
               {" "}
               Add-Ons
             </span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed">
+          <p
+            data-aos="fade-up"
+            className="text-gray-400 max-w-2xl mx-auto font-light leading-relaxed"
+          >
             Enhance your travel with optional upgrades tailored for comfort and
             convenience.
           </p>
@@ -67,6 +76,7 @@ export default function AddOn() {
           {addons.map((item, index) => (
             <div
               key={index}
+              // data-aos="fade-up"
               className="group relative p-8 rounded-2xl bg-white/5 backdrop-blur-md border border-white/5 hover:border-white/10 transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] flex flex-col items-center text-center overflow-hidden"
             >
               {/* Hover Beam Effect */}
@@ -81,9 +91,7 @@ export default function AddOn() {
               <h3 className="text-xl font-semibold text-white mb-2 cinzel tracking-wide">
                 {item.title}
               </h3>
-              <p className="text-sm text-gray-400 leading-relaxed">
-                {item.desc}
-              </p>
+              <p className="text-sm text-gray-400 leading-relaxed">{item.desc}</p>
             </div>
           ))}
         </div>
