@@ -92,7 +92,7 @@ const Testimonial = () => {
   React.useEffect(() => {
     const interval = setInterval(() => {
       nextTestimonial();
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
   }, [active]);
@@ -100,7 +100,7 @@ const Testimonial = () => {
   return (
     <section
       ref={containerRef}
-      className="relative w-full min-h-screen  text-black overflow-hidden items-center justify-center flex flex-col lg:flex-row font-sans"
+      className="relative w-full min-h-screen text-black overflow-hidden items-center justify-center flex flex-col lg:flex-row font-sans"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 z-0">
@@ -202,22 +202,35 @@ const Testimonial = () => {
 
       {/* Right Side: Heading & Desc */}
       <div className="relative z-10 w-full lg:w-1/2 h-auto lg:h-full flex flex-col justify-center px-8 lg:px-20 text-center lg:text-left py-12 lg:py-0">
-        <div ref={textRef} className="max-w-xl mx-auto lg:mx-0">
+        <div
+          data-aos="fade-left"
+          ref={textRef}
+          className="max-w-xl mx-auto lg:mx-0"
+        >
           <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
             <div className="h-px w-12 bg-linear-to-r from-red-600/30 to-red-400/60"></div>
-            <span className="text-black uppercase tracking-[0.2em] text-sm font-medium">
+            <span
+              data-aos="fade-left"
+              className="text-black uppercase tracking-[0.2em] text-sm font-medium"
+            >
               Testimonials
             </span>
           </div>
 
-          <h2 className="text-4xl lg:text-6xl font-extrabold text-black mb-6 leading-tight font-[Audiowide] tracking-tight">
+          <h2
+            data-aos="fade-up-left"
+            className="text-4xl lg:text-6xl font-extrabold text-black mb-6 leading-tight font-[Audiowide] tracking-tight"
+          >
             What Our{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 via-red-500 to-red-700">
               Clients Say
             </span>
           </h2>
 
-          <p className="text-black text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0">
+          <p
+            data-aos="fade-up-left"
+            className="text-black text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0"
+          >
             Hear from those who have experienced the pinnacle of luxury travel
             with Reddin. Your journey, redefined.
           </p>

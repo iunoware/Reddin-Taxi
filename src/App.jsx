@@ -9,6 +9,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Enquiry from "./components/Enquiry";
 import Popup from "./components/Popup";
+import { Toaster } from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,23 +41,26 @@ function App() {
   // }, []);
 
   return (
-    <Router>
-      <Popup />
-      <ScrollToTop />
-      <Navbar />
-      <Enquiry />
-      <div id="smoothWrapper">
-        <div id="smoothContainer">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Router>
+        <Popup />
+        <ScrollToTop />
+        <Navbar />
+        <Enquiry />
+        <div id="smoothWrapper">
+          <div id="smoothContainer">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/packages" element={<Packages />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </>
   );
 }
 
