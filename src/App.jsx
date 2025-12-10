@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Enquiry from "./components/Enquiry";
+import { Toaster } from "react-hot-toast";
 
 // gsap scroll smoother
 import { gsap } from "gsap";
@@ -27,22 +28,25 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Navbar />
-      <Enquiry />
-      <div id="smoothWrapper">
-        <div id="smoothContainer">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
+    <>
+      <Toaster position="top-center" reverseOrder={false} />
+      <Router>
+        <ScrollToTop />
+        <Navbar />
+        <Enquiry />
+        <div id="smoothWrapper">
+          <div id="smoothContainer">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/packages" element={<Packages />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+          </div>
         </div>
-      </div>
-    </Router>
+      </Router>
+    </>
   );
 }
 
