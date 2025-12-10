@@ -239,30 +239,32 @@ export default function About() {
 
               <div className="space-y-10">
                 {/* Highlight 1 */}
-                <div className="flex items-start gap-5 shadow-[4px_4px_10px_#8d8d8d,-4px_-4px_10px_#ffffff] p-3 rounded-2xl group">
-                  <div className="p-3 rounded-xl text-red-500 shadow-[4px_4px_10px_#8d8d8d,-4px_-4px_10px_#ffffff] transition-all duration-500">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.2}
-                      stroke="currentColor"
-                      className="w-7 h-7"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9.813 15.904 9 19h4.253l-.813-3.096m-4.253 0c-.966-.546-1.272-1.928-.75-2.923l2.876-5.592a1.146 1.146 0 0 1 2.155 0l2.875 5.592c.523.995.217 2.378-.75 2.923m-6.353 0h6.353M12 2.25a9.75 9.75 0 0 1 9.75 9.75v.516c0 .783-.625 1.487-1.406 1.41a9.75 9.75 0 0 0-1.036-.086c-1.002 0-1.875.75-1.875 1.76v1.385c0 .324.253.587.575.602.836.038 1.636.326 2.298.814l.2.146c.362.264.445.765.181 1.128A9.75 9.75 0 0 1 12 21.75c-5.385 0-9.75-4.365-9.75-9.75 0-3.69 2.067-6.9 5.093-8.541"
-                      />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="md:text-xl text-lg text-red-500 font-medium mb-1 basker tracking-wide">
-                      Cinematic Comfort
-                    </h3>
-                    <p className="text-sm text-black/90 font-light tracking-wide">
-                      Bespoke interiors designed for silence and serenity.
-                    </p>
+                <div data-aos="fade-up">
+                  <div className="flex items-start gap-5 shadow-[4px_4px_10px_#8d8d8d,-4px_-4px_10px_#ffffff] p-3 rounded-2xl group">
+                    <div className="p-3 rounded-xl text-red-500 shadow-[4px_4px_10px_#8d8d8d,-4px_-4px_10px_#ffffff] transition-all duration-500">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        strokeWidth={1.2}
+                        stroke="currentColor"
+                        className="w-7 h-7"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9.813 15.904 9 19h4.253l-.813-3.096m-4.253 0c-.966-.546-1.272-1.928-.75-2.923l2.876-5.592a1.146 1.146 0 0 1 2.155 0l2.875 5.592c.523.995.217 2.378-.75 2.923m-6.353 0h6.353M12 2.25a9.75 9.75 0 0 1 9.75 9.75v.516c0 .783-.625 1.487-1.406 1.41a9.75 9.75 0 0 0-1.036-.086c-1.002 0-1.875.75-1.875 1.76v1.385c0 .324.253.587.575.602.836.038 1.636.326 2.298.814l.2.146c.362.264.445.765.181 1.128A9.75 9.75 0 0 1 12 21.75c-5.385 0-9.75-4.365-9.75-9.75 0-3.69 2.067-6.9 5.093-8.541"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="md:text-xl text-lg text-red-500 font-medium mb-1 basker tracking-wide">
+                        Cinematic Comfort
+                      </h3>
+                      <p className="text-sm text-black/90 font-light tracking-wide">
+                        Bespoke interiors designed for silence and serenity.
+                      </p>
+                    </div>
                   </div>
                 </div>
 

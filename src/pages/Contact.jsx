@@ -78,7 +78,7 @@ export default function Contact() {
             {/* heading */}
             <div
               className="flex flex-col justify-start items-start w-full p-4"
-              data-aos="fade-down"
+              // data-aos="fade-down"
             >
               <h2 className="text-3xl text-white text-center sm:text-start mt-5">
                 Plan Your Journey
