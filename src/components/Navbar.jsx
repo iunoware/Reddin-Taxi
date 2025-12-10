@@ -59,14 +59,13 @@ export default function Navbar() {
       >
         <div className=" px-6 flex justify-between items-center">
           {/* Logo */}
-          <Link
-            to="/"
-            className="text-2xl font-bold text-(--c-navy) tracking-tight"
-          >
+          <Link to="/" className="text-2xl font-bold text-(--c-navy) tracking-tight">
             <img
               src="/images/logo-w.png"
               alt="Reddin Taxi"
-              className="h-12 w-auto"
+              className={`${
+                isScrolled ? "h-12" : "h-16"
+              } w-auto transition-all duration-700`}
             />
           </Link>
 
