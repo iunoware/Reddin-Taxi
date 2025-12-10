@@ -18,7 +18,7 @@ export default function Contact() {
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
-    document.title = "Redinn tours & travels | Contact us";
+    document.title = "Redinn Tours & Travels | Contact us";
   }, []);
 
   const handleSubmit = async (e) => {
@@ -221,7 +221,7 @@ export default function Contact() {
                       disabled={isDisabled}
                       className={`${
                         isDisabled ? "cursor-not-allowed" : "cursor-pointer"
-                      } block w-[50%] bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 text-sm font-medium text-white transition-all duration-300 `}
+                      } block w-full md:w-[50%] text-center text-md md:text-lg bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 text-sm font-medium text-white transition-all duration-300 `}
                       type="submit"
                     >
                       Send Message
