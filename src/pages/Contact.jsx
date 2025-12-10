@@ -67,8 +67,8 @@ export default function Contact() {
           </h1>
 
           <p className="text-lg md:text-xl text-white font-light max-w-2xl mx-auto leading-relaxed">
-            Ready for a premium travel experience? Get in touch with us for bespoke
-            bookings, inquiries, or support.
+            Ready for a premium travel experience? Get in touch with us for
+            bespoke bookings, inquiries, or support.
           </p>
         </div>
 
@@ -142,7 +142,8 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="pickUpLocation"
                         >
-                          Pick up location <span className="text-red-500">*</span>
+                          Pick up location{" "}
+                          <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -182,7 +183,8 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="passengers"
                         >
-                          Number of passengers <span className="text-red-500">*</span>
+                          Number of passengers{" "}
+                          <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -361,7 +363,10 @@ export default function Contact() {
           </p>
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 place-items-center mt-5">
-            <div className="flex justify-center items-center" data-aos="fade-right">
+            <div
+              className="flex justify-center items-center"
+              data-aos="fade-right"
+            >
               <img
                 loading="lazy"
                 src="/images/different-3.webp"

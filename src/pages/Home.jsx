@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "REDDIN Tours & Travels | Home";
+    document.title = "Redinn Tours & Travels | Home";
   }, []);
 
   const [current, setCurrent] = useState(0);
@@ -69,10 +69,12 @@ export default function Home() {
         "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
     },
   ];
+
   return (
     <>
       <div className="overflow-x-clip">
         {/* hero section */}
+
         {/* old HEro */}
         {/* <div className="relative w-screen h-screen bg-[url(/images/hero-white.jpg)] bg-cover bg-center">
           
@@ -130,7 +132,7 @@ export default function Home() {
         </div> */}
 
         {/* new hero */}
-        <div className="relative z-50 w-screen mx-auto h-screen overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ">
+        <div className="relative w-screen mx-auto h-screen overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ">
           {slides.map((slide, index) => (
             <div
               key={slide.id}

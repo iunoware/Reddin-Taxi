@@ -17,7 +17,7 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-24">
           {/* Text Content */}
-          <div className="space-y-8 animate-fade-in-up">
+          <div data-aos="fade-right" className="space-y-8 animate-fade-in-up">
             <div>
               <h2 className="text-4xl md:text-6xl font-bold text-black mb-6 cinzel leading-tight">
                 Experience Luxury <br />
@@ -54,31 +54,37 @@ const ServicesSection = () => {
 
           {/* my images side */}
           <div className="grid space-x-4 md:grid-cols-12 grid-cols-1 gap-5">
-            <div className="md:col-span-5 md:-translate-y-4">
+            <div
+              data-aos="fade-up-right"
+              className="md:col-span-5 md:-translate-y-4"
+            >
               <img
                 src="/images/as-1.webp"
-                alt=""
+                alt="Best Tours and Travels"
                 className="md:rounded-tl-4xl h-full w-full object-center object-cover"
               />
             </div>
             <div className="md:col-span-7">
               <img
+                data-aos="fade-up-left"
                 src="/images/as-4.webp"
-                alt=""
+                alt="South Indian Tours and Travels"
                 className="md:rounded-tr-4xl h-full w-full object-center object-cover"
               />
             </div>
             <div className="md:col-span-7 ">
               <img
+                data-aos="fade-up-right"
                 src="/images/as-3.webp"
-                alt=""
+                alt="Tours and Travels"
                 className="h-full w-full md:rounded-bl-4xl object-center object-cover"
               />
             </div>
             <div className="md:col-span-5 md:translate-y-4">
               <img
+                data-aos="fade-up-left"
                 src="/images/as-2.webp"
-                alt=""
+                alt="Tours and Travels India"
                 className="md:rounded-br-4xl h-full w-full object-center object-cover"
               />
             </div>
@@ -90,43 +96,53 @@ const ServicesSection = () => {
           {[
             {
               icon: <Briefcase className="w-8 h-8 text-white" />,
+              delay: "200",
               title: "Corporate & Event Travel",
               desc: "Professional, punctual, and premium transport for companies and large events.",
             },
             {
               icon: <Users className="w-8 h-8 text-white" />,
+              delay: "300",
               title: "Tour Packages & Group Trips",
               desc: "Comfortable and scenic travel for family tours, educational trips, and holiday tours.",
             },
             {
               icon: <Crown className="w-8 h-8 text-white" />,
-              title: "Private Bus Charter",
+              delay: "400",
+              title: "Customizable Buses for Special Moments",
               desc: "Customize the entire bus for weddings, VIP travel, and special occasions.",
             },
             {
               icon: <Armchair className="w-8 h-8 text-white" />,
+              delay: "500",
               title: "Long-Distance Luxury Travel",
               desc: "Relax in pushback seats, AC, entertainment system, and spacious interiors on long routes.",
             },
           ].map((service, index) => (
             <div
               key={index}
-              className="group relative bg-gray-100 shadow-xl backdrop-blur-md border border-white/10 p-8 rounded-2xl hover:bg-black transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] overflow-hidden"
+              className="group relative bg-gray-100 shadow-xl backdrop-blur-md border border-white/10 rounded-2xl hover:bg-black transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-24 h-24 bg-gray-400/20 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-white/10"></div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay={service.delay}
+                className="p-8"
+              >
+                <div className="absolute top-0 right-0 w-24 h-24 bg-gray-400/20 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-white/10"></div>
 
-              <div className="mb-6 p-4 bg-red-400 rounded-xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 border border-white/5 shadow-inner">
-                {service.icon}
+                <div className="mb-6 p-4 bg-red-400 rounded-xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 border border-white/5 shadow-inner">
+                  {service.icon}
+                </div>
+
+                <h3 className="text-xl font-bold text-black mb-4 cinzel group-hover:text-red-400 transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-black/60 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
+                  {service.desc}
+                </p>
+
+                <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-400 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
               </div>
-
-              <h3 className="text-xl font-bold text-black mb-4 cinzel group-hover:text-red-400 transition-colors">
-                {service.title}
-              </h3>
-              <p className="text-black/60 text-sm leading-relaxed group-hover:text-gray-300 transition-colors">
-                {service.desc}
-              </p>
-
-              <div className="absolute bottom-0 left-0 w-full h-1 bg-linear-to-r from-red-400 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             </div>
           ))}
         </div>

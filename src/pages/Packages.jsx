@@ -8,7 +8,7 @@ import AddOn from "../components/PackagesComponents/AddOn";
 
 export default function Packages() {
   useEffect(() => {
-    document.title = "REDDIN Tours & Travels | Packages";
+    document.title = "Redinn Tours & Travels | Packages";
   }, []);
   return (
     <>

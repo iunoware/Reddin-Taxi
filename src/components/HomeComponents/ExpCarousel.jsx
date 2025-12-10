@@ -67,7 +67,10 @@ export default function ExpCarousel() {
           <p className="text-yellow-500 tracking-[0.2em] text-sm font-semibold uppercase mb-2">
             Experience Excellence
           </p>
-          <h2 className="text-3xl md:text-5xl cinzel text-white tracking-tight">
+          <h2
+            data-aos="fade-down"
+            className="text-3xl md:text-5xl cinzel text-white tracking-tight"
+          >
             Interior <span className="italic text-gray-500">Experience</span>
           </h2>
         </div>

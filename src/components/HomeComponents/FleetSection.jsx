@@ -126,6 +126,7 @@ const FleetSection = () => {
             {vans.map((item, index) => (
               <div
                 key={index}
+                data-aos="fade-up"
                 className="group p-3 relative bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] rounded-xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 hover:-translate-y-1"
               >
                 {/* Image Container */}

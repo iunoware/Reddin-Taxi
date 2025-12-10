@@ -29,14 +29,14 @@ function App() {
     });
   }, []);
 
-  useGSAP(() => {
-    ScrollSmoother.create({
-      wrapper: "#smoothWrapper",
-      content: "#smoothContainer",
-      smooth: 1,
-      effects: true,
-    });
-  }, []);
+  // useGSAP(() => {
+  //   ScrollSmoother.create({
+  //     wrapper: "#smoothWrapper",
+  //     content: "#smoothContainer",
+  //     smooth: 1,
+  //     effects: true,
+  //   });
+  // }, []);
 
   return (
     <>
