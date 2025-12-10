@@ -43,20 +43,13 @@ const services = [
 const OurServices = () => {
   return (
     <section className="relative w-full py-24 px-4 md:px-10 lg:px-20  overflow-hidden">
-      {/* Cinematic Background */}
-      <div className="absolute inset-0 z-0">
-        {/* <img
-          src="/images/luxury-wbg.webp"
-          alt="Luxury Background"
-          className="w-full h-full object-cover opacity-80"
-        /> */}
-        {/* <div className="absolute inset-0 bg-linear-to-b from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div> */}
-      </div>
-
       <div className="relative z-10 max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl cinzel md:text-6xl font-serif font-bold mb-4 tracking-wide drop-shadow-xl relative inline-block">
+          <h2
+            data-aos="fade-down"
+            className="text-4xl cinzel md:text-6xl font-serif font-bold mb-4 tracking-wide drop-shadow-xl relative inline-block"
+          >
             Services{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600">
               We Offer
@@ -74,6 +67,7 @@ const OurServices = () => {
           {services.map((service, index) => (
             <div
               key={index}
+              data-aos="fade-up"
               className={`group relative overflow-hidden rounded-2xl border border-white/5 hover:border-[#D4AF37]/50 transition-all duration-500 hover:shadow-[0_0_30px_-5px_rgba(212,175,55,0.15)] ${service.size}`}
             >
               {/* Background with Zoom Effect */}

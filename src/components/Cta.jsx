@@ -11,12 +11,16 @@ import {
 
 export default function Cta() {
   return (
-    <section className="relative bg-[#e0e0e0] w-full py-10 px-4 flex items-center justify-center overflow-hidden">
+    <section className="relative  bg-[#e0e0e0] w-full py-10 px-4 flex items-center justify-center overflow-hidden">
       {/* Background Decorative Blur */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(circle_at_center,#ffffff_0%,#e5e7eb_100%)] -z-10"></div>
 
       {/* Ticket Container */}
-      <div className="relative w-full max-w-5xl bg-[#0F0F0F] rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden ">
+
+      <div
+        data-aos="fade-up-right"
+        className="relative w-full max-w-5xl bg-[#0F0F0F] rounded-[2.5rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] flex flex-col md:flex-row overflow-hidden "
+      >
         {/* Left Side: Content */}
         <div className="flex-1 p-10 md:p-14 flex flex-col justify-center relative z-10">
           {/* Subtle Watermark/Pattern */}
