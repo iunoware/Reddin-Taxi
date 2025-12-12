@@ -7,8 +7,7 @@ const packages = [
     delay: "200",
     price: "₹2999",
     period: "+ trip",
-    description:
-      "Perfect for airport transfers and short luxury city commutes.",
+    description: "Perfect for airport transfers and short luxury city commutes.",
     icon: <Star className="w-6 h-6 text-yellow-500" />,
     features: [
       "Luxury Leather Seating",
@@ -18,6 +17,7 @@ const packages = [
       "Free Wi-Fi Access",
     ],
     highlight: false,
+    premium: false,
   },
   {
     title: "Executive Comfort",
@@ -34,14 +34,14 @@ const packages = [
       "Enhanced Privacy Tint",
     ],
     highlight: true,
+    premium: false,
   },
   {
     title: "Elite Royal Experience",
     delay: "400",
     price: "₹9999",
     period: "+ trip",
-    description:
-      "The ultimate VIP experience with unmatched luxury and privacy.",
+    description: "The ultimate VIP experience with unmatched luxury and privacy.",
     icon: <Crown className="w-6 h-6 text-yellow-500" />,
     features: [
       "Full Flat-Bed Recliners",
@@ -50,7 +50,8 @@ const packages = [
       "Private Cabin Partition",
       "Massage Functionality",
     ],
-    highlight: false,
+    highlight: true,
+    premium: true,
   },
 ];
 
@@ -67,24 +68,19 @@ export default function Packages() {
             data-aos="fade-down"
             className="text-3xl cinzel md:text-5xl font-serif text-black font-bold mb-4 tracking-tight"
           >
-            Curated{" "}
-            <span className="text-red-500 italic font-normal">Packages</span>
+            Curated <span className="text-red-500 italic font-normal">Packages</span>
           </h2>
           <div className="w-20 h-1 bg-linear-to-r from-transparent via-red-600 to-transparent mx-auto rounded-full mb-6"></div>
           <p className="text-black max-w-2xl mx-auto text-lg font-light leading-relaxed">
-            Choose the level of luxury that suits your journey. Exceptional
-            service is standard across all tiers.
+            Choose the level of luxury that suits your journey. Exceptional service is
+            standard across all tiers.
           </p>
         </div>
 
         {/* Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {packages.map((pkg, index) => (
-            <div
-              key={index}
-              data-aos="fade-up-right"
-              data-aos-delay={pkg.delay}
-            >
+            <div key={index} data-aos="fade-up-right" data-aos-delay={pkg.delay}>
               <div
                 className={`relative group rounded-2xl p-1 transition-all duration-500 hover:-translate-y-2 ${
                   pkg.highlight
@@ -92,9 +88,15 @@ export default function Packages() {
                     : "bg-linear-to-b from-zinc-700/50 via-zinc-900/10 to-transparent hover:from-yellow-800/30"
                 }`}
               >
-                <div className="h-full bg-[#111] backdrop-blur-xl rounded-xl p-8 flex flex-col border border-white/5 relative overflow-hidden">
+                <div
+                  className={`${
+                    pkg.premium
+                      ? "bg-linear-to-b from-amber-400/20 via-[#111] to-[#111]"
+                      : "bg-[#111]"
+                  } h-full backdrop-blur-xl rounded-xl p-8 flex flex-col border border-white/5 relative overflow-hidden`}
+                >
                   {/* Glow Effect */}
-                  <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-yellow-500/10 blur-3xl rounded-full group-hover:bg-yellow-500/20 transition-all duration-700"></div>
+                  {/* <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-yellow-500/10 blur-3xl rounded-full group-hover:bg-yellow-500/20 transition-all duration-700"></div> */}
 
                   {/* Header */}
                   <div className="mb-6 relative">
@@ -102,21 +104,22 @@ export default function Packages() {
                       <div
                         className={`p-3 rounded-full ${
                           pkg.highlight
-                            ? "bg-yellow-500/10 text-yellow-500"
-                            : "bg-zinc-800 text-gray-400 group-hover:text-yellow-500 group-hover:bg-yellow-500/10"
+                            ? `bg-yellow-500/10 text-yellow-500`
+                            : `${
+                                index === 0 &&
+                                "bg-zinc-800 text-gray-400 group-hover:text-yellow-500 group-hover:bg-yellow-500/10"
+                              }`
                         } transition-colors duration-300`}
                       >
                         {pkg.icon}
                       </div>
                       {pkg.highlight && (
                         <span className="px-3 py-1 text-xs font-semibold tracking-wider text-black bg-yellow-500 rounded-full uppercase">
-                          Most Popular
+                          {!pkg.premium ? "Most Popular" : "Most Elite"}
                         </span>
                       )}
                     </div>
-                    <h3 className="text-2xl font-serif text-white mb-2">
-                      {pkg.title}
-                    </h3>
+                    <h3 className={`text-2xl font-serif text-white mb-2`}>{pkg.title}</h3>
                     <p className="text-sm text-gray-500 leading-relaxed min-h-10">
                       {pkg.description}
                     </p>
@@ -124,12 +127,8 @@ export default function Packages() {
 
                   {/* Price */}
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-4xl font-light text-white">
-                      {pkg.price}
-                    </span>
-                    <span className="text-gray-500 text-sm font-light">
-                      {pkg.period}
-                    </span>
+                    <span className="text-4xl font-light text-white">{pkg.price}</span>
+                    <span className="text-gray-500 text-sm font-light">{pkg.period}</span>
                   </div>
 
                   {/* Divider */}

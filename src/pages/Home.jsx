@@ -44,7 +44,8 @@ export default function Home() {
   const slides = [
     {
       id: 1,
-      image: "/images/interior-seat.webp",
+      // image: "/images/interior-seat.webp",
+      image: "/images/package-hero.webp",
       title: "Ultra-Comfort Seating",
       description:
         "Plush reclining leather captain seats with diamond-stitched patterns and ambient lighting.",
@@ -58,7 +59,8 @@ export default function Home() {
     },
     {
       id: 3,
-      image: "/images/interior-ambience.webp",
+      // image: "/images/interior-ambience.webp",
+      image: "/images/interior.webp",
       title: "Cinematic Ambience",
       description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
     },
