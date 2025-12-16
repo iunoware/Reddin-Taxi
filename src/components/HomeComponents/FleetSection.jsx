@@ -184,7 +184,7 @@ const FleetSection = () => {
                     className="text-center inline-block w-full"
                   /> */}
                   <Link to="/contact">
-                    <button className="w-full backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
+                    <button className="w-full cursor-pointer backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
                       Experience Luxury
                     </button>
                   </Link>

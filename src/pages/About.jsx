@@ -398,8 +398,8 @@ export default function About() {
                 </div>
                 <div className="p-5 w-full">
                   <h2 className="font-semibold text-2xl text-red-700">{fleet.title}</h2>
-                  <p className="ml-3 text-sm text-gray-700">{fleet.seater}</p>
-                  <ul className="space-y-1 my-2">
+                  <p className=" text-sm text-gray-700">{fleet.seater}</p>
+                  <ul className="space-y-1 my-2 -ml-1">
                     {fleet.features.map((feature, i) => (
                       <li key={i}>
                         <Star
@@ -493,10 +493,10 @@ export default function About() {
           </p>
 
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-8 place-items-center h-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="flex flex-wrap flex-row justify-center items-center gap-8">
               {differences.map((d, i) => (
                 <div data-aos="fade-right" key={i}>
-                  <div className="p-8 rounded-3xl backdrop-blur-md shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group">
+                  <div className="p-8 min-h-fit h-60 w-80 rounded-3xl backdrop-blur-md shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff] transition-all duration-300 flex flex-col items-start hover:-translate-y-1 group">
                     <div className="mb-3 p-3 rounded-full shadow-[5px_5px_10px_#8d8d8d,-5px_-5px_10px_#ffffff]">
                       {d.svg}
                     </div>
@@ -510,7 +510,7 @@ export default function About() {
             <div className="order-1 lg:order-2" data-aos="fade-left">
               <img
                 loading="lazy"
-                src="/images/different-3.webp"
+                src="/images/interior-design.webp"
                 alt="no.1 luxury tours and travels in TamilNadu"
                 className="h-70 rounded-3xl sm:h-90 md:h-[420px] lg:h-[520px] w-auto"
               />

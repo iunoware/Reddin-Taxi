@@ -6,7 +6,7 @@ const packages = [
     title: "Standard Premium",
     delay: "200",
     price: "₹2999",
-    period: "+ trip",
+    period: "+ other charges",
     description: "Perfect for airport transfers and short luxury city commutes.",
     icon: <Star className="w-6 h-6 text-yellow-500" />,
     features: [
@@ -20,10 +20,27 @@ const packages = [
     premium: false,
   },
   {
+    title: "Elite Royal Experience",
+    delay: "400",
+    price: "₹9999",
+    period: "+ other charges",
+    description: "The ultimate VIP experience with unmatched luxury and privacy.",
+    icon: <Crown className="w-6 h-6 text-black/90" />,
+    features: [
+      "Full Flat-Bed Recliners",
+      "Champagne Service",
+      "Personal Concierge",
+      "Private Cabin Partition",
+      "Massage Functionality",
+    ],
+    highlight: true,
+    premium: true,
+  },
+  {
     title: "Executive Comfort",
     delay: "300",
     price: "₹5499",
-    period: "+ trip",
+    period: "+ other charges",
     description: "Designed for business travel and extended comfort journeys.",
     icon: <Zap className="w-6 h-6 text-yellow-500" />,
     features: [
@@ -35,23 +52,6 @@ const packages = [
     ],
     highlight: true,
     premium: false,
-  },
-  {
-    title: "Elite Royal Experience",
-    delay: "400",
-    price: "₹9999",
-    period: "+ trip",
-    description: "The ultimate VIP experience with unmatched luxury and privacy.",
-    icon: <Crown className="w-6 h-6 text-yellow-500" />,
-    features: [
-      "Full Flat-Bed Recliners",
-      "Champagne Service",
-      "Personal Concierge",
-      "Private Cabin Partition",
-      "Massage Functionality",
-    ],
-    highlight: true,
-    premium: true,
   },
 ];
 
@@ -82,21 +82,26 @@ export default function Packages() {
           {packages.map((pkg, index) => (
             <div key={index} data-aos="fade-up-right" data-aos-delay={pkg.delay}>
               <div
-                className={`relative group rounded-2xl p-1 transition-all duration-500 hover:-translate-y-2 ${
-                  pkg.highlight
-                    ? "bg-linear-to-b from-yellow-600 via-yellow-900/20 to-transparent shadow-[0_0_50px_-10px_rgba(234,179,8,0.2)]"
-                    : "bg-linear-to-b from-zinc-700/50 via-zinc-900/10 to-transparent hover:from-yellow-800/30"
-                }`}
+                className={`${
+                  pkg.premium
+                    ? "lg:scale-110 scale-100 bg-linear-to-b from-amber-200  via-zinc-900/10 to-transparent"
+                    : "lg:scale-97 scale-100 bg-linear-to-b from-zinc-700/50 via-zinc-900/10 to-transparent"
+                } relative shadow-lg group rounded-2xl p-1 transition-all duration-500 hover:-translate-y-2`}
               >
                 <div
                   className={`${
                     pkg.premium
-                      ? "bg-linear-to-b from-amber-400/20 via-[#111] to-[#111]"
+                      ? "bg-[url('/images/gold-bg.webp')] bg-cover bg-center"
                       : "bg-[#111]"
-                  } h-full backdrop-blur-xl rounded-xl p-8 flex flex-col border border-white/5 relative overflow-hidden`}
+                  } h-full backdrop-blur-xl rounded-xl p-8 flex flex-col relative overflow-hidden`}
                 >
                   {/* Glow Effect */}
-                  {/* <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-yellow-500/10 blur-3xl rounded-full group-hover:bg-yellow-500/20 transition-all duration-700"></div> */}
+                  {pkg.premium && (
+                    <div>
+                      <div className="absolute top-0 right-0 -mr-16 -mt-16 w-32 h-32 bg-yellow-500/50 blur-3xl rounded-full group-hover:bg-yellow-500/60 transition-all duration-700"></div>
+                      {/* <div className="absolute top-0 left-0 -mr-16 -mt-16 w-32 h-32 bg-yellow-500/50 blur-3xl rounded-full group-hover:bg-yellow-500/60 transition-all duration-700"></div> */}
+                    </div>
+                  )}
 
                   {/* Header */}
                   <div className="mb-6 relative">
@@ -119,16 +124,38 @@ export default function Packages() {
                         </span>
                       )}
                     </div>
-                    <h3 className={`text-2xl font-serif text-white mb-2`}>{pkg.title}</h3>
-                    <p className="text-sm text-gray-500 leading-relaxed min-h-10">
+                    <h3
+                      className={`${
+                        pkg.premium ? "text-black" : "text-white"
+                      } text-2xl font-semibold mb-2`}
+                    >
+                      {pkg.title}
+                    </h3>
+                    <p
+                      className={`${
+                        pkg.premium ? "text-black/90" : "text-gray-500"
+                      } text-sm leading-relaxed min-h-10`}
+                    >
                       {pkg.description}
                     </p>
                   </div>
 
                   {/* Price */}
                   <div className="mb-8 flex items-baseline gap-1">
-                    <span className="text-4xl font-light text-white">{pkg.price}</span>
-                    <span className="text-gray-500 text-sm font-light">{pkg.period}</span>
+                    <span
+                      className={`${
+                        pkg.premium ? "text-black" : "text-white"
+                      } text-4xl font-semibold `}
+                    >
+                      {pkg.price}
+                    </span>
+                    <span
+                      className={`${
+                        pkg.premium ? "text-black/90" : "text-gray-500"
+                      }  text-sm font-light`}
+                    >
+                      {pkg.period}
+                    </span>
                   </div>
 
                   {/* Divider */}
@@ -139,13 +166,15 @@ export default function Packages() {
                     {pkg.features.map((feature, idx) => (
                       <li
                         key={idx}
-                        className="flex items-center gap-3 text-sm text-gray-300 group-hover:text-white transition-colors duration-300"
+                        className={`${
+                          pkg.premium ? "text-black" : "text-gray-300"
+                        } flex items-center gap-3 text-sm transition-colors duration-300`}
                       >
                         <Check
                           className={`w-4 h-4 ${
-                            pkg.highlight
+                            pkg.highlight && index === 2
                               ? "text-yellow-500"
-                              : "text-zinc-600 group-hover:text-yellow-500"
+                              : "text-zinc-600 "
                           } transition-colors duration-300`}
                         />
                         {feature}
@@ -153,17 +182,7 @@ export default function Packages() {
                     ))}
                   </ul>
 
-                  {/* Button */}
-                  {/* <button
-                  className={`w-full py-4 px-6 rounded-lg text-sm font-semibold tracking-wide uppercase transition-all duration-300 ${
-                    pkg.highlight
-                      ? "bg-white text-black hover:bg-white/5 hover:text-white hover:shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] "
-                      : "bg-white/5 backdrop-blur-md text-white shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)]"
-                  }`}
-                >
-                  Book Now
-                </button> */}
-                  {pkg.highlight ? (
+                  {/* {pkg.highlight ? (
                     <GlassButton
                       text1="Book Now"
                       bg="bg-white"
@@ -179,6 +198,40 @@ export default function Packages() {
                       link="/contact"
                       className="text-center"
                     />
+                  )} */}
+                  {index === 0 ? (
+                    <GlassButton
+                      text1="Book Now"
+                      glass={true}
+                      link="/contact"
+                      className="text-center"
+                    />
+                  ) : (
+                    <></>
+                  )}
+                  {index === 1 ? (
+                    <GlassButton
+                      text1="Book Now"
+                      bg="bg-black"
+                      textColor="text-white"
+                      // glass={true}
+                      link="/contact"
+                      className="text-center"
+                    />
+                  ) : (
+                    <></>
+                  )}
+                  {index === 2 ? (
+                    <GlassButton
+                      text1="Book Now"
+                      bg="bg-white"
+                      textColor="text-black"
+                      // glass={true}
+                      link="/contact"
+                      className="text-center"
+                    />
+                  ) : (
+                    <></>
                   )}
                 </div>
               </div>

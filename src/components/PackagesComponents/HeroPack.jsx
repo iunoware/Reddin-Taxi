@@ -41,14 +41,14 @@ export default function HeroPack() {
       <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/30 to-transparent"></div>
 
       <div className="relative z-10 flex flex-col justify-center h-full px-3 md:px-20 text-white max-w-4xl">
-        <h1 className="text-4xl  cinzel font-bold md:text-7xl leading-tight mb-2 md:mb-6 drop-shadow-lg">
+        <h1 className="text-3xl basker font-bold md:text-6xl leading-tight mb-2 md:mb-6 drop-shadow-lg">
           Business-Class <br />
           <span className="text-red-600">On Wheels</span>
         </h1>
 
-        <p className="text-lg md:text-2xl text-gray-100 mb-10 max-w-2xl drop-shadow-md font-light">
-          Redefining road travel with unmatched luxury, privacy, and comfort.
-          The journey matters as much as the destination.
+        <p className="text-lg md:text-xl text-gray-100 mb-10 max-w-xl drop-shadow-md font-light">
+          Redefining road travel with unmatched luxury, privacy, and comfort. The journey
+          matters as much as the destination.
         </p>
 
         <div className="flex flex-row items-center gap-6">
@@ -77,10 +77,8 @@ export default function HeroPack() {
             <h2 className="text-sm md:text-md">Customer Satisfaction Score</h2>
           </div>
           <div className="">
-            <p className="md:text-5xl text-2xl font-bold">0</p>
-            <h2 className="text-sm md:text-md pr-2 md:pr-0">
-              Safety Compromises
-            </h2>
+            <p className="md:text-5xl text-2xl font-bold">100%</p>
+            <h2 className="text-sm md:text-md pr-2 md:pr-0">Safety</h2>
           </div>
         </div>
       </div>
