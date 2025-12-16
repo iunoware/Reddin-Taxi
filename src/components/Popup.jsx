@@ -129,8 +129,8 @@ export default function Popup() {
 
               <div className="relative hidden md:flex flex-col justify-center items-center py-4">
                 <div className="h-full border-l-2 border-dashed border-gray-300 relative z-20"></div>
-                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-[#e0e0e0] rounded-full shadow-[inset_0_-2px_4px_rgba(0,0,0,0.05)] z-20"></div>
-                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-[#e0e0e0] rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] z-20"></div>
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-gray-500 rounded-full shadow-[inset_0_-2px_4px_rgba(0,0,0,0.05)] z-20"></div>
+                <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-10 h-10 bg-gray-500 rounded-full shadow-[inset_0_2px_4px_rgba(0,0,0,0.05)] z-20"></div>
               </div>
 
               <div className="md:w-3/5 bg-linear-to-br from-[#61616141] to-[#111] p-10 flex flex-col items-center justify-center relative">
