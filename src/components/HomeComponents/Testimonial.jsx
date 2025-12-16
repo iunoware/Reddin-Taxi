@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/purity */
 import React, { useState, useRef } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import gsap from "gsap";
@@ -7,9 +8,9 @@ import GlassButton from "../GlassButton";
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kannan .",
+    name: "Ashok Selvan",
     role: "Travel Vloger",
-    profile: "RK",
+    profile: "AS",
     // image:
     //   // "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop",
     quote: "Redinn made our 8-hour trip feel like a business-class ride. Pure comfort!",
@@ -17,9 +18,9 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "James D.",
+    name: "Kavin",
     role: "Corporate Executive",
-    profile: "JD",
+    profile: "KV",
     // image:
     //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
     quote: "Luxury, smooth travel, and a calm experience—Redinn never disappoints.",
@@ -27,9 +28,9 @@ const testimonials = [
   },
   {
     id: 3,
-    name: "Sophia Rani L.",
+    name: "Aishwarya Lekshmi",
     role: "Event Coordinator",
-    profile: "SR",
+    profile: "AL",
     // image:
     //   "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
     quote: "The best family trip we’ve had. Spacious, Luxury, and totally relaxing.",
@@ -37,9 +38,9 @@ const testimonials = [
   },
   {
     id: 4,
-    name: "Sophia L.",
+    name: "Siddharth",
     role: "Event Coordinator",
-    profile: "SL",
+    profile: "SD",
     // image:
     //   "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
     quote: "On-time, elegant, and super comfortable. Redinn set a new standard for us.",
