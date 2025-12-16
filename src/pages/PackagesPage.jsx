@@ -6,7 +6,7 @@ import PricingTable from "../components/PackagesComponents/PricingTable";
 import Cta from "../components/Cta";
 import AddOn from "../components/PackagesComponents/AddOn";
 
-export default function Packages() {
+export default function PackagesPage() {
   useEffect(() => {
     document.title = "Redinn Tours & Travels | Packages";
   }, []);

@@ -134,7 +134,7 @@ const FleetSection = () => {
               <div
                 key={index}
                 // data-aos="fade-up"
-                className="group p-3 relative bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] rounded-xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 hover:-translate-y-1"
+                className="group p-3 relative bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 hover:-translate-y-1"
               >
                 {/* Image Container */}
                 <div className="relative rounded-xl h-48 overflow-hidden">
@@ -184,7 +184,7 @@ const FleetSection = () => {
                     className="text-center inline-block w-full"
                   /> */}
                   <Link to="/contact">
-                    <button className="w-full backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
+                    <button className="w-full cursor-pointer backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
                       Experience Luxury
                     </button>
                   </Link>

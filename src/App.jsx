@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Packages from "./pages/Packages";
+import PackagesPage from "./pages/PackagesPage";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
@@ -53,7 +53,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/packages" element={<Packages />} />
+              <Route path="/packages" element={<PackagesPage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
