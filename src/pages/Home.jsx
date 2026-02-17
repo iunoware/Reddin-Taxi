@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       id: 4,
-      image: "/images/spacious.png",
+      image: "/images/spacious.webp",
       title: "Spacious VIP Cabin",
       description:
         "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
@@ -150,7 +150,7 @@ export default function Home() {
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${index === 0 ? "object-left" : "object center"}`}
                 />
                 {/* Vignette & Gradients */}
                 <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent opacity-90"></div>
