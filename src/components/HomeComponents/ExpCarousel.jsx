@@ -18,14 +18,13 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/interior-ambience.webp",
+    image: "/images/laser-interior.webp",
     title: "Cinematic Ambience",
-    description:
-      "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+    description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
   },
   {
     id: 4,
-    image: "/images/spacious.png",
+    image: "/images/spacious.webp",
     title: "Spacious VIP Cabin",
     description:
       "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
@@ -122,9 +121,7 @@ export default function ExpCarousel() {
 
                   {/* Interactive Button-like element */}
                   <button className="group relative overflow-hidden rounded-full py-3 px-8 bg-transparent border border-white/20 text-white transition-all hover:bg-white/10 hover:border-white/40 hover:scale-105 active:scale-95 flex items-center gap-2">
-                    <span className="relative z-10 font-medium">
-                      Explore Details
-                    </span>
+                    <span className="relative z-10 font-medium">Explore Details</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </button>
                 </div>
