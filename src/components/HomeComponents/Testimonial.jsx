@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/purity */
 import React, { useState, useRef } from "react";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import gsap from "gsap";
@@ -7,46 +8,42 @@ import GlassButton from "../GlassButton";
 const testimonials = [
   {
     id: 1,
-    name: "Rajesh Kannan .",
+    name: "Ashok Selvan",
     role: "Travel Vloger",
-    profile: "RK",
+    profile: "AS",
     // image:
     //   // "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1888&auto=format&fit=crop",
-    quote:
-      "Reddin made our 8‑hour trip feel like a business‑class ride. Pure comfort!",
+    quote: "Redinn made our 8-hour trip feel like a business-class ride. Pure comfort!",
     rating: 4,
   },
   {
     id: 2,
-    name: "James D.",
+    name: "Kavin",
     role: "Corporate Executive",
-    profile: "JD",
+    profile: "KV",
     // image:
     //   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1887&auto=format&fit=crop",
-    quote:
-      "Luxury, smooth travel, and a calm experience—Reddin never disappoints.",
+    quote: "Luxury, smooth travel, and a calm experience—Redinn never disappoints.",
     rating: 4.5,
   },
   {
     id: 3,
-    name: "Sophia Rani L.",
+    name: "Aishwarya Lekshmi",
     role: "Event Coordinator",
-    profile: "SR",
+    profile: "AL",
     // image:
     //   "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    quote:
-      "The best family trip we’ve had. Spacious, Luxury, and totally relaxing.",
+    quote: "The best family trip we’ve had. Spacious, Luxury, and totally relaxing.",
     rating: 4,
   },
   {
     id: 4,
-    name: "Sophia L.",
+    name: "Siddharth",
     role: "Event Coordinator",
-    profile: "SL",
+    profile: "SD",
     // image:
     //   "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1961&auto=format&fit=crop",
-    quote:
-      "On‑time, elegant, and super comfortable. Reddin set a new standard for us.",
+    quote: "On-time, elegant, and super comfortable. Redinn set a new standard for us.",
     rating: 5,
   },
 ];
@@ -181,9 +178,7 @@ const Testimonial = () => {
                   className="w-14 h-14 rounded-full object-cover border-2 border-yellow-500/30 shadow-lg"
                 /> */}
                 <div className="w-12 flex items-center justify-center h-12 rounded-full object-cover border-2 border-yellow-500/30 shadow-lg bg-white">
-                  <p className="text-2xl font-bold ">
-                    {testimonials[active].profile}
-                  </p>
+                  <p className="text-2xl font-bold ">{testimonials[active].profile}</p>
                 </div>
                 <div className="absolute inset-0 rounded-full ring-2 ring-yellow-500/20 ring-offset-2 ring-offset-black/0 animate-pulse-slow"></div>
               </div>
@@ -202,11 +197,7 @@ const Testimonial = () => {
 
       {/* Right Side: Heading & Desc */}
       <div className="relative z-10 w-full lg:w-1/2 h-auto lg:h-full flex flex-col justify-center px-8 lg:px-20 text-center lg:text-left py-12 lg:py-0">
-        <div
-          data-aos="fade-left"
-          ref={textRef}
-          className="max-w-xl mx-auto lg:mx-0"
-        >
+        <div data-aos="fade-left" ref={textRef} className="max-w-xl mx-auto lg:mx-0">
           <div className="flex items-center justify-center lg:justify-start gap-4 mb-4">
             <div className="h-px w-12 bg-linear-to-r from-red-600/30 to-red-400/60"></div>
             <span
@@ -231,8 +222,8 @@ const Testimonial = () => {
             data-aos="fade-up-left"
             className="text-black text-lg leading-relaxed mb-8 max-w-md mx-auto lg:mx-0"
           >
-            Hear from those who have experienced the pinnacle of luxury travel
-            with Reddin. Your journey, redefined.
+            Hear from those who have experienced the pinnacle of luxury travel with
+            Redinn. Your journey, redefined.
           </p>
 
           <GlassButton text1="View All Reviews" bg="bg-black" link="/contact" />

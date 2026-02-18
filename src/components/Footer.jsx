@@ -27,15 +27,8 @@ export default function Footer() {
               {/* <h2 className="cinzel text-3xl font-bold tracking-wider text-red-600 drop-shadow-sm">
                 REDDIN TRAVELS
               </h2> */}
-              <Link
-                to="/"
-                className="text-2xl font-bold text-(--c-navy) tracking-tight"
-              >
-                <img
-                  src="/images/logo-w.png"
-                  alt="Reddin Taxi"
-                  className="h-20 w-auto"
-                />
+              <Link to="/" className="text-2xl font-bold text-(--c-navy) tracking-tight">
+                <img src="/images/logo-w.png" alt="Reddin Taxi" className="h-20 w-auto" />
               </Link>
 
               <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">
@@ -57,9 +50,8 @@ export default function Footer() {
             <div className="flex md:-mx-5 gap-3 items-center text-gray-400 leading-relaxed tracking-wide ">
               <MapPin size={55} />
               <p className="text-sm ">
-                No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur
-                Road, Opp. To Tirunelveli Court, Tirunelveli–627002, Tamilnadu,
-                India.
+                No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur Road, Opp.
+                To Tirunelveli Court, Tirunelveli–627002, Tamilnadu, India.
               </p>
             </div>
           </div>
@@ -104,7 +96,7 @@ export default function Footer() {
                   className="text-gray-400 flex items-start gap-2 text-sm hover:text-white transition-colors duration-300 cursor-pointer"
                 >
                   <div className="w-1.5 h-1.5 rounded-full bg-[#C9A35C] mt-1.5 opacity-60"></div>
-                  <Link to="/contact">{service}</Link>
+                  <Link to="/packages">{service}</Link>
                 </li>
               ))}
             </ul>
@@ -125,7 +117,7 @@ export default function Footer() {
               <SocialLink
                 icon={<WhatsAppIcon />}
                 label="WhatsApp"
-                href="tel:+918098702345"
+                href="https://wa.me/918098702345"
               />
               {/* <SocialLink icon={<YouTubeIcon />} label="YouTube" href="#" /> */}
             </div>
@@ -136,11 +128,7 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-4">
           <p className="text-gray-300 text-sm tracking-wider">
             &copy; {currentYear}{" "}
-            <a
-              rel="noopener noreferrer"
-              href="https://www.iunoware.com/"
-              target="_blank"
-            >
+            <a rel="noopener noreferrer" href="https://www.iunoware.com/" target="_blank">
               Iunoware Pvt Ltd
             </a>
             . All rights reserved.
@@ -234,11 +222,7 @@ function WhatsAppIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g
-        id="SVGRepo_tracerCarrier"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      ></g>
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path

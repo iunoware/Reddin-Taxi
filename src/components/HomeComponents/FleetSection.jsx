@@ -1,5 +1,6 @@
 import GlassButton from "../GlassButton";
 import { Users, Gauge, Armchair, Star, Check, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const FleetSection = () => {
   const vans = [
@@ -61,7 +62,10 @@ const FleetSection = () => {
         <div className="flex flex-col lg:flex-col gap-16">
           {/* Left Side: Content & Stats */}
           <div className="w-full flex flex-col items-center justify-center space-y-10 sticky top-24 h-fit">
-            <div className="space-y-6 flex flex-col items-center justify-center">
+            <div
+              data-aos="fade-up"
+              className="space-y-6 flex flex-col items-center justify-center"
+            >
               <h4 className="text-yellow-500 tracking-[0.2em] text-sm font-bold uppercase">
                 The Collection
               </h4>
@@ -70,10 +74,9 @@ const FleetSection = () => {
                 <span className="text-gray-400 italic">{""} Luxury Fleet</span>
               </h2>
               <p className="text-gray-400 text-center text-lg leading-relaxed font-light">
-                Experience the pinnacle of group travel with our exclusive fleet
-                of four luxury-modified Urbania vans. Designed for
-                business-class comfort, each vehicle offers a sanctuary of
-                sophistication on wheels.
+                Experience the pinnacle of group travel with our exclusive fleet of four
+                luxury-modified Urbania vans. Designed for business-class comfort, each
+                vehicle offers a sanctuary of sophistication on wheels.
               </p>
             </div>
 
@@ -99,7 +102,11 @@ const FleetSection = () => {
                     icon: <Gauge className="w-5 h-5 text-red-500" />,
                   },
                 ].map((stat, idx) => (
-                  <div key={idx} className="flex items-center gap-4 group">
+                  <div
+                    key={idx}
+                    data-aos="fade-up"
+                    className="flex items-center gap-4 group"
+                  >
                     <div className="p-2 bg-red-500/10 rounded-lg group-hover:bg-red-500/20 transition-colors">
                       {stat.icon}
                     </div>
@@ -126,8 +133,8 @@ const FleetSection = () => {
             {vans.map((item, index) => (
               <div
                 key={index}
-                data-aos="fade-up"
-                className="group p-3 relative bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] rounded-xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 hover:-translate-y-1"
+                // data-aos="fade-up"
+                className="group p-3 relative bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] rounded-2xl overflow-hidden hover:border-yellow-500/30 transition-all duration-500 hover:-translate-y-1"
               >
                 {/* Image Container */}
                 <div className="relative rounded-xl h-48 overflow-hidden">
@@ -140,9 +147,7 @@ const FleetSection = () => {
                   <div className="absolute top-4 right-4 z-20 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">
                     <div className="flex items-center gap-1">
                       <Star className="w-3 h-3 text-yellow-400 fill-yellow-400" />
-                      <span className="text-xs font-bold text-white">
-                        Premium
-                      </span>
+                      <span className="text-xs font-bold text-white">Premium</span>
                     </div>
                   </div>
                 </div>
@@ -171,13 +176,18 @@ const FleetSection = () => {
                   {/* <button className="w-full py-3 bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] hover:scale-96  text-gray-300 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider">
                     Book This Vehicle
                   </button> */}
-                  <GlassButton
+                  {/* <GlassButton
                     text1="Know more"
                     text2="Experience the Luxury"
                     glass={true}
                     link="/contact"
-                    className="text-center inline-block w-full py-[7px]"
-                  />
+                    className="text-center inline-block w-full"
+                  /> */}
+                  <Link to="/contact">
+                    <button className="w-full cursor-pointer backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
+                      Experience Luxury
+                    </button>
+                  </Link>
                 </div>
               </div>
             ))}

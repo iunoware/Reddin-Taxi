@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable no-undef */
 import React, { useState, useEffect } from "react";
 import ServicesSection from "../components/HomeComponents/ServicesSection";
 import FleetSection from "../components/HomeComponents/FleetSection";
@@ -42,7 +44,8 @@ export default function Home() {
   const slides = [
     {
       id: 1,
-      image: "/images/interior-seat.webp",
+      // image: "/images/interior-seat.webp",
+      image: "/images/package-hero.webp",
       title: "Ultra-Comfort Seating",
       description:
         "Plush reclining leather captain seats with diamond-stitched patterns and ambient lighting.",
@@ -56,14 +59,14 @@ export default function Home() {
     },
     {
       id: 3,
-      image: "/images/interior-ambience.webp",
+      // image: "/images/interior-ambience.webp",
+      image: "/images/interior.webp",
       title: "Cinematic Ambience",
-      description:
-        "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+      description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
     },
     {
       id: 4,
-      image: "/images/spacious.png",
+      image: "/images/spacious.webp",
       title: "Spacious VIP Cabin",
       description:
         "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
@@ -147,7 +150,7 @@ export default function Home() {
                 <img
                   src={slide.image}
                   alt={slide.title}
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-cover ${index === 0 ? "object-left" : "object center"}`}
                 />
                 {/* Vignette & Gradients */}
                 <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent opacity-90"></div>
@@ -181,9 +184,7 @@ export default function Home() {
                     to="/packages"
                     className="group w-fit relative overflow-hidden rounded-full py-3 px-8 bg-transparent border border-white/20 text-white transition-all hover:bg-white/10 hover:border-white/40 hover:scale-105 active:scale-95 flex items-center gap-2"
                   >
-                    <span className="relative z-10 font-medium">
-                      Explore Details
-                    </span>
+                    <span className="relative z-10 font-medium">Explore Details</span>
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </div>

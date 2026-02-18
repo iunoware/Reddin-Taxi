@@ -18,7 +18,7 @@ export default function Contact() {
   const [isDisabled, setIsDisabled] = useState(false);
 
   useEffect(() => {
-    document.title = "Redinn tours & travels | Contact us";
+    document.title = "Redinn Tours & Travels | Contact us";
   }, []);
 
   const handleSubmit = async (e) => {
@@ -67,8 +67,8 @@ export default function Contact() {
           </h1>
 
           <p className="text-lg md:text-xl text-white font-light max-w-2xl mx-auto leading-relaxed">
-            Ready for a premium travel experience? Get in touch with us for
-            bespoke bookings, inquiries, or support.
+            Ready for a premium travel experience? Get in touch with us for bespoke
+            bookings, inquiries, or support.
           </p>
         </div>
 
@@ -142,8 +142,7 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="pickUpLocation"
                         >
-                          Pick up location{" "}
-                          <span className="text-red-500">*</span>
+                          Pick up location <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -183,8 +182,7 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="passengers"
                         >
-                          Number of passengers{" "}
-                          <span className="text-red-500">*</span>
+                          Number of passengers <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -223,7 +221,7 @@ export default function Contact() {
                       disabled={isDisabled}
                       className={`${
                         isDisabled ? "cursor-not-allowed" : "cursor-pointer"
-                      } block w-[50%] bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 text-sm font-medium text-white transition-all duration-300 `}
+                      } block w-full md:w-[50%] text-center text-md md:text-lg bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 text-sm font-medium text-white transition-all duration-300 `}
                       type="submit"
                     >
                       Send Message
@@ -364,14 +362,14 @@ export default function Contact() {
 
           <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 place-items-center mt-5">
             <div
-              className="flex justify-center items-center"
+              className="lg:flex hidden justify-center p-5 items-center"
               data-aos="fade-right"
             >
               <img
                 loading="lazy"
-                src="/images/different-3.webp"
+                src="/images/interior-seat.webp"
                 alt="Map boy images"
-                className="sm:w-[400px] w-[300px] h-auto"
+                className="sm:w-[400px] rounded-2xl w-[300px] h-auto"
               />
             </div>
             <iframe

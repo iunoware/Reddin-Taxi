@@ -3,22 +3,23 @@ import { useEffect } from "react";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import Packages from "./pages/Packages";
+import PackagesPage from "./pages/PackagesPage";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Enquiry from "./components/Enquiry";
+import Popup from "./components/Popup";
 import { Toaster } from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 // gsap scroll smoother
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { ScrollSmoother } from "gsap/ScrollSmoother";
-import { useGSAP } from "@gsap/react";
+// import { gsap } from "gsap";
+// import { ScrollTrigger } from "gsap/ScrollTrigger";
+// import { ScrollSmoother } from "gsap/ScrollSmoother";
+// import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+// gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
       once: false,
       mirror: true,
       easing: "ease-in-out",
+      duration: 500,
     });
   }, []);
 
@@ -42,6 +44,7 @@ function App() {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Router>
+        <Popup />
         <ScrollToTop />
         <Navbar />
         <Enquiry />
@@ -50,7 +53,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/packages" element={<Packages />} />
+              <Route path="/packages" element={<PackagesPage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
             <Footer />
