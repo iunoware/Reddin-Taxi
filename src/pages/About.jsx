@@ -367,7 +367,7 @@ export default function About() {
       </section> */}
 
       {/* Premium Fleet */}
-      <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
+      {/* <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
         <div className="px-4 lg:px-12 relative z-10">
           <div data-aos="fade-up">
             <Heading title="Our Premium Fleet" className="mb-3!" />
@@ -379,9 +379,7 @@ export default function About() {
             Choose the perfect chariot for your journey.
           </p>
 
-          {/* new fleet card */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-            {/* new online courses */}
             {fleets.map((fleet, i) => (
               <div
                 key={fleet.title}
@@ -412,16 +410,6 @@ export default function About() {
                       </li>
                     ))}
                   </ul>
-
-                  {/* <GlassButton
-                    text1="Book this fleet"
-                    text2="Experience Luxury"
-                    // glass={true}
-                    textColor="text-white"
-                    bg="bg-black"
-                    link="/contact"
-                    className="mt-10 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] transition-shadow duration-300 w-full block text-center"
-                  /> */}
                   <Link to="/contact">
                     <button className="mt-10 rounded-2xl px-8 py-3 bg-black text-white cursor-pointer hover:scale-102 transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] w-full block text-center">
                       Experience luxury
@@ -432,7 +420,7 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
       <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/luxury-bg-red.webp')] bg-center bg-cover">
