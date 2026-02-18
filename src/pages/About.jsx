@@ -189,7 +189,7 @@ export default function About() {
         <div className="absolute inset-0">
           <img
             loading="lazy"
-            src="/images/about-hero.webp"
+            src="/images/spacious.webp"
             alt="Luxury Travel"
             className="w-full h-full object-cover"
           />
@@ -319,7 +319,7 @@ export default function About() {
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
                   {/* 2 floating cards */}
                   <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
-                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/interior-ambience.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
+                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/interior-4.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-8 right-8 flex items-center gap-3 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-full border border-white/10 shadow-xl z-20 transition-all duration-300 hover:bg-black/80 hover:scale-105 cursor-default">

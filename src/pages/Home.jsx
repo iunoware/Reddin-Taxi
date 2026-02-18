@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       id: 4,
-      image: "/images/spacious.webp",
+      image: "/images/interior-3.webp",
       title: "Spacious VIP Cabin",
       description:
         "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
