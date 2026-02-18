@@ -26,16 +26,15 @@ const ServicesSection = () => {
                 </span>
               </h2>
               <p className="text-xl text-gray-700 font-light italic border-l-4 border-white pl-6 py-2">
-                “Where comfort meets class, and every journey becomes
-                unforgettable.”
+                “Where comfort meets class, and every journey becomes unforgettable.”
               </p>
             </div>
             <p className="text-black/90 leading-relaxed text-lg font-light">
-              With our fleet of four state-of-the-art luxury buses, we redefine
-              group travel with unmatched comfort and style. Whether it’s
-              corporate events, long-distance tours, pilgrimages, school trips,
-              airport transfers, or private charters — our services are designed
-              to deliver a seamless, premium travel experience.
+              With our fleet of four state-of-the-art luxury buses, we redefine group
+              travel with unmatched comfort and style. Whether it’s corporate events,
+              long-distance tours, pilgrimages, school trips, airport transfers, or
+              private charters — our services are designed to deliver a seamless, premium
+              travel experience.
             </p>
             {/* <button className="relative hover:scale-96 transition-all  bg-black backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
               <span className="relative z-10 flex items-center gap-3">
@@ -54,12 +53,9 @@ const ServicesSection = () => {
 
           {/* my images side */}
           <div className="grid space-x-4 md:grid-cols-12 grid-cols-1 gap-5">
-            <div
-              data-aos="fade-up-right"
-              className="md:col-span-5 md:-translate-y-4"
-            >
+            <div data-aos="fade-up-right" className="md:col-span-5 md:-translate-y-4">
               <img
-                src="/images/as-1.webp"
+                src="/images/as-3.webp"
                 alt="Best Tours and Travels"
                 className="md:rounded-tl-4xl h-full w-full object-center object-cover"
               />
@@ -75,7 +71,7 @@ const ServicesSection = () => {
             <div className="md:col-span-7 ">
               <img
                 data-aos="fade-up-right"
-                src="/images/as-3.webp"
+                src="/images/as-1.webp"
                 alt="Tours and Travels"
                 className="h-full w-full md:rounded-bl-4xl object-center object-cover"
               />
@@ -123,11 +119,7 @@ const ServicesSection = () => {
               key={index}
               className="group relative bg-gray-100 shadow-xl backdrop-blur-md border border-white/10 rounded-2xl hover:bg-black transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] overflow-hidden"
             >
-              <div
-                data-aos="fade-up"
-                data-aos-delay={service.delay}
-                className="p-8"
-              >
+              <div data-aos="fade-up" data-aos-delay={service.delay} className="p-8">
                 <div className="absolute top-0 right-0 w-24 h-24 bg-gray-400/20 rounded-bl-full -mr-4 -mt-4 transition-all group-hover:bg-white/10"></div>
 
                 <div className="mb-6 p-4 bg-red-400 rounded-xl w-fit group-hover:scale-110 group-hover:rotate-3 transition-all duration-500 border border-white/5 shadow-inner">

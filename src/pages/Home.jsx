@@ -46,9 +46,9 @@ export default function Home() {
       id: 1,
       // image: "/images/interior-seat.webp",
       image: "/images/package-hero.webp",
-      title: "Ultra-Comfort Seating",
+      title: "Commanding Exterior Design",
       description:
-        "Plush reclining leather captain seats with diamond-stitched patterns and ambient lighting.",
+        "A bold, premium silhouette with refined detailing that makes a powerful first impression on every arrival.",
     },
     {
       id: 2,
@@ -66,7 +66,7 @@ export default function Home() {
     },
     {
       id: 4,
-      image: "/images/spacious.webp",
+      image: "/images/interior-3.webp",
       title: "Spacious VIP Cabin",
       description:
         "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
@@ -223,7 +223,7 @@ export default function Home() {
         <ServicesSection />
 
         {/* our luxury fleet section */}
-        <FleetSection />
+        {/* <FleetSection /> */}
 
         {/* Our services */}
         <OurServices />
