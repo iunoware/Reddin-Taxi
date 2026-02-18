@@ -19,7 +19,7 @@ export default function Enquiry() {
 
   return (
     <>
-      {/* {visible ? ( */}
+      
       <a
         href="tel:+918098702345"
         className={`fixed z-40 bottom-10 ${
@@ -28,9 +28,7 @@ export default function Enquiry() {
       >
         <Phone className="h-7 w-11 m-2 transition-all  duration-200 group-active:scale-95 group-hover:scale-108" />
       </a>
-      {/* ) : (
-        ""
-      )} */}
+      
     </>
   );
 }
