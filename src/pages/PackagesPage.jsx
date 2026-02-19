@@ -5,6 +5,7 @@ import FleetSection from "../components/HomeComponents/FleetSection";
 import PricingTable from "../components/PackagesComponents/PricingTable";
 import Cta from "../components/Cta";
 import AddOn from "../components/PackagesComponents/AddOn";
+import Gallery from "../components/Gallery";
 
 export default function PackagesPage() {
   useEffect(() => {
@@ -16,7 +17,8 @@ export default function PackagesPage() {
       <HeroPack />
 
       {/* fleet showcase */}
-      <FleetSection />
+      {/* <FleetSection /> */}
+      <Gallery />
 
       {/* pricing table */}
       <PricingTable />

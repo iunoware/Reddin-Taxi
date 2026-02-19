@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight, MapPin, Phone } from "lucide-react";
+import { ChevronRight, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -34,16 +34,22 @@ export default function Footer() {
               <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">
                 <Phone className="h-4" />
                 <a
-                  href="tel:+918098702345"
-                  className="hover:text-white duration-75 transition-all"
-                >
-                  +91 8098 70 2345{" "}
-                </a>
-                <a
                   href="tel:+918098502345"
                   className="hover:text-white duration-75 transition-all"
                 >
-                  +91 8098 50 2345
+                  +91 8098 50 2345{" "}
+                </a>
+              </p>
+
+              <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">
+                <Mail className="h-4" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@redinntravels.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white duration-75 transition-all"
+                >
+                  info@redinntravels.com
                 </a>
               </p>
             </div>
@@ -113,7 +119,11 @@ export default function Footer() {
                 label="Instagram"
                 href="https://www.instagram.com/redinn_travels?igsh=NmhtNXJka2ljcHUx"
               />
-              <SocialLink icon={<FacebookIcon />} label="Facebook" href="#" />
+              <SocialLink
+                icon={<FacebookIcon />}
+                label="Facebook"
+                href="https://www.facebook.com/profile.php?id=61584905511219"
+              />
               <SocialLink
                 icon={<WhatsAppIcon />}
                 label="WhatsApp"
