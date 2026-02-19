@@ -46,7 +46,7 @@ const ServicesSection = () => {
               text1="Explore Our Premium Services "
               textColor="text-white"
               bg="bg-black"
-              link="/contact"
+              link="/packages"
               className="block text-center w-fit"
             />
           </div>
