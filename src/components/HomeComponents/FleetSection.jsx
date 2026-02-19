@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 const FleetSection = () => {
   const vans = [
     {
-      name: "Urbania Royale",
+      name: "Urbania VIP",
+      image: "/images/van-1.webp",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -16,6 +17,7 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
+      image: "/images/van-2.webp",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -26,6 +28,7 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
+      image: "/images/spacious.webp",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -36,6 +39,7 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
+      image: "/images/interior-design.webp",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -46,6 +50,7 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
+      image: "/images/interior-seat.webp",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -83,16 +88,16 @@ const FleetSection = () => {
             {/* Stats Bar */}
             <div className="space-y-6">
               <div className="h-px w-full bg-linear-to-r from-yellow-500/50 to-transparent"></div>
-              <div className="grid md:grid-cols-4 grid-cols-1 gap-6">
+              <div className="grid md:grid-cols-4 grid-cols-1 place-items-center gap-6">
                 {[
                   {
                     label: "Luxury Urbania Vans",
                     icon: <Shield className="w-5 h-5 text-red-500" />,
                   },
-                  {
-                    label: "8–17 Seat Options",
-                    icon: <Users className="w-5 h-5 text-red-500" />,
-                  },
+                  // {
+                  //   label: "8-17 Seat Options",
+                  //   icon: <Users className="w-5 h-5 text-red-500" />,
+                  // },
                   {
                     label: "Premium Interiors",
                     icon: <Armchair className="w-5 h-5 text-red-500" />,
@@ -140,7 +145,7 @@ const FleetSection = () => {
                 <div className="relative rounded-xl h-48 overflow-hidden">
                   <div className="absolute inset-0 bg-linear-to-t transition-opacity ease-in from-black/60 group-hover:from-black/30  rounded-xl via-transparent to-transparent z-10"></div>
                   <img
-                    src="/images/urbania-fleet.webp"
+                    src={item.image}
                     alt="Luxury Urbania"
                     className="w-full h-full rounded-xl object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
@@ -158,7 +163,8 @@ const FleetSection = () => {
                     {item.name}
                   </h3>
                   <p className="text-red-200 text-sm mb-4 font-medium">
-                    Luxury Class • {index % 2 === 0 ? "12 Seater" : "17 Seater"}
+                    {/* Luxury Class • {index % 2 === 0 ? "12 Seater" : "17 Seater"} */}
+                    Luxury Class • "12 Seater"
                   </p>
 
                   <div className="space-y-2 mb-6">
@@ -173,21 +179,11 @@ const FleetSection = () => {
                     ))}
                   </div>
 
-                  {/* <button className="w-full py-3 bg-white/5 backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] hover:scale-96  text-gray-300 transition-all rounded-lg text-sm font-semibold uppercase tracking-wider">
-                    Book This Vehicle
-                  </button> */}
-                  {/* <GlassButton
-                    text1="Know more"
-                    text2="Experience the Luxury"
-                    glass={true}
-                    link="/contact"
-                    className="text-center inline-block w-full"
-                  /> */}
-                  <Link to="/contact">
+                  {/* <Link to="/contact">
                     <button className="w-full cursor-pointer backdrop-blur-md bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] px-6 hover:-translate-y-2 transition-all duration-300 rounded-2xl py-3">
                       Experience Luxury
                     </button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
             ))}

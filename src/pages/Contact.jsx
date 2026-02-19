@@ -15,12 +15,60 @@ import Heading from "../components/Heading";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const [isDisabled, setIsDisabled] = useState(false);
-
   useEffect(() => {
     document.title = "Redinn Tours & Travels | Contact us";
   }, []);
 
+  const [isDisabled, setIsDisabled] = useState(false);
+
+  // whatsapp form
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [pickup, setPickup] = useState("");
+
+  const [drop, setDrop] = useState("");
+  const [passengers, setPassengers] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [error, setError] = useState("");
+
+  function clearInput() {
+    setName("");
+    setPhone("");
+    setPickup("");
+    setDrop("");
+    setPassengers("");
+    setMessage("");
+  }
+
+  function inputCheck(e) {
+    e.preventDefault();
+
+    const phoneRegex = /^[0-9]{10}$/;
+    const passengerRegex = /^[1-9][0-9]{0,2}$/;
+
+    if (!name.trim()) return setError("Enter your name");
+    if (!phoneRegex.test(phone)) return setError("Enter valid phone number");
+    if (!pickup.trim()) return setError("Enter pickup location");
+    if (!drop.trim()) return setError("Enter drop location");
+    // if (!passengers.trim()) return setError("Enter passenger count");
+    if (!passengerRegex.test(passengers)) return setError("Enter passenger count");
+    if (!message.trim()) return setError("Enter your message");
+
+    setError("");
+
+    window.open(whatsappLink(), "_blank");
+    // setTimeout(clearInput, 300);
+    clearInput();
+  }
+
+  function whatsappLink() {
+    if (!name || !phone || !pickup || !drop || !passengers || !message) return;
+    return `https://wa.me/918098702345?text=Hi%20Redinn%20Travels!%0A%0AI’m%20interested%20in%20booking%20a%20trip%20and%20here%20are%20my%20details:%0A%0AName: ${name.trim()}%0APhone: ${phone.trim()}%0APickup Location: ${pickup.trim()}%0ADrop Location: ${drop.trim()}%0ANumber of Passengers: ${passengers.trim()}%0AMessage: ${message.trim()}`;
+  }
+  // whatsapp form
+
+  // google sheets form
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -89,10 +137,10 @@ export default function Contact() {
               {/* contact form */}
               <div>
                 <form
-                  action="https://sheetdb.io/api/v1/hes12fn5dscth"
-                  method="POST"
+                  // action="https://sheetdb.io/api/v1/hes12fn5dscth"
+                  // method="POST"
                   id="sheetdb-form"
-                  onSubmit={handleSubmit}
+                  // onSubmit={handleSubmit}
                   // data-aos="fade-up"
                   className="flex w-full flex-col gap-4 space-y-4 rounded-lg p-6"
                 >
@@ -112,6 +160,8 @@ export default function Contact() {
                           id="name"
                           name="data[name]"
                           type="text"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
                           required
                           placeholder="Your name"
                         ></input>
@@ -131,6 +181,9 @@ export default function Contact() {
                           id="mobile"
                           name="data[mobile]"
                           type="tel"
+                          pattern="[0-9]{10}"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
                           required
                           placeholder="Mobile number"
                         ></input>
@@ -150,6 +203,8 @@ export default function Contact() {
                           id="pickUpLocation"
                           name="data[pick-up-location]"
                           type="text"
+                          value={pickup}
+                          onChange={(e) => setPickup(e.target.value)}
                           required
                           placeholder="pick Up Location"
                         ></input>
@@ -171,6 +226,8 @@ export default function Contact() {
                           id="dropLocation"
                           name="data[drop-location]"
                           type="text"
+                          value={drop}
+                          onChange={(e) => setDrop(e.target.value)}
                           required
                           placeholder="Drop Location"
                         ></input>
@@ -190,6 +247,8 @@ export default function Contact() {
                           id="passengers"
                           name="data[passengers]"
                           type="text"
+                          value={passengers}
+                          onChange={(e) => setPassengers(e.target.value)}
                           required
                           placeholder="number of passengers"
                         ></input>
@@ -209,6 +268,8 @@ export default function Contact() {
                           id="message"
                           name="data[message]"
                           type="text"
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           required
                           placeholder="your message"
                         ></input>
@@ -216,16 +277,29 @@ export default function Contact() {
                     </div>
                   </div>
 
+                  <div>
+                    <h3
+                      id="errorMessage"
+                      className="text-center text-white font-semibold text-lg cinzel"
+                    >
+                      {error}
+                    </h3>
+                  </div>
+
                   <div className="flex justify-center items-center">
-                    <button
-                      disabled={isDisabled}
+                    <a
+                      target="_blank"
+                      // href={whatsappLink()}
+                      onClick={inputCheck}
+                      rel="noopener noreferrer"
+                      // disabled={isDisabled}
                       className={`${
                         isDisabled ? "cursor-not-allowed" : "cursor-pointer"
                       } block w-full md:w-[50%] text-center text-md md:text-lg bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 text-sm font-medium text-white transition-all duration-300 `}
                       type="submit"
                     >
                       Send Message
-                    </button>
+                    </a>
                   </div>
                 </form>
               </div>
@@ -233,7 +307,12 @@ export default function Contact() {
               {/* contact details */}
               <div className="flex items-center justify-center my-20">
                 <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-8 max-w-[1220px]">
-                  <div className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center">
+                  <a
+                    href="tel:+918098502345"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center"
+                  >
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
                     <div className="w-15 h-15 mb-4 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
@@ -243,25 +322,23 @@ export default function Contact() {
                     <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
                       phone number
                     </h3>
+
                     <a
-                      href="tel:+918098702345"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
-                    >
-                      +91 8098 70 2345
-                    </a>
-                    <a
-                      href="tel:+918098502345"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // href="tel:+918098502345"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
                     >
                       +91 8098 50 2345
                     </a>
-                  </div>
+                  </a>
 
-                  <div className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center">
+                  <a
+                    href="https://wa.me/918098702345"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center"
+                  >
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
                     <div className="w-15 h-15 mb-4 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
@@ -271,25 +348,22 @@ export default function Contact() {
                     <h3 className="text-xl text-white font-medium mb-4 tracking-wide font-sans">
                       Whatsapp
                     </h3>
-                    <a
-                      href="https://wa.me/918098702345"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <p
+                      // href="https://wa.me/918098702345"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
                     >
                       +91 8098 70 2345
-                    </a>
-                    <a
-                      href="https://wa.me/918098502345"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
-                    >
-                      +91 8098 50 2345
-                    </a>
-                  </div>
+                    </p>
+                  </a>
 
-                  <div className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center">
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@redinntravels.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center"
+                  >
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
                     <div className="w-15 h-15 mb-4 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
@@ -300,16 +374,21 @@ export default function Contact() {
                       E-Mail
                     </h3>
                     <a
-                      href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@redinntravels.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@redinntravels.com"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
                     >
-                      Info@redinntravels.com
+                      info@redinntravels.com
                     </a>
-                  </div>
+                  </a>
 
-                  <div className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center">
+                  <a
+                    href="https://www.instagram.com/redinn_travels?igsh=NmhtNXJka2ljcHUx"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group w-65 h-65 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] relative p-8 md:p-10 rounded-3xl bg-[linear-gradient(145deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.005)_100%)] backdrop-blur-sm transition-all duration-500 hover:-translate-y-3 flex flex-col items-center text-center"
+                  >
                     <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none shadow-[0_0_50px_rgba(201,163,92,0.15),inset_0_0_20px_rgba(201,163,92,0.05)]"></div>
 
                     <div className="w-15 h-15 mb-4 rounded-full flex items-center justify-center border border-transparent bg-white/5 group-hover:border-[#C9A35C]/50 transition-all duration-500 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]">
@@ -320,14 +399,14 @@ export default function Contact() {
                       Instagram
                     </h3>
                     <a
-                      href="https://www.instagram.com/redinn_travels?igsh=NmhtNXJka2ljcHUx"
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      // href="https://www.instagram.com/redinn_travels?igsh=NmhtNXJka2ljcHUx"
+                      // target="_blank"
+                      // rel="noopener noreferrer"
                       className="text-gray-400 text-sm leading-relaxed font-light tracking-wide font-sans"
                     >
                       reddin_travels
                     </a>
-                  </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -373,7 +452,7 @@ export default function Contact() {
               />
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1964.9653535425039!2d78.1280295!3d9.9397236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c598c62fb90d%3A0x55eb753f30a250b!2sIUNOWARE%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1763549365310!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.682226758516!2d77.7538611!3d8.721694399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDMnMTguMSJOIDc3wrA0NScxMy45IkU!5e0!3m2!1sen!2sin!4v1771495558585!5m2!1sen!2sin"
               className="rounded-2xl m-3 h-[450px] md:w-[700px] lg:col-span-2"
               allowFullScreen=""
               loading="lazy"

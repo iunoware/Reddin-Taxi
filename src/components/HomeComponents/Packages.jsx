@@ -82,30 +82,41 @@ export default function Packages() {
       : (document.body.style.overflow = "auto");
   }, [isModalVisible]);
 
-  const handleSubmit = async (e) => {
+  let dummyVar;
+  // whatsapp form
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [error, setError] = useState("");
+
+  function clearInput() {
+    setName("");
+    setPhone("");
+    setMessage("");
+  }
+
+  function inputCheck(e) {
     e.preventDefault();
 
-    const form = e.target;
+    const phoneRegex = /^[0-9]{10}$/;
 
-    document.getElementById("submitBtn").disabled = true;
+    if (!name.trim()) return setError("Enter your name");
+    if (!phoneRegex.test(phone)) return setError("Enter valid phone number");
+    if (!message.trim()) return setError("Enter your message");
 
-    setTimeout(() => {});
+    setError("");
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-      });
+    window.open(whatsappLink(), "_blank");
+    clearInput();
+  }
 
-      setIsDisabled(true);
-      setIsSubmitted(true);
-      formRef.current.reset();
-    } catch (err) {
-      console.log("error: ", err);
-    }
-  };
-
-  // for popup
+  function whatsappLink() {
+    if (!name || !phone || !message) return;
+    setIsModalVisible(false);
+    return `https://wa.me/918098702345?text=Hi%20Redinn%20Travels!%0A%0AI’m%20interested%20in%20booking%20a%20trip%20and%20here%20are%20my%20details:%0A%0AName: ${name.trim()}%0APhone: ${phone.trim()}%0AMessage: ${message.trim()}%0APackage: ${pkg}%0A%0A`;
+  }
+  // whatsapp form
 
   const sectionRef = useRef();
   // const numberRef = useRef();
@@ -129,7 +140,7 @@ export default function Packages() {
             el.textContent = `₹${Math.floor(obj.value).toLocaleString("en-IN")}`;
           },
           onComplete: () => {
-            el.textContent = "₹xxxx";
+            el.textContent = "₹****";
           },
         });
       });
@@ -367,8 +378,8 @@ export default function Packages() {
             <div className="relative w-full py-10 px-4 flex items-center justify-center overflow-hidden">
               <div className="flex items-start justify-between absolute top-15 right-10">
                 {/* <h2 id="modalTitle" className="text-xl font-bold text-gray-900 sm:text-2xl">
-              Modal Title
-              </h2> */}
+                Modal Title
+                </h2> */}
                 <div></div>
 
                 <button
@@ -429,11 +440,11 @@ export default function Packages() {
                   <form
                     className={`${isSubmitted ? "hidden" : "flex"} w-full flex-col gap-4 space-y-4 rounded-lg p-2`}
                     // onClick={() => popUp}
-                    id="sheetdb-form"
+                    // id="sheetdb-form"
                     ref={formRef}
-                    action="https://sheetdb.io/api/v1/hes12fn5dscth"
-                    method="POST"
-                    onSubmit={handleSubmit}
+                    // action="https://sheetdb.io/api/v1/hes12fn5dscth"
+                    // method="POST"
+                    // onSubmit={handleSubmit}
                     // data-aos="fade-up"
                   >
                     {/* <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-12"> */}
@@ -468,6 +479,8 @@ export default function Packages() {
                           id="name"
                           name="data[name]"
                           type="text"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
                           required
                           placeholder="Your name"
                         ></input>
@@ -488,6 +501,8 @@ export default function Packages() {
                           name="data[mobile]"
                           type="tel"
                           pattern="[0-9]{10}"
+                          value={phone}
+                          onChange={(e) => setPhone(e.target.value)}
                           required
                           placeholder="Mobile number"
                         ></input>
@@ -508,24 +523,33 @@ export default function Packages() {
                           name="data[message]"
                           type="text"
                           required
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
                           placeholder="your message"
                         ></input>
                       </div>
                       {/* </div> */}
                     </div>
 
+                    <div>
+                      <h3 className="cinzel text-center text-white">{error}</h3>
+                    </div>
+
                     <div className="flex justify-center items-center">
-                      <button
+                      <a
+                        onClick={inputCheck}
+                        // target="_blank"
+                        // rel="noopener noreferrer"
                         id="submitBtn"
-                        disabled={isDisabled}
-                        onClick={() => setIsSubmitted(false)}
+                        // disabled={isDisabled}
+                        // onClick={() => setIsSubmitted(false)}
                         className={`${
                           isDisabled ? "cursor-not-allowed" : "cursor-pointer"
                         } block w-full text-center text-sm bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 font-medium text-white transition-all duration-300 `}
                         type="submit"
                       >
                         Send Message
-                      </button>
+                      </a>
                     </div>
                   </form>
 
