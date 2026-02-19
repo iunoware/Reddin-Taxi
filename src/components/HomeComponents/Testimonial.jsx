@@ -67,7 +67,7 @@ const Testimonial = () => {
     gsap.fromTo(
       cardRef.current,
       { opacity: 0.5, scale: 0.95, y: 30 },
-      { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power2.out" }
+      { opacity: 1, scale: 1, y: 0, duration: 0.3, ease: "power2.out" },
     );
 
     // Dynamic background particles
@@ -226,7 +226,15 @@ const Testimonial = () => {
             Redinn. Your journey, redefined.
           </p>
 
-          <GlassButton text1="View All Reviews" bg="bg-black" link="/contact" />
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://www.google.com/search?sca_esv=5d486a06773defb6&sxsrf=ANbL-n7HS3Z94jAMKaQwhgl4CxGqtl2JYw:1771505040525&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOWDVfXZOw43vQ2NKb0ULri0dDd6mX9qaWJHJydf1mhPjdR45qi1ntBg-TdmJWYw98A-Ej1tGqPQC85IbUB3hUFZrAd8qzJzLo1FqQdh5by0nBzkQOA%3D%3D&q=Redinn+tours+and+travels+Reviews&sa=X&ved=2ahUKEwi87aHFyuWSAxWmyqACHc1AF7YQ0bkNegQINRAF&biw=1536&bih=695&dpr=1.25"
+            className="text-white bg-black hover:bg-gray-950 rounded-xl px-8 py-3"
+          >
+            {/* <GlassButton text1="View All Reviews" bg="bg-black" /> */}
+            View All Reviews
+          </a>
         </div>
       </div>
     </section>

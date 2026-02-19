@@ -113,6 +113,7 @@ export default function Packages() {
 
   function whatsappLink() {
     if (!name || !phone || !message) return;
+    setIsModalVisible(false);
     return `https://wa.me/918098702345?text=Hi%20Redinn%20Travels!%0A%0AI’m%20interested%20in%20booking%20a%20trip%20and%20here%20are%20my%20details:%0A%0AName: ${name.trim()}%0APhone: ${phone.trim()}%0AMessage: ${message.trim()}%0APackage: ${pkg}%0A%0A`;
   }
   // whatsapp form
@@ -537,8 +538,8 @@ export default function Packages() {
                     <div className="flex justify-center items-center">
                       <a
                         onClick={inputCheck}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        // target="_blank"
+                        // rel="noopener noreferrer"
                         id="submitBtn"
                         // disabled={isDisabled}
                         // onClick={() => setIsSubmitted(false)}

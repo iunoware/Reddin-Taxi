@@ -2,6 +2,12 @@ import { Star } from "lucide-react";
 import GlassButton from "../GlassButton";
 
 export default function HeroPack() {
+  function scrollSection(href) {
+    const section = document.getElementById(href);
+    if (!section) return;
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     // <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-center bg-cover bg-[url('/images/package-hero.webp')]">
     //   <div className="bg-black/60 absolute w-full h-full"></div>
@@ -58,13 +64,22 @@ export default function HeroPack() {
             link="/contact"
             className="text-center"
           />
-          <GlassButton
+
+          <button
+            onClick={() => scrollSection("pricingPreview")}
+            className="bg-white cursor-pointer text-black rounded-2xl px-8 py-3 text-lg"
+          >
+            Explore Services
+          </button>
+
+          {/* <GlassButton
             text1="Explore Services"
             textColor="text-black"
             bg="bg-white"
-            link="/contact"
+            // link="/contact"
+            onClick={() => scrollSection("pricingPreview")}
             className="text-center"
-          />
+          /> */}
         </div>
 
         <div className="flex absolute bottom-10 justify-between w-full">

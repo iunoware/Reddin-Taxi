@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function PricingPreview() {
   return (
-    <section className="w-full py-24 bg-neutral-950 text-white">
+    <section id="pricingPreview" className="w-full py-24 bg-neutral-950 text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         {/* <div className="max-w-xl mb-16">
