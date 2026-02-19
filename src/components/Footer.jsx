@@ -53,12 +53,17 @@ export default function Footer() {
                 </a>
               </p>
             </div>
-            <div className="flex md:-mx-5 gap-3 items-center text-gray-400 leading-relaxed tracking-wide ">
+            <div className="flex md:-mx-5 gap-3 items-center  leading-relaxed tracking-wide ">
               <MapPin size={55} />
-              <p className="text-sm ">
+              <a
+                href="https://maps.app.goo.gl/ahM116QPrxEMXUxb6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-white duration-75 transition-all"
+              >
                 No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur Road, Opp.
-                To Tirunelveli Court, Tirunelveli–627002, Tamilnadu, India.
-              </p>
+                To Tirunelveli Court, Tirunelveli-627002, Tamilnadu, India.
+              </a>
             </div>
           </div>
           {/* Column 2: Quick Links */}

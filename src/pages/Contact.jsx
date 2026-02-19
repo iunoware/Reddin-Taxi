@@ -452,7 +452,7 @@ export default function Contact() {
               />
             </div>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1964.9653535425039!2d78.1280295!3d9.9397236!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b00c598c62fb90d%3A0x55eb753f30a250b!2sIUNOWARE%20PRIVATE%20LIMITED!5e0!3m2!1sen!2sin!4v1763549365310!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.682226758516!2d77.7538611!3d8.721694399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDMnMTguMSJOIDc3wrA0NScxMy45IkU!5e0!3m2!1sen!2sin!4v1771495558585!5m2!1sen!2sin"
               className="rounded-2xl m-3 h-[450px] md:w-[700px] lg:col-span-2"
               allowFullScreen=""
               loading="lazy"

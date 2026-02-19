@@ -6,6 +6,7 @@ import PricingTable from "../components/PackagesComponents/PricingTable";
 import Cta from "../components/Cta";
 import AddOn from "../components/PackagesComponents/AddOn";
 import Gallery from "../components/Gallery";
+import PricingPreview from "../components/PricingPreview";
 
 export default function PackagesPage() {
   useEffect(() => {
@@ -21,7 +22,8 @@ export default function PackagesPage() {
       <Gallery />
 
       {/* pricing table */}
-      <PricingTable />
+      {/* <PricingTable /> */}
+      <PricingPreview />
 
       {/* CTA */}
       <Cta />
