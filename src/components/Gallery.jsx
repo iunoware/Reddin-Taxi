@@ -73,12 +73,28 @@ export default function Gallery() {
       >
         <div className="container mx-auto px-6 md:px-12 lg:px-24">
           {/* Editorial Heading Block */}
-          <div className="mb-20 md:mb-32 max-w-sm">
+          {/* <div className="mb-20 md:mb-32 max-w-sm">
             <h2 className="text-reveal text-3xl md:text-4xl cinzel font-semibold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600 mb-6">
               Luxury, Redefined Inside
             </h2>
             <div className="text-reveal w-12 h-1px bg-neutral-300 mb-6"></div>
             <p className="text-reveal text-sm md:text-base font-sans tracking-wide text-neutral-800 font-light leading-relaxed uppercase">
+              Experience interiors that elevate travel into an indulgence.
+            </p>
+          </div> */}
+
+          <div className="text-center mb-16">
+            <h2
+              data-aos="fade-down"
+              className="text-4xl cinzel md:text-6xl font-serif font-bold mb-4 tracking-wide drop-shadow-xl relative inline-block"
+            >
+              Luxury,{" "}
+              <span className="text-transparent bg-clip-text bg-linear-to-r from-red-400 to-red-600">
+                Redefined Inside
+              </span>
+              <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-0.5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent"></span>
+            </h2>
+            <p className="text-black text-lg md:text-xl font-light tracking-wide mt-6 max-w-2xl mx-auto">
               Experience interiors that elevate travel into an indulgence.
             </p>
           </div>
