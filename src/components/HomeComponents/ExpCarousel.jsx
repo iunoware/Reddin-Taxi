@@ -8,7 +8,7 @@ const slides = [
     alt: "tours and travels in Tenkasi",
     title: "Ultra-Comfort Seating",
     description:
-      "Plush reclining leather captain seats with diamond-stitched patterns and ambient lighting.",
+      "Plush reclining leather captain seats designed for Tirunelveli Local Sightseeing Taxi journeys with superior comfort and elegance.",
   },
   {
     id: 2,
@@ -16,14 +16,15 @@ const slides = [
     alt: "Luxury tourist van rental",
     title: "Modern Interior Design",
     description:
-      "Sleek wood-finish panels and minimalistic ceiling design for a premium feel.",
+      "Sleek wood-finish panels and refined interiors ideal for Tirunelveli Kanyakumari Tour Package travel.",
   },
   {
     id: 3,
-    image: "/images/tirunelvelil-luxury-car-rental.webp",
+    image: "/images/tirunelveli-luxury-car-rental.webp",
     alt: "Luxury travel van in Tirunelveli",
     title: "Cinematic Ambience",
-    description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+    description:
+      "Soft LED mood lighting and warm golden glows that elevate every Tirunelveli Luxury Car Rental experience.",
   },
   {
     id: 4,
@@ -31,7 +32,7 @@ const slides = [
     alt: "Premium Travels in Tirunelveli",
     title: "Spacious VIP Cabin",
     description:
-      "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
+      "Ample legroom, premium flooring, and built-in storage suited for luxury Tour Packages and long journeys.",
   },
 ];
 

@@ -7,42 +7,42 @@ export default function WhyChooseUs() {
       delay: "200",
       title: "Unmatched Safety",
       description:
-        " rigorous safety protocols and premium insurance coverage for your peace of mind.",
+        "Rigorous safety protocols and premium insurance coverage, backed by our trusted Tirunelveli Travel Agency.",
     },
     {
       icon: <Clock className="w-8 h-8  text-red-500 " />,
       delay: "300",
       title: "Punctuality Guarantee",
       description:
-        "Respecting your time with precision scheduling and real-time route optimization.",
+        "Respecting your time with precision scheduling through our reliable Tirunelveli Cab Booking Service.",
     },
     {
       icon: <Award className="w-8 h-8  text-red-500 " />,
       delay: "400",
       title: "Premium Service",
       description:
-        "Recognized globally for excellence in luxury hospitality and transportation.",
+        "Luxury experiences delivered with transparent pricing, making us one of the Affordable Travels in Tirunelveli.",
     },
     {
       icon: <UserCheck className="w-8 h-8 text-red-500 " />,
       delay: "200",
       title: "Professional Chauffeurs",
       description:
-        "Hand-picked, highly trained professionals dedicated to your comfort and privacy.",
+        "Expertly trained drivers ensuring comfort and discretion across our Tirunelveli Van Rental Service.",
     },
     {
       icon: <Star className="w-8 h-8  text-red-500 " />,
       delay: "300",
       title: "Premium Fleet",
       description:
-        "An exclusive collection of top-tier vehicles maintained to showroom standards.",
+        "An exclusive lineup of luxury vehicles maintained to showroom standards under our Tirunelveli Bus Booking Service.",
     },
     {
       icon: <MapPin className="w-8 h-8  text-red-500 " />,
       delay: "400",
       title: "On‑Board Amenities",
       description:
-        "Complimentary water bottles, charging ports, Wi‑Fi (if you offer), blankets, etc.",
+        "Thoughtful in‑ride comforts including charging ports, refreshments, and premium interiors for long journeys.",
     },
   ];
 
@@ -64,8 +64,8 @@ export default function WhyChooseUs() {
           </h2>
           {/* <div className="w-24 h-1 bg-yellow-600 mx-auto rounded-full mb-6"></div> */}
           <p className="text-gray-700 max-w-2xl mx-auto text-lg md:text-xl font-light leading-relaxed">
-            Experience the pinnacle of luxury travel where every detail is
-            curated for your absolute comfort.
+            Experience the pinnacle of luxury travel where every detail is curated for
+            your absolute comfort.
           </p>
         </div>
 

@@ -115,8 +115,8 @@ export default function Contact() {
           </h1>
 
           <p className="text-lg md:text-xl text-white font-light max-w-2xl mx-auto leading-relaxed">
-            Ready for a premium travel experience? Get in touch with us for bespoke
-            bookings, inquiries, or support.
+            Ready for a premium travel experience? Get in touch for tailored bookings,
+            expert guidance, and seamless support.
           </p>
         </div>
 

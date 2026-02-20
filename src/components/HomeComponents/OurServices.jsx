@@ -57,7 +57,9 @@ const OurServices = () => {
             <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-0.5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent"></span>
           </h2>
           <p className="text-black text-lg md:text-xl font-light tracking-wide mt-6 max-w-2xl mx-auto">
-            Premium travel solutions crafted for comfort, style, and a seamless journey.
+            {/* Premium travel solutions crafted for comfort, style, and a seamless journey. */}
+            Premium travel solutions by the Best Travels in Tirunelveli, crafted for
+            comfort, style, and a seamless journey.
           </p>
         </div>
 

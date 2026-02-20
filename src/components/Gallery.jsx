@@ -15,7 +15,7 @@ const images = [
   },
   // 3
   {
-    src: "/images/tirunelvelil-luxury-car-rental.webp",
+    src: "/images/tirunelveli-luxury-car-rental.webp",
     alt: "Tirunelveli Van Rental Service",
     className: "md:col-span-4 md:row-span-1",
     aspect: "aspect-square md:aspect-auto md:h-full",

@@ -31,10 +31,11 @@ const ServicesSection = () => {
             </div>
             <p className="text-black/90 leading-relaxed text-lg font-light">
               With our fleet of four state-of-the-art luxury buses, we redefine group
-              travel with unmatched comfort and style. Whether it’s corporate events,
-              long-distance tours, pilgrimages, school trips, airport transfers, or
-              private charters — our services are designed to deliver a seamless, premium
-              travel experience.
+              travel across Tirunelveli with unmatched comfort and elegance. From
+              corporate events and private charters to Tirunelveli Outstation Taxi
+              services, airport transfers, and curated holiday journeys, we operate as
+              trusted Tirunelveli tour operators delivering seamless, premium travel
+              experiences.
             </p>
             {/* <button className="relative hover:scale-96 transition-all  bg-black backdrop-blur-md shadow-[0_8px_24px_rgba(0,0,0,0.15),inset_0_0.5px_5px_rgba(255,255,255,0.4)] text-white px-2 py-1 md:px-5 md:py-3 rounded-xl font-semibold text-lg cursor-pointer ease-in">
               <span className="relative z-10 flex items-center gap-3">
@@ -100,7 +101,7 @@ const ServicesSection = () => {
               icon: <Users className="w-8 h-8 text-white" />,
               delay: "300",
               title: "Tour Packages & Group Trips",
-              desc: "Comfortable and scenic travel for family tours, educational trips, and holiday tours.",
+              desc: "Comfortable and scenic journeys with curated Tirunelveli holiday packages for families, groups, and educational tours.",
             },
             {
               icon: <Crown className="w-8 h-8 text-white" />,
@@ -112,7 +113,7 @@ const ServicesSection = () => {
               icon: <Armchair className="w-8 h-8 text-white" />,
               delay: "500",
               title: "Long-Distance Luxury Travel",
-              desc: "Relax in pushback seats, AC, entertainment system, and spacious interiors on long routes.",
+              desc: "Ideal for Tirunelveli outstation taxi travel with pushback seats, AC comfort, entertainment systems, and spacious interiors.",
             },
           ].map((service, index) => (
             <div

@@ -49,7 +49,7 @@ export default function Home() {
       alt: "Tirunelveli Tourist Packages",
       title: "Commanding Exterior Design",
       description:
-        "A bold, premium silhouette with refined detailing that makes a powerful first impression on every arrival.",
+        "A bold, premium silhouette with refined detailing, trusted by the Best Travels in Tirunelveli for creating a powerful first impression on every arrival.",
     },
     {
       id: 2,
@@ -57,7 +57,7 @@ export default function Home() {
       alt: "Urbania Hire Tirunelveli",
       title: "Modern Interior Design",
       description:
-        "Sleek wood-finish panels and minimalistic ceiling design for a premium feel.",
+        "Sleek wood-finish panels and minimalistic ceiling design, setting a new standard for comfort in Urbania Hire Tirunelveli services.",
     },
     {
       id: 3,
@@ -65,7 +65,8 @@ export default function Home() {
       image: "/images/affordable-travels-in-Tirunelveli.webp",
       alt: "Tirunelveli Outstation Taxi",
       title: "Cinematic Ambience",
-      description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+      description:
+        "Soft LED mood lighting and warm golden glows enhance the journey, ideal for premium Tirunelveli Tourist Packages and long-distance travel.",
     },
     {
       id: 4,
@@ -73,7 +74,7 @@ export default function Home() {
       alt: "Tirunelveli Airport Pickup & Drop",
       title: "Spacious VIP Cabin",
       description:
-        "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
+        "Ample legroom, premium flooring, and smart storage define this cabin, making it a preferred choice for Tirunelveli Car Rental Service seekers.",
     },
   ];
 
