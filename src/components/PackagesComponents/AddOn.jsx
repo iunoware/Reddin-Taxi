@@ -57,10 +57,7 @@ export default function AddOn() {
             className="cinzel text-4xl md:text-5xl pt-3 text-white drop-shadow-lg"
           >
             Premium
-            <span span className="text-gray-500 italic">
-              {" "}
-              Add-Ons
-            </span>
+            <span className="text-gray-500 italic"> Add-Ons</span>
           </h2>
           <p
             data-aos="fade-up"

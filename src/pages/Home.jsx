@@ -12,11 +12,13 @@ import Cta from "../components/Cta";
 import GlassButton from "../components/GlassButton";
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Redinn Tours & Travels | Home";
-  }, []);
+  // useEffect(() => {
+  //   document.title =
+  //     "Reddin Tours & Travels | Luxury Travels & Van Rental in Tirunelveli";
+  // }, []);
 
   const [current, setCurrent] = useState(0);
   // const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -44,97 +46,49 @@ export default function Home() {
   const slides = [
     {
       id: 1,
-      // image: "/images/interior-seat.webp",
-      image: "/images/package-hero.webp",
+      // image: "/images/tirunelveli-local-sightseeing-taxi.webp",
+      image: "/images/tirunelveli-car-rental-service2.webp",
+      alt: "Tirunelveli Tourist Packages",
       title: "Commanding Exterior Design",
       description:
-        "A bold, premium silhouette with refined detailing that makes a powerful first impression on every arrival.",
+        "A bold, premium silhouette with refined detailing, trusted by the Best Travels in Tirunelveli for creating a powerful first impression on every arrival.",
     },
     {
       id: 2,
-      image: "/images/interior-design.webp",
+      image: "/images/tirunelveli-kanyakumari-tour-packages.webp",
+      alt: "Urbania Hire Tirunelveli",
       title: "Modern Interior Design",
       description:
-        "Sleek wood-finish panels and minimalistic ceiling design for a premium feel.",
+        "Sleek wood-finish panels and minimalistic ceiling design, setting a new standard for comfort in Urbania Hire Tirunelveli services.",
     },
     {
       id: 3,
-      // image: "/images/interior-ambience.webp",
-      image: "/images/interior.webp",
+      // image: "/images/tirunelveli-pilgrimage-tour-packages.webp",
+      image: "/images/affordable-travels-in-Tirunelveli.webp",
+      alt: "Tirunelveli Outstation Taxi",
       title: "Cinematic Ambience",
-      description: "Soft LED mood lighting and warm golden glows for a relaxing journey.",
+      description:
+        "Soft LED mood lighting and warm golden glows enhance the journey, ideal for premium Tirunelveli Tourist Packages and long-distance travel.",
     },
     {
       id: 4,
-      image: "/images/interior-3.webp",
+      image: "/images/tirunelveli-van-rental.webp",
+      alt: "Tirunelveli Airport Pickup & Drop",
       title: "Spacious VIP Cabin",
       description:
-        "Ample legroom, premium flooring, and built-in storage in a spacious luxury environment.",
+        "Ample legroom, premium flooring, and smart storage define this cabin, making it a preferred choice for Tirunelveli Car Rental Service seekers.",
     },
   ];
 
   return (
     <>
+      <SEO
+        title="Reddin Tours & Travels | Luxury Travels in Tirunelveli"
+        description="Reddin Tours & Travels offers luxury vans, premium cabs, and curated travel experiences in Tirunelveli. Comfort, safety, and elegance on every journey."
+      />
+
       <div className="overflow-x-clip">
         {/* hero section */}
-
-        {/* old HEro */}
-        {/* <div className="relative w-screen h-screen bg-[url(/images/hero-white.jpg)] bg-cover bg-center">
-          
-          <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/30 to-transparent"></div>
-
-          
-          <div className="relative z-10 flex flex-col justify-center h-full px-3 md:px-20 text-white max-w-4xl">
-            <h1 className="text-4xl  cinzel font-bold md:text-7xl leading-tight mb-2 md:mb-6 drop-shadow-lg">
-              Travel Beyond <br />
-              <span className="text-red-600">Ordinary</span>
-            </h1>
-
-            <p className="text-lg md:text-2xl text-gray-100 mb-10 max-w-2xl drop-shadow-md font-light">
-              Luxury bus journeys crafted for comfort, safety, and unforgettable
-              experiences.
-            </p>
-
-            
-            <div className="flex flex-row items-center gap-6">
-              <GlassButton
-                text1="Book Your Trip"
-                glass={true}
-                link="/contact"
-                className="text-center"
-              />
-              <GlassButton
-                text1="Explore Services"
-                textColor="text-black"
-                bg="bg-white"
-                link="/contact"
-                className="text-center"
-              />
-            </div>
-
-            
-            <div className="flex absolute bottom-10 justify-between w-full">
-              <div className="">
-                <p className="md:text-5xl text-2xl font-bold">5+</p>
-                <h2 className="text-sm md:text-md">Luxury-Class Vehicles</h2>
-              </div>
-              <div className="">
-                <p className="md:text-5xl text-2xl font-bold">100%</p>
-                <h2 className="text-sm md:text-md">
-                  Customer Satisfaction Score
-                </h2>
-              </div>
-              <div className="">
-                <p className="md:text-5xl text-2xl font-bold">0</p>
-                <h2 className="text-sm md:text-md pr-2 md:pr-0">
-                  Safety Compromises
-                </h2>
-              </div>
-            </div>
-          </div>
-        </div> */}
-
-        {/* new hero */}
         <div className="relative w-screen mx-auto h-screen overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ">
           {slides.map((slide, index) => (
             <div
@@ -149,7 +103,7 @@ export default function Home() {
               <div className="absolute inset-0">
                 <img
                   src={slide.image}
-                  alt={slide.title}
+                  alt={slide.alt}
                   className={`w-full h-full object-cover ${index === 0 ? "object-left" : "object center"}`}
                 />
                 {/* Vignette & Gradients */}

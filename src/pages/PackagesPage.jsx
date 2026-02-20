@@ -7,6 +7,7 @@ import Cta from "../components/Cta";
 import AddOn from "../components/PackagesComponents/AddOn";
 import Gallery from "../components/Gallery";
 import PricingPreview from "../components/PricingPreview";
+import SEO from "../components/SEO";
 
 export default function PackagesPage() {
   useEffect(() => {
@@ -14,6 +15,11 @@ export default function PackagesPage() {
   }, []);
   return (
     <div className="overflow-x-hidden">
+      <SEO
+        title="Luxury Travel Packages in Tirunelveli | Reddin Travels"
+        description="Explore luxury travel packages from Tirunelveli including outstation trips, pilgrimage tours, airport transfers, and premium van rentals with Reddin Travels."
+      />
+
       {/* hero section */}
       <HeroPack />
 

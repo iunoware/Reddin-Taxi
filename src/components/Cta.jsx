@@ -25,11 +25,7 @@ export default function Cta() {
         <div className="flex-1 p-10 md:p-14 flex flex-col justify-center relative z-10">
           {/* Subtle Watermark/Pattern */}
           <div className="absolute top-0 right-0 p-10 opacity-5 pointer-events-none">
-            <BriefcaseBusiness
-              size={200}
-              className="text-white"
-              strokeWidth={0.5}
-            />
+            <BriefcaseBusiness size={200} className="text-white" strokeWidth={0.5} />
           </div>
 
           <div className="flex items-center gap-2 mb-6">
@@ -46,8 +42,8 @@ export default function Cta() {
           </h2>
 
           <p className="font-sans text-gray-200 text-lg mb-10 max-w-md leading-relaxed">
-            Your next luxury ride begins with a single click. Experience
-            comfort, safety, and elegance like never before.
+            Your next luxury ride begins with a single click. Experience comfort, safety,
+            and elegance like never before.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -61,7 +57,7 @@ export default function Cta() {
             <GlassButton
               text1={`Book Now `}
               glass={true}
-              link="/contact"
+              link="/packages"
               // className="text-center py-1"
             />
             {/* <button className="px-8 py-4 bg-white text-gray-900 border border-gray-200 rounded-xl font-medium tracking-wide hover:bg-gray-50 transition-colors shadow-sm hover:shadow-md">
@@ -98,11 +94,7 @@ export default function Cta() {
         <div className="md:w-1/3 bg-linear-to-br from-[#61616141] to-[#111] p-10 flex flex-col items-center justify-center relative">
           {/* Minimalist Map Graphic */}
           <div className="absolute inset-0 overflow-hidden opacity-30">
-            <svg
-              className="w-full h-full text-white"
-              fill="none"
-              viewBox="0 0 400 600"
-            >
+            <svg className="w-full h-full text-white" fill="none" viewBox="0 0 400 600">
               <path
                 d="M50 50 C 100 100, 200 50, 250 150 S 100 300, 150 400"
                 stroke="currentColor"
@@ -117,13 +109,7 @@ export default function Cta() {
                 fill="currentColor"
                 className="text-red-400"
               />
-              <circle
-                cx="50"
-                cy="50"
-                r="4"
-                fill="currentColor"
-                className="text-white"
-              />
+              <circle cx="50" cy="50" r="4" fill="currentColor" className="text-white" />
             </svg>
           </div>
 
@@ -143,17 +129,10 @@ export default function Cta() {
 
             <div className="flex justify-center gap-1">
               {[1, 2, 3, 4, 5].map((i) => (
-                <Star
-                  key={i}
-                  size={16}
-                  fill="#FCA5A5"
-                  className="text-yellow-600"
-                />
+                <Star key={i} size={16} fill="#FCA5A5" className="text-yellow-600" />
               ))}
             </div>
-            <p className="text-xs text-gray-200 font-medium">
-              5-Star Experience
-            </p>
+            <p className="text-xs text-gray-200 font-medium">5-Star Experience</p>
           </div>
 
           {/* Barcode Strip (Decorative) */}
@@ -162,9 +141,7 @@ export default function Cta() {
               {[...Array(20)].map((_, i) => (
                 <div
                   key={i}
-                  className={`h-full bg-gray-100 ${
-                    i % 2 === 0 ? "w-1" : "w-0.5"
-                  }`}
+                  className={`h-full bg-gray-100 ${i % 2 === 0 ? "w-1" : "w-0.5"}`}
                 ></div>
               ))}
             </div>

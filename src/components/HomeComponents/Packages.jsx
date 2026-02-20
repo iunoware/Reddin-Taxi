@@ -4,6 +4,9 @@ import { Check, Star, Crown, Zap, X, BriefcaseBusiness, Flashlight } from "lucid
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useEffect, useState } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const packages = [
   {
@@ -188,7 +191,7 @@ export default function Packages() {
                   <div
                     className={`${
                       pkg.premium
-                        ? "bg-[url('/images/gold-bg.webp')] bg-cover bg-center"
+                        ? "bg-[url('/images/tirunelveli-holiday-packages.webp')] bg-cover bg-center"
                         : "bg-[#111]"
                     } h-full backdrop-blur-xl rounded-xl p-8 flex flex-col relative overflow-hidden`}
                   >
