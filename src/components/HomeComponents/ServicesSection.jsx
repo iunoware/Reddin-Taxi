@@ -55,32 +55,32 @@ const ServicesSection = () => {
           <div className="grid space-x-4 md:grid-cols-12 grid-cols-1 gap-5">
             <div data-aos="fade-up-right" className="md:col-span-5 md:-translate-y-4">
               <img
-                src="/images/as-3.webp"
-                alt="Best Tours and Travels"
+                src="/images/urbania-hire-Tirunelveli.webp"
+                alt="Tirunelveli Outstation Taxi"
                 className="md:rounded-tl-4xl h-full w-full object-center object-cover"
               />
             </div>
             <div className="md:col-span-7">
               <img
                 data-aos="fade-up-left"
-                src="/images/as-4.webp"
-                alt="South Indian Tours and Travels"
+                src="/images/tirunelveli-outstation-taxi.webp"
+                alt="Tirunelveli Airport Pickup & Drop"
                 className="md:rounded-tr-4xl h-full w-full object-center object-cover"
               />
             </div>
             <div className="md:col-span-7 ">
               <img
                 data-aos="fade-up-right"
-                src="/images/as-1.webp"
-                alt="Tours and Travels"
+                src="/images/tirunelveli-car-rental-service.webp"
+                alt="Tirunelveli Tour Operators"
                 className="h-full w-full md:rounded-bl-4xl object-center object-cover"
               />
             </div>
             <div className="md:col-span-5 md:translate-y-4">
               <img
                 data-aos="fade-up-left"
-                src="/images/as-2.webp"
-                alt="Tours and Travels India"
+                src="/images/tirunelveli-tourist-packages.webp"
+                alt="Tirunelveli Holiday Packages"
                 className="md:rounded-br-4xl h-full w-full object-center object-cover"
               />
             </div>

@@ -6,7 +6,8 @@ const FleetSection = () => {
   const vans = [
     {
       name: "Urbania VIP",
-      image: "/images/van-1.webp",
+      image: "/images/tirunelveli-airport-pickup-drop2.webp",
+      alt: "Tours and Travels in Tirunelveli ",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -17,7 +18,8 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
-      image: "/images/van-2.webp",
+      image: "/images/tirunelveli-tour-operators2.webp",
+      alt: "Best Travels in Tirunelveli",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -28,7 +30,8 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
-      image: "/images/spacious.webp",
+      image: "/images/tirunelveli-tourist-packages2.webp",
+      alt: "Tirunelveli Car Rental Service",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -39,7 +42,8 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
-      image: "/images/interior-design.webp",
+      image: "/images/tirunelveli-kanyakumari-tour-packages.webp",
+      alt: "Tirunelveli Tourist Packages",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -50,7 +54,8 @@ const FleetSection = () => {
     },
     {
       name: "Urbania VIP",
-      image: "/images/interior-seat.webp",
+      image: "/images/tirunelveli-local-sightseeing-taxi.webp",
+      alt: "Tempo Traveller Hire Tirunelveli",
       features: [
         "Premium Leather Seating",
         "LED Ambience Lighting",
@@ -146,7 +151,7 @@ const FleetSection = () => {
                   <div className="absolute inset-0 bg-linear-to-t transition-opacity ease-in from-black/60 group-hover:from-black/30  rounded-xl via-transparent to-transparent z-10"></div>
                   <img
                     src={item.image}
-                    alt="Luxury Urbania"
+                    alt={item.alt}
                     className="w-full h-full rounded-xl object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
                   <div className="absolute top-4 right-4 z-20 bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10">

@@ -62,7 +62,7 @@ export default function Navbar() {
           <Link to="/" className="text-2xl font-bold text-(--c-navy) tracking-tight">
             <img
               src="/images/logo-w.png"
-              alt="Reddin Taxi"
+              alt="Reddin Tours & Travels"
               className={`${
                 isScrolled ? "h-12" : "h-16"
               } w-auto transition-all duration-700`}

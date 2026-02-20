@@ -97,7 +97,7 @@ export default function Contact() {
     <div className="overflow-x-hidden">
       <div className="">
         {/* Hero */}
-        <div className="text-center relative pt-10 h-[90vh] mb-16 md:mb-24 bg-[url('/images/luxury-bg-red.webp')] bg-cover bg-center flex flex-col justify-center items-center">
+        <div className="text-center relative pt-10 h-[90vh] mb-16 md:mb-24 bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-cover bg-center flex flex-col justify-center items-center">
           {/* <div className="absolute inset-0 h-full w-full bg-black/10"></div> */}
 
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] backdrop-blur-sm mb-6">
@@ -446,8 +446,8 @@ export default function Contact() {
             >
               <img
                 loading="lazy"
-                src="/images/interior-seat.webp"
-                alt="Map boy images"
+                src="/images/tirunelveli-local-sightseeing-taxi.webp"
+                alt="Tirunelveli Car Rental Service"
                 className="sm:w-[400px] rounded-2xl w-[300px] h-auto"
               />
             </div>

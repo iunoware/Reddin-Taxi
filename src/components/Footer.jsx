@@ -28,7 +28,11 @@ export default function Footer() {
                 REDDIN TRAVELS
               </h2> */}
               <Link to="/" className="text-2xl font-bold text-(--c-navy) tracking-tight">
-                <img src="/images/logo-w.png" alt="Reddin Taxi" className="h-20 w-auto" />
+                <img
+                  src="/images/logo-w.png"
+                  alt="Redinn Tours & Travels"
+                  className="h-20 w-auto"
+                />
               </Link>
 
               <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">

@@ -54,8 +54,8 @@ export default function FleetShowcase() {
             Our <span className="text-gray-400 italic">Elite Fleet</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto font-light">
-            Choose from our exclusive range of Force Urbania variants, each
-            customized for a specific travel experience.
+            Choose from our exclusive range of Force Urbania variants, each customized for
+            a specific travel experience.
           </p>
         </div>
 
@@ -90,8 +90,8 @@ export default function FleetShowcase() {
                   </div> */}
                   <div className="w-full flex justify-center transform scale-150">
                     <img
-                      src="/images/package-hero.webp"
-                      alt="Urbania"
+                      src="/images/tirunelveli-car-rental-service2.webp"
+                      alt="Tirunelveli Cab Booking Service"
                       className="w-full"
                     />
                   </div>

@@ -52,7 +52,7 @@ export default function PricingTable() {
           </span>
           <h2
             data-aos="fade-up"
-            className="cinzel text-4xl  md:text-5xl font-bold text-black drop-shadow-lg"
+            className="cinzel text-4xl md:text-5xl font-bold text-black drop-shadow-lg"
           >
             Exclusive Rate Card
           </h2>

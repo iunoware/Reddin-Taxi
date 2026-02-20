@@ -188,7 +188,7 @@ export default function Packages() {
                   <div
                     className={`${
                       pkg.premium
-                        ? "bg-[url('/images/gold-bg.webp')] bg-cover bg-center"
+                        ? "bg-[url('/images/tirunelveli-holiday-packages.webp')] bg-cover bg-center"
                         : "bg-[#111]"
                     } h-full backdrop-blur-xl rounded-xl p-8 flex flex-col relative overflow-hidden`}
                   >

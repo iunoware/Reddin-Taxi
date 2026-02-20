@@ -9,7 +9,7 @@ export default function HeroPack() {
   }
 
   return (
-    // <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-center bg-cover bg-[url('/images/package-hero.webp')]">
+    // <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-center bg-cover bg-[url('/images/tirunelveli-car-rental-service2.webp')]">
     //   <div className="bg-black/60 absolute w-full h-full"></div>
 
     //   {/* Content Container */}
@@ -43,7 +43,7 @@ export default function HeroPack() {
     //   {/* cta like card */}
     // </section>
 
-    <div className="relative w-screen h-screen bg-[url(/images/hero-white.jpg)] bg-cover bg-center">
+    <div className="relative w-screen h-screen bg-[url(/images/tirunelveli-travel-agency.jpg)] bg-cover bg-center">
       <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/30 to-transparent"></div>
 
       <div className="relative z-10 flex flex-col justify-center h-full px-3 md:px-20 text-white max-w-4xl">

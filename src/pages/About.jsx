@@ -22,7 +22,7 @@ export default function About() {
 
   const fleets = [
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania Royale",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -32,7 +32,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania VIP",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -42,7 +42,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 3",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -52,7 +52,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 4",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -62,7 +62,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 5",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -189,8 +189,8 @@ export default function About() {
         <div className="absolute inset-0">
           <img
             loading="lazy"
-            src="/images/spacious.webp"
-            alt="Luxury Travel"
+            src="/images/tirunelveli-tourist-packages2.webp"
+            alt="Tirunelveli One Day Trip Package"
             className="w-full h-full object-cover"
           />
           {/* Dark Overlay */}
@@ -318,8 +318,8 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center p-10">
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
                   {/* 2 floating cards */}
-                  <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
-                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/interior-4.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
+                  <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/tirunelveli-tour-operators.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
+                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/tirunelveli-bus-booking-service.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-8 right-8 flex items-center gap-3 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-full border border-white/10 shadow-xl z-20 transition-all duration-300 hover:bg-black/80 hover:scale-105 cursor-default">
@@ -423,7 +423,7 @@ export default function About() {
       </section> */}
 
       {/* Why Choose Us */}
-      <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/luxury-bg-red.webp')] bg-center bg-cover">
+      <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-center bg-cover">
         <div className="absolute inset-0 bg-linear-to-br from-black/90 via-black/60 to-transparent z-0"></div>
         <div className="container mx-auto relative z-10 max-w-7xl">
           {/* <div data-aos="fade-up">
@@ -498,7 +498,7 @@ export default function About() {
             <div className="order-1 lg:order-2" data-aos="fade-left">
               <img
                 loading="lazy"
-                src="/images/interior-design.webp"
+                src="/images/tirunelveli-kanyakumari-tour-packages.webp"
                 alt="no.1 luxury tours and travels in TamilNadu"
                 className="h-70 rounded-3xl sm:h-90 md:h-[420px] lg:h-[520px] w-auto"
               />
@@ -508,7 +508,7 @@ export default function About() {
       </section>
 
       {/* Coverage Across India */}
-      <section className="relative w-full py-24 bg-[url('/images/luxury-bg-red.webp')] bg-cover bg-center overflow-hidden border-t border-white/5">
+      <section className="relative w-full py-24 bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-cover bg-center overflow-hidden border-t border-white/5">
         {/* Floating Glowing Markers */}
         <div className="absolute inset-0 pointer-events-none">
           {/* North */}
