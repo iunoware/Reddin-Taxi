@@ -14,11 +14,12 @@ import {
 } from "lucide-react";
 import Heading from "../components/Heading";
 import Cta from "../components/Cta";
+import SEO from "../components/SEO";
 
 export default function About() {
-  useEffect(() => {
-    document.title = "Redinn Tours & Travels | About us";
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Redinn Tours & Travels | About us";
+  // }, []);
 
   const fleets = [
     {
@@ -183,6 +184,11 @@ export default function About() {
 
   return (
     <div className="">
+      <SEO
+        title="About Reddin Tours & Travels | Premium Travel Experts"
+        description="Learn about Reddin Tours & Travels, a trusted premium travel agency delivering luxury tours, professional chauffeurs, and seamless journeys across India."
+      />
+
       {/* hero section */}
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Image */}

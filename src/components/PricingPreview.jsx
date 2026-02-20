@@ -26,11 +26,7 @@ export default function PricingPreview() {
             data-aos="fade-up"
             className="cinzel text-4xl md:text-5xl pt-3 text-white drop-shadow-lg"
           >
-            Pricing for
-            <span span className="text-gray-500 italic">
-              {" "}
-              Premium Experience
-            </span>
+            Pricing for <span className="text-gray-500 italic">Premium Experience</span>
           </h2>
           <p
             data-aos="fade-up"

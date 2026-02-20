@@ -4,6 +4,9 @@ import { Check, Star, Crown, Zap, X, BriefcaseBusiness, Flashlight } from "lucid
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { useRef, useEffect, useState } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const packages = [
   {

@@ -12,11 +12,13 @@ import Cta from "../components/Cta";
 import GlassButton from "../components/GlassButton";
 import { ChevronLeft, ChevronRight, Star, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Redinn Tours & Travels | Home";
-  }, []);
+  // useEffect(() => {
+  //   document.title =
+  //     "Reddin Tours & Travels | Luxury Travels & Van Rental in Tirunelveli";
+  // }, []);
 
   const [current, setCurrent] = useState(0);
   // const [isAutoPlaying, setIsAutoPlaying] = useState(true);
@@ -80,6 +82,11 @@ export default function Home() {
 
   return (
     <>
+      <SEO
+        title="Reddin Tours & Travels | Luxury Travels in Tirunelveli"
+        description="Reddin Tours & Travels offers luxury vans, premium cabs, and curated travel experiences in Tirunelveli. Comfort, safety, and elegance on every journey."
+      />
+
       <div className="overflow-x-clip">
         {/* hero section */}
         <div className="relative w-screen mx-auto h-screen overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.5)] ">

@@ -13,6 +13,7 @@ import {
 } from "lucide-react";
 import Heading from "../components/Heading";
 import toast from "react-hot-toast";
+import SEO from "../components/SEO";
 
 export default function Contact() {
   useEffect(() => {
@@ -95,6 +96,11 @@ export default function Contact() {
 
   return (
     <div className="overflow-x-hidden">
+      <SEO
+        title="Contact Reddin Tours & Travels | Book Luxury Travel"
+        description="Get in touch with Reddin Tours & Travels to book luxury vans, cabs, and travel packages in Tirunelveli. Personalized assistance and premium support."
+      />
+
       <div className="">
         {/* Hero */}
         <div className="text-center relative pt-10 h-[90vh] mb-16 md:mb-24 bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-cover bg-center flex flex-col justify-center items-center">

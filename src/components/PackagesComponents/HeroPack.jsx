@@ -33,7 +33,7 @@ export default function HeroPack() {
 
           <button
             onClick={() => scrollSection("pricingPreview")}
-            className="bg-white cursor-pointer text-black rounded-2xl px-8 py-3 text-lg"
+            className="bg-white cursor-pointer text-black rounded-2xl px-8 py-3 text-sm md:text-lg"
           >
             Explore Services
           </button>
@@ -48,16 +48,16 @@ export default function HeroPack() {
           /> */}
         </div>
 
-        <div className="flex absolute bottom-10 justify-between w-full">
-          <div className="">
+        <div className="flex flex-wrap justify-between items-start bottom-10 absolute w-full px-5 gap-5">
+          <div className="px-3">
             <p className="md:text-5xl text-2xl font-bold">5+</p>
             <h2 className="text-sm md:text-md">Luxury-Class Vehicles</h2>
           </div>
-          <div className="">
+          <div className="px-3">
             <p className="md:text-5xl text-2xl font-bold">100%</p>
-            <h2 className="text-sm md:text-md">Customer Satisfaction Score</h2>
+            <h2 className="text-sm md:text-md text-wrap">Customer Satisfaction Score</h2>
           </div>
-          <div className="">
+          <div className="px-3">
             <p className="md:text-5xl text-2xl font-bold">100%</p>
             <h2 className="text-sm md:text-md pr-2 md:pr-0">Safety</h2>
           </div>
