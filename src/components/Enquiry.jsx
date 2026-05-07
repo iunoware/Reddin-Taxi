@@ -19,16 +19,14 @@ export default function Enquiry() {
 
   return (
     <>
-      
       <a
-        href="tel:+918098702345"
+        href="tel:+918098502345"
         className={`fixed z-40 bottom-10 ${
           visible ? "right-10" : "-right-20"
         }  transition-all  duration-200 group rounded-full text-white bg-red-600 backdrop-blur-md py-2 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)]`}
       >
         <Phone className="h-7 w-11 m-2 transition-all  duration-200 group-active:scale-95 group-hover:scale-108" />
       </a>
-      
     </>
   );
 }

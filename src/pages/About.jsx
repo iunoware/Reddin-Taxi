@@ -14,15 +14,16 @@ import {
 } from "lucide-react";
 import Heading from "../components/Heading";
 import Cta from "../components/Cta";
+import SEO from "../components/SEO";
 
 export default function About() {
-  useEffect(() => {
-    document.title = "Redinn Tours & Travels | About us";
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Redinn Tours & Travels | About us";
+  // }, []);
 
   const fleets = [
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania Royale",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -32,7 +33,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania VIP",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -42,7 +43,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 3",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -52,7 +53,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 4",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -62,7 +63,7 @@ export default function About() {
       ],
     },
     {
-      img: "/images/urbania-fleet.webp",
+      img: "/images/urbania-hire-Tirunelveli2.webp",
       title: "Urbania 5",
       seater: "Luxury Class • 17 Seater",
       features: [
@@ -78,25 +79,25 @@ export default function About() {
       svg: <Shield size={30} className="text-red-600" />,
       title: "Skilled Travel Drivers",
       content:
-        "Professional, polite, and experienced drivers who ensure a smooth and safe journey from start to finish.",
+        "Highly trained, professional drivers ensuring a smooth, safe, and courteous travel experience from start to finish.",
     },
     {
       svg: <Car size={30} className="text-red-600" />,
       title: "Well-Maintained Vehicles",
       content:
-        "Every vehicle is cleaned, sanitized, and serviced regularly to deliver a spotless, comfortable travel experience.",
+        "Every vehicle is thoroughly cleaned, sanitized, and serviced to deliver a spotless, comfortable, and reliable journey.",
     },
     {
       svg: <Timer size={30} className="text-red-600" />,
       title: "On-Time Reliability",
       content:
-        "We value your time. We arrive as promised, ensuring timely pickups and smooth, delay-free travel.",
+        "We respect your time with punctual arrivals, timely pickups, and smooth, delay-free travel every time.",
     },
     {
       svg: <MousePointerClick size={30} className="text-red-600" />,
       title: "Seamless Booking",
       content:
-        "Simple, fast, and transparent booking with clear communication from your first inquiry to your final stop.",
+        "Simple, fast, and transparent booking with clear communication from your first inquiry to the completion of your journey.",
     },
   ];
 
@@ -119,7 +120,7 @@ export default function About() {
       ),
       title: "Premium Luxury Experience",
       content:
-        "Experience our luxurious fleet, crafted for your comfort and sophistication.",
+        "Experience our luxurious fleet, crafted for comfort, sophistication, and premium travel across Tirunelveli.",
     },
     {
       svg: (
@@ -139,7 +140,7 @@ export default function About() {
       ),
       title: "Skilled chauffeurs",
       content:
-        "Our verified, elite chauffeurs guarantee a discreet, safe, and impeccably smooth journey..",
+        "Our verified, elite chauffeurs ensure discreet, safe journeys for every cab booking and luxury van rental.",
     },
     {
       svg: (
@@ -159,7 +160,7 @@ export default function About() {
       ),
       title: "On-Time and Reliable",
       content:
-        "Punctuality is our signature. We value your time with prompt arrivals and seamless execution.",
+        "Punctuality is our signature, delivering reliable airport pickups, outstation trips, and scheduled travel services.",
     },
   ];
 
@@ -183,14 +184,19 @@ export default function About() {
 
   return (
     <div className="">
+      <SEO
+        title="About Reddin Tours & Travels | Premium Travel Experts"
+        description="Learn about Reddin Tours & Travels, a trusted premium travel agency delivering luxury tours, professional chauffeurs, and seamless journeys across India."
+      />
+
       {/* hero section */}
       <div className="relative w-full h-screen overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
             loading="lazy"
-            src="/images/about-hero.webp"
-            alt="Luxury Travel"
+            src="/images/tirunelveli-tourist-packages2.webp"
+            alt="Tirunelveli One Day Trip Package"
             className="w-full h-full object-cover"
           />
           {/* Dark Overlay */}
@@ -201,10 +207,11 @@ export default function About() {
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
           <h1 className="text-3xl md:text-4xl text-white drop-shadow-lg basker font-semibold">
             <span className="text-red-500">Reddin Tours & Travels</span> - Redefining
-            Luxury Travel in India
+            Luxury Travel Across Tamil Nadu
           </h1>
           <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-3xl font-light tracking-wide">
-            Premium vans crafted for comfort, elegance, and hospitality.
+            Premium vans crafted for comfort, elegance, and refined hospitality across
+            Tirunelveli and beyond.
           </p>
 
           <GlassButton
@@ -242,8 +249,9 @@ export default function About() {
                 <strong className="text-red-500 font-semibold">
                   Reddin Tours & Travels
                 </strong>{" "}
-                is the embodiment of premium mobility. We don't just transport; we curate
-                journeys defined by privacy, elegance, and cinematic comfort across India.
+                is a trusted name in premium mobility and a leading Tirunelveli tour
+                operator, curating journeys defined by privacy, elegance, and cinematic
+                comfort across South India.
               </p>
 
               <div className="space-y-10">
@@ -271,7 +279,8 @@ export default function About() {
                         Cinematic Comfort
                       </h3>
                       <p className="text-sm text-black/90 font-light tracking-wide">
-                        Bespoke interiors designed for silence and serenity.
+                        Bespoke interiors crafted for silent luxury travel and premium van
+                        rentals.
                       </p>
                     </div>
                   </div>
@@ -303,7 +312,7 @@ export default function About() {
                       Safety & Privacy
                     </h3>
                     <p className="text-sm text-black/90 font-light tracking-wide">
-                      Discreet service with top-tier safety standards.
+                      Discreet service with top-tier safety standards for every journey.
                     </p>
                   </div>
                 </div>
@@ -318,14 +327,14 @@ export default function About() {
               <div className="absolute inset-0 flex items-center justify-center p-10">
                 <div className="relative w-full h-full flex flex-col items-center justify-center">
                   {/* 2 floating cards */}
-                  <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/corporate-tour.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
-                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/interior-ambience.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
+                  <div className="absolute top-12 -left-2 md:left-8 right-8 w-3/4 h-2/3 bg-[url('/images/tirunelveli-tour-operators.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform rotate-3 transition-transform duration-1000 group-hover:rotate-6"></div>
+                  <div className="absolute bottom-12 md:left-34 left-22 w-2/3 h-1/2 bg-[url('/images/tirunelveli-bus-booking-service.webp')] bg-cover bg-center rounded-3xl shadow-2xl transform -rotate-2 z-10 transition-transform duration-1000 group-hover:-rotate-3"></div>
 
                   {/* Floating Badge */}
                   <div className="absolute bottom-8 right-8 flex items-center gap-3 bg-black/60 backdrop-blur-xl px-5 py-3 rounded-full border border-white/10 shadow-xl z-20 transition-all duration-300 hover:bg-black/80 hover:scale-105 cursor-default">
                     <div className="w-2 h-2 rounded-full bg-amber-400 animate-pulse shadow-[0_0_10px_rgba(251,191,36,0.8)]"></div>
                     <span className="text-[10px] text-amber-100 tracking-[0.2em] uppercase font-semibold">
-                      Premium Urbania
+                      Premium Urbania Travel
                     </span>
                   </div>
                 </div>
@@ -367,7 +376,7 @@ export default function About() {
       </section> */}
 
       {/* Premium Fleet */}
-      <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
+      {/* <section className="relative bg-[#dedede] w-full py-18 overflow-hidden">
         <div className="px-4 lg:px-12 relative z-10">
           <div data-aos="fade-up">
             <Heading title="Our Premium Fleet" className="mb-3!" />
@@ -379,9 +388,7 @@ export default function About() {
             Choose the perfect chariot for your journey.
           </p>
 
-          {/* new fleet card */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8">
-            {/* new online courses */}
             {fleets.map((fleet, i) => (
               <div
                 key={fleet.title}
@@ -412,16 +419,6 @@ export default function About() {
                       </li>
                     ))}
                   </ul>
-
-                  {/* <GlassButton
-                    text1="Book this fleet"
-                    text2="Experience Luxury"
-                    // glass={true}
-                    textColor="text-white"
-                    bg="bg-black"
-                    link="/contact"
-                    className="mt-10 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] transition-shadow duration-300 w-full block text-center"
-                  /> */}
                   <Link to="/contact">
                     <button className="mt-10 rounded-2xl px-8 py-3 bg-black text-white cursor-pointer hover:scale-102 transition-all duration-300 hover:shadow-[0_0_30px_-5px_rgba(255,2,2,0.9)] w-full block text-center">
                       Experience luxury
@@ -432,10 +429,10 @@ export default function About() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Why Choose Us */}
-      <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/luxury-bg-red.webp')] bg-center bg-cover">
+      <section className="relative w-full py-24 px-6 overflow-hidden bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-center bg-cover">
         <div className="absolute inset-0 bg-linear-to-br from-black/90 via-black/60 to-transparent z-0"></div>
         <div className="container mx-auto relative z-10 max-w-7xl">
           {/* <div data-aos="fade-up">
@@ -510,7 +507,7 @@ export default function About() {
             <div className="order-1 lg:order-2" data-aos="fade-left">
               <img
                 loading="lazy"
-                src="/images/interior-design.webp"
+                src="/images/tirunelveli-kanyakumari-tour-packages.webp"
                 alt="no.1 luxury tours and travels in TamilNadu"
                 className="h-70 rounded-3xl sm:h-90 md:h-[420px] lg:h-[520px] w-auto"
               />
@@ -520,7 +517,7 @@ export default function About() {
       </section>
 
       {/* Coverage Across India */}
-      <section className="relative w-full py-24 bg-[url('/images/luxury-bg-red.webp')] bg-cover bg-center overflow-hidden border-t border-white/5">
+      <section className="relative w-full py-24 bg-[url('/images/tirunelveli-family-tour-packages.webp')] bg-cover bg-center overflow-hidden border-t border-white/5">
         {/* Floating Glowing Markers */}
         <div className="absolute inset-0 pointer-events-none">
           {/* North */}
@@ -572,11 +569,12 @@ export default function About() {
               data-aos="fade-up"
               className="text-lg md:text-xl text-gray-300 font-light tracking-wide mb-12 max-w-2xl leading-relaxed"
             >
-              Serving customers across every state with reliable,{" "}
+              Delivering reliable,{" "}
               <strong className="text-red-400 font-normal">
                 premium travel solutions
-              </strong>
-              . From the mountains to the coast, we are where you need us.
+              </strong>{" "}
+              across every state in India — from scenic mountains to vibrant coastlines,
+              we’re wherever your journey takes you.
             </p>
 
             {/* Stats Grid */}

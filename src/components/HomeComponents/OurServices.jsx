@@ -6,37 +6,37 @@ const services = [
     title: "Corporate Travel & Business Trips",
     icon: <Briefcase size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-2",
-    img: "bg-[url('/images/corporate-tour.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/tirunelveli-tour-operators.webp')] bg-cover bg-center",
   },
   {
     title: "Airport Transfers",
     icon: <Plane size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/Airport-transfers.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/best-travels-in-tirunelveli.webp')] bg-cover bg-center",
   },
   {
     title: "Wedding & VIP Events",
     icon: <Crown size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/wedding.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/tirunelveli-holiday-packages2.webp')] bg-cover bg-center",
   },
   {
     title: "Outstation Luxury Tours",
     icon: <MapPin size={24} />,
     size: "col-span-1 md:col-span-1 md:row-span-1",
-    img: "bg-[url('/images/outstation-trips.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/best-travels-in-tirunelveli2.webp')] bg-cover bg-center",
   },
   {
     title: "Group & Family Trips",
     icon: <Users size={28} />,
     size: "col-span-1 md:col-span-2 md:row-span-1",
-    img: "bg-[url('/images/grouptrip.webp')] bg-cover bg-center",
+    img: "bg-[url('/images/tirunelveli-cab-booking-service.webp')] bg-cover bg-center",
   },
   {
-    title: "Celebrity / Executive Shuttle",
+    title: "Executive Shuttle",
     icon: <Star size={28} />,
     size: "col-span-1 md:col-span-3 md:row-span-1",
-    img: "bg-[url('/images/celebrety.webp')] bg-cover bg-center ",
+    img: "bg-[url('/images/tirunelveli-airport-pickup-drop.webp')] bg-cover bg-center ",
   },
 ];
 
@@ -57,8 +57,9 @@ const OurServices = () => {
             <span className="absolute -bottom-3 left-1/2 -translate-x-1/2 w-24 h-0.5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent"></span>
           </h2>
           <p className="text-black text-lg md:text-xl font-light tracking-wide mt-6 max-w-2xl mx-auto">
-            Premium travel solutions crafted for comfort, style, and a seamless
-            journey.
+            {/* Premium travel solutions crafted for comfort, style, and a seamless journey. */}
+            Premium travel solutions by the Best Travels in Tirunelveli, crafted for
+            comfort, style, and a seamless journey.
           </p>
         </div>
 

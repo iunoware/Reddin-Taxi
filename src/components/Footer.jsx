@@ -1,5 +1,5 @@
 import React from "react";
-import { ChevronRight, MapPin, Phone } from "lucide-react";
+import { ChevronRight, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -34,7 +34,7 @@ export default function Footer() {
               >
                 <img
                   src="/images/logo-w.png"
-                  alt="Reddin Taxi"
+                  alt="Redinn Tours & Travels"
                   className="h-20 w-auto"
                 />
               </Link>
@@ -42,26 +42,37 @@ export default function Footer() {
               <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">
                 <Phone className="h-4" />
                 <a
-                  href="tel:+918098702345"
-                  className="hover:text-white duration-75 transition-all"
-                >
-                  +91 8098 70 2345{" "}
-                </a>
-                <a
                   href="tel:+918098502345"
                   className="hover:text-white duration-75 transition-all"
                 >
-                  +91 8098 50 2345
+                  +91 8098 50 2345{" "}
+                </a>
+              </p>
+
+              <p className="flex gap-3 md:-mx-5 items-center text-gray-400 text-sm mt-3 leading-relaxed tracking-wide">
+                <Mail className="h-4" />
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=Info@redinntravels.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white duration-75 transition-all"
+                >
+                  info@redinntravels.com
                 </a>
               </p>
             </div>
-            <div className="flex md:-mx-5 gap-3 items-center text-gray-400 leading-relaxed tracking-wide ">
+            <div className="flex md:-mx-5 gap-3 items-center  leading-relaxed tracking-wide ">
               <MapPin size={55} />
-              <p className="text-sm ">
+              <a
+                href="https://maps.app.goo.gl/ahM116QPrxEMXUxb6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-white duration-75 transition-all"
+              >
                 No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur
-                Road, Opp. To Tirunelveli Court, Tirunelveli–627002, Tamilnadu,
+                Road, Opp. To Tirunelveli Court, Tirunelveli-627002, Tamilnadu,
                 India.
-              </p>
+              </a>
             </div>
           </div>
           {/* Column 2: Quick Links */}

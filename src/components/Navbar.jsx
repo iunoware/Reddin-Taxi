@@ -66,7 +66,7 @@ export default function Navbar() {
           >
             <img
               src="/images/logo-w.png"
-              alt="Reddin Taxi"
+              alt="Reddin Tours & Travels"
               className={`${
                 isScrolled ? "h-12" : "h-16"
               } w-auto transition-all duration-700`}

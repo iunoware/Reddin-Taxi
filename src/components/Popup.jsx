@@ -42,30 +42,66 @@ export default function Popup() {
       : (document.body.style.overflow = "auto");
   }, [isModalVisible]);
 
-  const handleSubmit = async (e) => {
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+
+  //   const form = e.target;
+
+  //   try {
+  //     const response = await fetch(form.action, {
+  //       method: "POST",
+  //       body: new FormData(form),
+  //     });
+
+  //     // const result = await response.json();
+
+  //     toast.success("Form submitted successfully");
+  //     setIsDisabled(true);
+
+  //     setTimeout(() => {
+  //       window.location.reload();
+  //     }, 2000);
+  //   } catch (err) {
+  //     toast.error("Something went wrong");
+  //     console.log("error: ", err);
+  //   }
+  // };
+
+  let dummyVar;
+  // whatsapp form
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [error, setError] = useState("");
+
+  function clearInput() {
+    setName("");
+    setPhone("");
+    setMessage("");
+  }
+
+  function inputCheck(e) {
     e.preventDefault();
 
-    const form = e.target;
+    const phoneRegex = /^[0-9]{10}$/;
 
-    try {
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: new FormData(form),
-      });
+    if (!name.trim()) return setError("Enter your name");
+    if (!phoneRegex.test(phone)) return setError("Enter valid phone number");
+    if (!message.trim()) return setError("Enter your message");
 
-      // const result = await response.json();
+    setError("");
 
-      toast.success("Form submitted successfully");
-      setIsDisabled(true);
+    window.open(whatsappLink(), "_blank");
+    clearInput();
+    handleModalClose();
+  }
 
-      setTimeout(() => {
-        window.location.reload();
-      }, 2000);
-    } catch (err) {
-      toast.error("Something went wrong");
-      console.log("error: ", err);
-    }
-  };
+  function whatsappLink() {
+    if (!name || !phone || !message) return;
+    return `https://wa.me/918098702345?text=Hi%20Redinn%20Travels!%0A%0AI’m%20interested%20in%20booking%20a%20trip%20and%20here%20are%20my%20details:%0A%0AName: ${name.trim()}%0APhone: ${phone.trim()}%0AMessage: ${message.trim()}%0A`;
+  }
+  // whatsapp form
 
   return (
     <section className={`${isModalVisible ? "no-doc-scroll" : ""}`}>
@@ -139,10 +175,10 @@ export default function Popup() {
                   <span className="italic text-gray-400">Premium Journey</span>
                 </h2>
                 <form
-                  action="https://sheetdb.io/api/v1/hes12fn5dscth"
-                  method="POST"
+                  // action="https://sheetdb.io/api/v1/hes12fn5dscth"
+                  // method="POST"
                   id="sheetdb-form"
-                  onSubmit={handleSubmit}
+                  // onSubmit={handleSubmit}
                   // data-aos="fade-up"
                   className="flex w-full flex-col gap-4 space-y-4 rounded-lg p-2"
                 >
@@ -164,6 +200,8 @@ export default function Popup() {
                         id="name"
                         name="data[name]"
                         type="text"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                         required
                         placeholder="Your name"
                       ></input>
@@ -183,6 +221,9 @@ export default function Popup() {
                         id="mobile"
                         name="data[mobile]"
                         type="tel"
+                        pattern="[0-9]{10}"
+                        value={phone}
+                        onChange={(e) => setPhone(e.target.value)}
                         required
                         placeholder="Mobile number"
                       ></input>
@@ -261,6 +302,8 @@ export default function Popup() {
                         id="message"
                         name="data[message]"
                         type="text"
+                        value={message}
+                        onChange={(e) => setMessage(e.target.value)}
                         required
                         placeholder="your message"
                       ></input>
@@ -268,16 +311,23 @@ export default function Popup() {
                     {/* </div> */}
                   </div>
 
+                  <div>
+                    <h3 className="cinzel text-center text-white">{error}</h3>
+                  </div>
+
                   <div className="flex justify-center items-center">
-                    <button
-                      disabled={isDisabled}
+                    <a
+                      // disabled={isDisabled}
+                      onClick={inputCheck}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`${
                         isDisabled ? "cursor-not-allowed" : "cursor-pointer"
                       } block w-full text-center text-sm bg-red-800 shadow-[0_1px_30px_rgba(0,0,0,0.2),inset_0_1px_rgba(255,255,255,0.3),inset_0_-1px_rgba(255,255,255,0.3)] rounded-lg px-12 py-3 font-medium text-white transition-all duration-300 `}
                       type="submit"
                     >
                       Send Message
-                    </button>
+                    </a>
                   </div>
                 </form>
               </div>
