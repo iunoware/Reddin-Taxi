@@ -9,6 +9,8 @@ import ScrollToTop from "./components/ScrollToTop";
 import Footer from "./components/Footer";
 import Enquiry from "./components/Enquiry";
 import Popup from "./components/Popup";
+import BlogList from "./pages/BlogList";
+import BlogDetails from "./pages/BlogDetails";
 import { Toaster } from "react-hot-toast";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -53,6 +55,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
+              <Route path="/blogs" element={<BlogList />} />
+              <Route path="/blogs/:blogIndividual" element={<BlogDetails />} />
               <Route path="/packages" element={<PackagesPage />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
