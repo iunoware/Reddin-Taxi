@@ -44,7 +44,7 @@ export default function BlogDetails() {
       {/* we can't use map function on selectedBlog, because it only return only one object */}
       <div>
         <SEO
-          title={`Iunoware | ${selectedBlog.metaTitle}`}
+          title={`Redinn Tours and Travels | ${selectedBlog.metaTitle}`}
           description={selectedBlog.metaDescription}
           // keywords="Digital Marketing Company, leading digital marketing agency, Top Digital Marketing Agency, digital marketing agency, digital marketing specialist, digital marketing services, Expert digital marketing agency, marketing firm, online advertising, SEO services,  social media marketing, content marketing, branding solutions, business growth, digital strategies, Digital Marketing"
         />
@@ -207,13 +207,12 @@ export default function BlogDetails() {
           <li className="flex gap-5 justify-start items-center">
             <div className="text-black font-semibold text-lg">Call Us: </div>
             <div>
-              <a href="tel:/+916381268955" className="font-semibold text-black">
-                +91 63812 68955
+              <a href="tel:/+918098502345" className="font-semibold text-black">
+                +91 80985 02345
               </a>{" "}
-              /
-              <a href="tel:/+919842453740" className="font-semibold text-black">
+              {/* <a href="tel:/+919842453740" className="font-semibold text-black">
                 +91 98424 53740
-              </a>
+              </a> */}
             </div>
           </li>
 
@@ -225,7 +224,7 @@ export default function BlogDetails() {
                 target="_blank"
                 className="font-semibold text-black"
               >
-                <div>info@iunoware.com</div>
+                <div>info@redinntravels.com</div>
               </a>
             </div>
           </li>
@@ -236,7 +235,7 @@ export default function BlogDetails() {
             </div>
             <div className="flex gap-3">
               <a
-                href="https://www.instagram.com/iunoware?igsh=YmlycTZ5bWZwMDF4"
+                href="https://www.instagram.com/redinn_travels/"
                 rel="noreferrer"
                 target="_blank"
                 className="hover:-translate-y-1 transition-transform duration-200"
@@ -244,21 +243,12 @@ export default function BlogDetails() {
                 <Instagram className="text-red-500" size={30} />
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=61569943926291"
-                // href="https://www.facebook.com/profile.php?id=61581100037905" //iunoware digi link
+                href="https://www.facebook.com/profile.php?id=61584905511219"
                 rel="noreferrer"
                 target="_blank"
                 className="hover:-translate-y-1 transition-transform duration-200"
               >
                 <Facebook className="text-blue-500" size={30} />
-              </a>
-              <a
-                href="https://www.linkedin.com/company/iunoware-private-limited/posts/?feedView=all"
-                rel="noreferrer"
-                target="_blank"
-                className="hover:-translate-y-1 transition-transform duration-200"
-              >
-                <Linkedin className="text-sky-600" size={30} />
               </a>
             </div>
           </li>

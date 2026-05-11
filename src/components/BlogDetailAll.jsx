@@ -273,11 +273,11 @@ const blogDetailAll = [
         ],
       },
 
-      {
-        type: "heading",
-        level: 2,
-        text: "Frequently Asked Questions",
-      },
+      // {
+      //   type: "heading",
+      //   level: 2,
+      //   text: "Frequently Asked Questions",
+      // },
 
       {
         type: "faq",
