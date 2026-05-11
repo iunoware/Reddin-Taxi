@@ -8,6 +8,7 @@ export default function Footer() {
     { head: "Home", path: "/" },
     { head: "About", path: "/about" },
     { head: "Packages", path: "/packages" },
+    { head: "Blogs", path: "/blogs" },
     { head: "Contact", path: "/contact" },
   ];
 
@@ -27,7 +28,10 @@ export default function Footer() {
               {/* <h2 className="cinzel text-3xl font-bold tracking-wider text-red-600 drop-shadow-sm">
                 REDDIN TRAVELS
               </h2> */}
-              <Link to="/" className="text-2xl font-bold text-(--c-navy) tracking-tight">
+              <Link
+                to="/"
+                className="text-2xl font-bold text-(--c-navy) tracking-tight"
+              >
                 <img
                   src="/images/logo-w.png"
                   alt="Redinn Tours & Travels"
@@ -65,8 +69,9 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="text-sm text-gray-400 hover:text-white duration-75 transition-all"
               >
-                No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur Road, Opp.
-                To Tirunelveli Court, Tirunelveli-627002, Tamilnadu, India.
+                No. 1011, 3rd Floor, Asia Complex, Kamaraj Nagar, Tiruchendur
+                Road, Opp. To Tirunelveli Court, Tirunelveli-627002, Tamilnadu,
+                India.
               </a>
             </div>
           </div>
@@ -147,7 +152,11 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-center gap-4">
           <p className="text-gray-300 text-sm tracking-wider">
             &copy; {currentYear}{" "}
-            <a rel="noopener noreferrer" href="https://www.iunoware.com/" target="_blank">
+            <a
+              rel="noopener noreferrer"
+              href="https://www.iunoware.com/"
+              target="_blank"
+            >
               Iunoware Pvt Ltd
             </a>
             . All rights reserved.
@@ -241,7 +250,11 @@ function WhatsAppIcon() {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+      <g
+        id="SVGRepo_tracerCarrier"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}
         <path
