@@ -21,6 +21,32 @@ export default function BlogList() {
       category: "Travel",
       date: "May 7, 2026",
     },
+    // 2
+    {
+      id: 2,
+
+      metaTitle:
+        "Best Family Tourist Places in Tamil Nadu for a Perfect Road Trip | Reddin Tours and Travels",
+
+      metaDescription:
+        "Explore the best family tourist places in Tamil Nadu with comfortable road trips, luxury tourist van rental, Urbania van rental Tirunelveli, and customized family travel packages from Reddin Tours and Travels.",
+
+      title:
+        "10 Best Family Tourist Places in Tamil Nadu for a Perfect Road Trip",
+
+      url: "best-family-tourist-places-in-tamil-nadu",
+
+      summary:
+        "Discover the best family tourist places in Tamil Nadu for unforgettable road trips. Explore hill stations, beaches, temples, and family-friendly destinations with comfortable tourist van rental and luxury travel services.",
+
+      image: "/images/best-family-tourist-places-tamilnadu.webp",
+
+      alt: "best family tourist places in tamil nadu",
+
+      category: "Travel",
+
+      date: "May 12, 2026",
+    },
   ];
 
   return (

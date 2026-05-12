@@ -200,7 +200,7 @@ export default function BlogDetails() {
       {/* contact section */}
       <section className="max-w-3xl mx-auto px-6 my-16  md:my-24">
         <h2 className="text-black font-semibold text-2xl mt-10">
-          Contact Iunoware Pvt Ltd - Start Your IT Career Today
+          Contact Redinn Tours and Travels - Book Your Journey Today
         </h2>
 
         <ul className="mt-5 space-y-3">
