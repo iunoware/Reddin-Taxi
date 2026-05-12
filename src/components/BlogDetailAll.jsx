@@ -351,6 +351,7 @@ const blogDetailAll = [
       },
     ],
   },
+  // 2
 ];
 
 // use 16th blog for reference
