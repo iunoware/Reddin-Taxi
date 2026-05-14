@@ -1,24 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
   <url>
     <loc>https://redinntravels.com/</loc>
+    <lastmod>2026-05-14</lastmod>
     <priority>1.0</priority>
   </url>
-
-  <url>
-    <loc>https://redinntravels.com/packages</loc>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://redinntravels.com/about</loc>
-    <priority>0.6</priority>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://redinntravels.com/packages</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://redinntravels.com/blogs</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.5</priority>
+  </url>
   <url>
     <loc>https://redinntravels.com/contact</loc>
-    <priority>0.6</priority>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.5</priority>
   </url>
-
+  <url>
+    <loc>https://redinntravels.com/blogs/why-road-travel-is-trending-in-india</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://redinntravels.com/blogs/best-family-tourist-places-in-tamil-nadu</loc>
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
