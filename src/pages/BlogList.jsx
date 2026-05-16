@@ -76,11 +76,7 @@ export default function BlogList() {
 
   return (
     <div className=" bg-white text-gray-900">
-      <SEO
-        title="Redinn Tours and Travels | Marketing, Advertising & Business Insights"
-        // description="Grow your business with iunoware’s digital marketing services including SEO, social media marketing, paid ads, and data-driven growth strategies."
-        // keywords="Digital Marketing Company, leading digital marketing agency, Top Digital Marketing Agency, digital marketing agency, digital marketing specialist, digital marketing services, Expert digital marketing agency, marketing firm, online advertising, SEO services,  social media marketing, content marketing, branding solutions, business growth, digital strategies, Digital Marketing"
-      />
+      <SEO title="Redinn Tours and Travels | Travel Deals, Holidays & Adventures" />
 
       {/* Hero Section */}
 
