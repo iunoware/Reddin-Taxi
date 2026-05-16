@@ -47,12 +47,37 @@ export default function BlogList() {
 
       date: "May 12, 2026",
     },
+    // 3
+    {
+      id: 3,
+
+      metaTitle:
+        "How to Choose the Best Tours and Travels in Tirunelveli | Urbania Van Rental Services",
+
+      metaDescription:
+        "Looking for the best tours and travels in Tirunelveli? Discover how to choose the right travel agency with premium tourist van rental, Urbania van rental Tirunelveli, and luxury travel services for family and group trips.",
+
+      title: "How to Choose the Best Tours and Travels in Tirunelveli",
+
+      url: "how-to-choose-best-tours-and-travels-in-tirunelveli",
+
+      summary:
+        "Learn how to choose the best tours and travels in Tirunelveli for family vacations, group tours, corporate travel, and road trips. Explore the benefits of Urbania van rental Tirunelveli, tourist van rental services, and comfortable luxury travel options.",
+
+      image: "/images/best-tours-and-travels-tirunelveli.webp",
+
+      alt: "best tours and travels in tirunelveli",
+
+      category: "Travel",
+
+      date: "May 16, 2026",
+    },
   ];
 
   return (
     <div className=" bg-white text-gray-900">
       <SEO
-        title="Redinn | Marketing, Advertising & Business Insights"
+        title="Redinn Tours and Travels | Marketing, Advertising & Business Insights"
         // description="Grow your business with iunoware’s digital marketing services including SEO, social media marketing, paid ads, and data-driven growth strategies."
         // keywords="Digital Marketing Company, leading digital marketing agency, Top Digital Marketing Agency, digital marketing agency, digital marketing specialist, digital marketing services, Expert digital marketing agency, marketing firm, online advertising, SEO services,  social media marketing, content marketing, branding solutions, business growth, digital strategies, Digital Marketing"
       />
