@@ -72,6 +72,32 @@ export default function BlogList() {
 
       date: "May 16, 2026",
     },
+    // 4
+    {
+      id: 4,
+
+      metaTitle:
+        "Best Urbania Van Rental Services in Tirunelveli | Luxury Tourist Van Booking",
+
+      metaDescription:
+        "Looking for the best Urbania van rental services in Tirunelveli? Explore luxury tourist van booking, family travel vans, group travel packages, and premium road trip services with comfortable travel solutions.",
+
+      title:
+        "Why More Families Are Choosing Urbania Vans for Summer Road Trips",
+
+      url: "why-families-choose-urbania-vans-for-summer-road-trips",
+
+      summary:
+        "Discover why more families are choosing Urbania vans for summer road trips. Explore the benefits of luxury tourist van rental, comfortable group travel, and premium Urbania van rental Tirunelveli services for family vacations and long-distance travel.",
+
+      image: "/images/best-urbania-van-rental-services-in-tirunelveli.webp",
+
+      alt: "best Urbania van rental services in Tirunelveli",
+
+      category: "Travel",
+
+      date: "May 20, 2026",
+    },
   ];
 
   return (
