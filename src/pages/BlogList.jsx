@@ -98,6 +98,32 @@ export default function BlogList() {
 
       date: "May 20, 2026",
     },
+    // 5
+    {
+      id: 5,
+
+      metaTitle:
+        "Best Urbania Travel Agency in Tamil Nadu | Luxury Tourist Van Rental",
+
+      metaDescription:
+        "Looking for the best Urbania travel agency in Tamil Nadu? Explore luxury tourist van rental, family road trips, group travel packages, and premium Urbania van booking services for comfortable travel experiences.",
+
+      title:
+        "Best Urbania Travel Agency in Tamil Nadu for Comfortable Family Trips",
+
+      url: "best-urbania-travel-agency-in-tamilnadu",
+
+      summary:
+        "Discover why families prefer the best Urbania travel agency in Tamil Nadu for comfortable road trips, luxury tourist van rental, and premium group travel experiences across Tamil Nadu.",
+
+      image: "/images/best-urbania-travel-agency-tamilnadu.webp",
+
+      alt: "best Urbania travel agency in Tamil Nadu",
+
+      category: "Travel",
+
+      date: "May 23, 2026",
+    },
   ];
 
   return (
