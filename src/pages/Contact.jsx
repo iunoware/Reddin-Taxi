@@ -53,7 +53,8 @@ export default function Contact() {
     if (!pickup.trim()) return setError("Enter pickup location");
     if (!drop.trim()) return setError("Enter drop location");
     // if (!passengers.trim()) return setError("Enter passenger count");
-    if (!passengerRegex.test(passengers)) return setError("Enter passenger count");
+    if (!passengerRegex.test(passengers))
+      return setError("Enter passenger count");
     if (!message.trim()) return setError("Enter your message");
 
     setError("");
@@ -121,8 +122,8 @@ export default function Contact() {
           </h1>
 
           <p className="text-lg md:text-xl text-white font-light max-w-2xl mx-auto leading-relaxed">
-            Ready for a premium travel experience? Get in touch for tailored bookings,
-            expert guidance, and seamless support.
+            Ready for a premium travel experience? Get in touch for tailored
+            bookings, expert guidance, and seamless support.
           </p>
         </div>
 
@@ -201,7 +202,8 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="pickUpLocation"
                         >
-                          Pick up location <span className="text-red-500">*</span>
+                          Pick up location{" "}
+                          <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -245,7 +247,8 @@ export default function Contact() {
                           className="block text-lg text-white font-medium"
                           htmlFor="passengers"
                         >
-                          Number of passengers <span className="text-red-500">*</span>
+                          Number of passengers{" "}
+                          <span className="text-red-500">*</span>
                         </label>
 
                         <input
@@ -457,13 +460,21 @@ export default function Contact() {
                 className="sm:w-[400px] rounded-2xl w-[300px] h-auto"
               />
             </div>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3943.682226758516!2d77.7538611!3d8.721694399999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOMKwNDMnMTguMSJOIDc3wrA0NScxMy45IkU!5e0!3m2!1sen!2sin!4v1771495558585!5m2!1sen!2sin"
+            {/* <iframe
+              src="https://www.google.com/maps?vet=10CAAQoqAOahcKEwjYqN3vhdSUAxUAAAAAHQAAAAAQCA..i&pvq=Cg0vZy8xMW4za3ozeXhuIh4KGHJlZGRpbiB0b3VycyBhbmQgdHJhdmVscxACGAM&lqi=ChhyZWRkaW4gdG91cnMgYW5kIHRyYXZlbHNIlO-Hn460gIAIWigQABABEAIQAxgBGAIYAyIYcmVkZGluIHRvdXJzIGFuZCB0cmF2ZWxzkgENdHJhdmVsX2FnZW5jeQ&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3b040dbcdefbd501:0xaac5faa8fd0c1bb6"
               className="rounded-2xl m-3 h-[450px] md:w-[700px] lg:col-span-2"
               allowFullScreen=""
               loading="lazy"
               data-aos="fade-left"
               referrerPolicy="no-referrer-when-downgrade"
+            ></iframe> */}
+            <iframe
+              allowFullScreen=""
+              loading="lazy"
+              data-aos="fade-left"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded-2xl m-3 h-[450px] md:w-[700px] lg:col-span-2"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.7002780332937!2d77.75694159999999!3d8.719984700000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b040dbcdefbd501%3A0xaac5faa8fd0c1bb6!2sRedinn%20Tours%20and%20Travels%20-%20Car%2C%20van%2C%20tourist%20bus%20rental%20travels%20service%20in%20Tirunelveli!5e0!3m2!1sen!2sin!4v1779699575761!5m2!1sen!2sin"
             ></iframe>
           </div>
         </section>
