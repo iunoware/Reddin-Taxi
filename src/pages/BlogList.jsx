@@ -210,7 +210,7 @@ export default function BlogList() {
         </div>
       </section>
 
-      {/* Simple Footer / Pagination Placeholder (Optional Visual Only) */}
+      {/* Simple Footer / Pagination Placeholder */}
       <div className="w-full text-center pb-20">
         <span className="text-gray-600 text-sm">
           Showing {blogPosts.length} recent articles

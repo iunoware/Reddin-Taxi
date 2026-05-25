@@ -64,7 +64,7 @@ export default function Footer() {
             <div className="flex md:-mx-5 gap-3 items-center  leading-relaxed tracking-wide ">
               <MapPin size={55} />
               <a
-                href="https://maps.app.goo.gl/ahM116QPrxEMXUxb6"
+                href="https://www.google.com/maps?vet=10CAAQoqAOahcKEwjYqN3vhdSUAxUAAAAAHQAAAAAQCA..i&pvq=Cg0vZy8xMW4za3ozeXhuIh4KGHJlZGRpbiB0b3VycyBhbmQgdHJhdmVscxACGAM&lqi=ChhyZWRkaW4gdG91cnMgYW5kIHRyYXZlbHNIlO-Hn460gIAIWigQABABEAIQAxgBGAIYAyIYcmVkZGluIHRvdXJzIGFuZCB0cmF2ZWxzkgENdHJhdmVsX2FnZW5jeQ&fvr=1&cs=0&um=1&ie=UTF-8&fb=1&gl=in&sa=X&ftid=0x3b040dbcdefbd501:0xaac5faa8fd0c1bb6"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-gray-400 hover:text-white duration-75 transition-all"
