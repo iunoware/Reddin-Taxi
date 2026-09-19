@@ -31,8 +31,7 @@ export default function BlogList() {
       metaDescription:
         "Explore the best family tourist places in Tamil Nadu with comfortable road trips, luxury tourist van rental, Urbania van rental Tirunelveli, and customized family travel packages from Reddin Tours and Travels.",
 
-      title:
-        "10 Best Family Tourist Places in Tamil Nadu for a Perfect Road Trip",
+      title: "10 Best Family Tourist Places in Tamil Nadu for a Perfect Road Trip",
 
       url: "best-family-tourist-places-in-tamil-nadu",
 
@@ -82,8 +81,7 @@ export default function BlogList() {
       metaDescription:
         "Looking for the best Urbania van rental services in Tirunelveli? Explore luxury tourist van booking, family travel vans, group travel packages, and premium road trip services with comfortable travel solutions.",
 
-      title:
-        "Why More Families Are Choosing Urbania Vans for Summer Road Trips",
+      title: "Why More Families Are Choosing Urbania Vans for Summer Road Trips",
 
       url: "why-families-choose-urbania-vans-for-summer-road-trips",
 
@@ -102,14 +100,12 @@ export default function BlogList() {
     {
       id: 5,
 
-      metaTitle:
-        "Best Urbania Travel Agency in Tamil Nadu | Luxury Tourist Van Rental",
+      metaTitle: "Best Urbania Travel Agency in Tamil Nadu | Luxury Tourist Van Rental",
 
       metaDescription:
         "Looking for the best Urbania travel agency in Tamil Nadu? Explore luxury tourist van rental, family road trips, group travel packages, and premium Urbania van booking services for comfortable travel experiences.",
 
-      title:
-        "Best Urbania Travel Agency in Tamil Nadu for Comfortable Family Trips",
+      title: "Best Urbania Travel Agency in Tamil Nadu for Comfortable Family Trips",
 
       url: "best-urbania-travel-agency-in-tamilnadu",
 
@@ -140,8 +136,11 @@ export default function BlogList() {
                 Redinn Travels Blogs
               </h1>
               <p className="max-w-3xl tracking-wide text-center md:text-start mx-auto text-lg md:text-xl text-gray-800 leading-relaxed">
-                Travel guides, road trip ideas, destination tips, and luxury
+                {/* Travel guides, road trip ideas, destination tips, and luxury
                 group travel experiences from{" "}
+                <strong>Reddin Tours & Travels.</strong> */}
+                Discover inspiring destinations, travel guides, road trip ideas, and
+                practical tips for your next journey with{" "}
                 <strong>Reddin Tours & Travels.</strong>
               </p>
             </div>
