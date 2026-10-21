@@ -49,76 +49,64 @@ export default function BlogList() {
     // 3
     {
       id: 3,
-
       metaTitle:
         "How to Choose the Best Tours and Travels in Tirunelveli | Urbania Van Rental Services",
-
       metaDescription:
         "Looking for the best tours and travels in Tirunelveli? Discover how to choose the right travel agency with premium tourist van rental, Urbania van rental Tirunelveli, and luxury travel services for family and group trips.",
-
       title: "How to Choose the Best Tours and Travels in Tirunelveli",
-
       url: "how-to-choose-best-tours-and-travels-in-tirunelveli",
-
       summary:
         "Learn how to choose the best tours and travels in Tirunelveli for family vacations, group tours, corporate travel, and road trips. Explore the benefits of Urbania van rental Tirunelveli, tourist van rental services, and comfortable luxury travel options.",
-
       image: "/images/best-tours-and-travels-tirunelveli.webp",
-
       alt: "best tours and travels in tirunelveli",
-
       category: "Travel",
-
       date: "May 16, 2026",
     },
     // 4
     {
       id: 4,
-
       metaTitle:
         "Best Urbania Van Rental Services in Tirunelveli | Luxury Tourist Van Booking",
-
       metaDescription:
         "Looking for the best Urbania van rental services in Tirunelveli? Explore luxury tourist van booking, family travel vans, group travel packages, and premium road trip services with comfortable travel solutions.",
-
       title: "Why More Families Are Choosing Urbania Vans for Summer Road Trips",
-
       url: "why-families-choose-urbania-vans-for-summer-road-trips",
-
       summary:
         "Discover why more families are choosing Urbania vans for summer road trips. Explore the benefits of luxury tourist van rental, comfortable group travel, and premium Urbania van rental Tirunelveli services for family vacations and long-distance travel.",
-
       image: "/images/best-urbania-van-rental-services-in-tirunelveli.webp",
-
       alt: "best Urbania van rental services in Tirunelveli",
-
       category: "Travel",
-
       date: "May 20, 2026",
     },
     // 5
     {
       id: 5,
-
       metaTitle: "Best Urbania Travel Agency in Tamil Nadu | Luxury Tourist Van Rental",
-
       metaDescription:
         "Looking for the best Urbania travel agency in Tamil Nadu? Explore luxury tourist van rental, family road trips, group travel packages, and premium Urbania van booking services for comfortable travel experiences.",
-
       title: "Best Urbania Travel Agency in Tamil Nadu for Comfortable Family Trips",
-
       url: "best-urbania-travel-agency-in-tamilnadu",
-
       summary:
         "Discover why families prefer the best Urbania travel agency in Tamil Nadu for comfortable road trips, luxury tourist van rental, and premium group travel experiences across Tamil Nadu.",
-
       image: "/images/best-urbania-travel-agency-tamilnadu.webp",
-
       alt: "best Urbania travel agency in Tamil Nadu",
-
       category: "Travel",
-
       date: "May 23, 2026",
+    },
+    // 6
+    {
+      id: 6,
+      metaTitle: "Top 10 Tourist Places to Visit in Tamil Nadu | Redinn Travels",
+      metaDescription:
+        "Explore the top 10 tourist places to visit in Tamil Nadu, from scenic hill stations and beautiful beaches to historic temples. Plan your next holiday with Redinn Travels, Tirunelveli.",
+      title: "Top 10 Tourist Places to Visit in Tamil Nadu for a Memorable Vacation",
+      url: "top-10-tourist-places-to-visit-in-tamil-nadu",
+      summary:
+        "Discover the best tourist places in Tamil Nadu, including Kodaikanal, Ooty, Kanyakumari, Rameswaram, and more. Explore scenic destinations and plan a memorable holiday with Redinn Travels.",
+      image: "/images/blogs/top-tourist-places-tamil-nadu.webp",
+      alt: "Top tourist places to visit in Tamil Nadu",
+      category: "Travel",
+      date: "October 21, 2026",
     },
   ];
 
@@ -160,7 +148,7 @@ export default function BlogList() {
       {/* Blog Grid Section */}
       <section className="w-full -translate-y-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {blogPosts.map((post) => (
+          {blogPosts.toReversed().map((post) => (
             <div
               key={post.id}
               className="flex flex-col bg-white rounded-xl overflow-hidden h-full transition-transform hover:scale-103 duration-300"
