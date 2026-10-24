@@ -108,6 +108,22 @@ export default function BlogList() {
       category: "Travel",
       date: "October 21, 2026",
     },
+    // 7
+    {
+      id: 7,
+      metaTitle: "Western Ghats to Kanyakumari: Curated Getaways | Redinn Travels",
+      metaDescription:
+        "Plan a curated getaway from the Western Ghats to Kanyakumari with Redinn Travels, a premium travel company in Tirunelveli. Explore Courtallam, Munnar, Kodaikanal and more.",
+      title:
+        "From the Western Ghats to Kanyakumari: Curated Getaways Designed Around You",
+      url: "western-ghats-to-kanyakumari-curated-getaways",
+      summary:
+        "Discover a curated journey from Courtallam, Munnar, and Kodaikanal to Kanyakumari. Plan a comfortable getaway designed around you with Redinn Travels.",
+      image: "/images/blogs/western-ghats-to-kanyakumari-curated-getaways.webp",
+      alt: "Curated getaways from the Western Ghats to Kanyakumari",
+      category: "Travel",
+      date: "October 24, 2026",
+    },
   ];
 
   return (
