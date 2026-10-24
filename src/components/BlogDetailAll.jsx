@@ -2532,6 +2532,321 @@ const blogDetailAll = [
       },
     ],
   },
+  // 7
+  {
+    id: 7,
+    metaTitle: "Western Ghats to Kanyakumari: Curated Getaways | Redinn Travels",
+    metaDescription:
+      "Plan a curated getaway from the Western Ghats to Kanyakumari with Redinn Travels, a premium travel company in Tirunelveli. Explore Courtallam, Munnar, Kodaikanal and more.",
+    title: "From the Western Ghats to Kanyakumari: Curated Getaways Designed Around You",
+    url: "western-ghats-to-kanyakumari-curated-getaways",
+    summary:
+      "Discover a curated journey from Courtallam, Munnar, and Kodaikanal to Kanyakumari. Plan a comfortable getaway designed around you with Redinn Travels.",
+    image: "/images/blogs/western-ghats-to-kanyakumari-curated-getaways.webp",
+    alt: "Curated getaways from the Western Ghats to Kanyakumari",
+    category: "Travel",
+    date: "October 24, 2026",
+
+    fullContent: [
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Few journeys capture the charm of the south quite like a road trip that begins
+            among the misty peaks of the Western Ghats and ends where three seas meet at
+            Kanyakumari. For travelers looking beyond ordinary itineraries, this route
+            offers cool hill air, rushing waterfalls, spice-scented valleys, and golden
+            coastal sunrises, all within a few comfortable days of driving.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            At Redinn Travels, we believe a holiday should feel personal rather than
+            pre-packaged. The best journeys match your pace, your company, and your
+            priorities, which is why more travelers are moving from fixed South India tour
+            packages to routes designed around them. Here is how this Western Ghats to
+            Kanyakumari getaway comes together.
+          </>
+        ),
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "1. Courtallam – Start with Waterfalls and Cool Mountain Air",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Close to Tirunelveli, Courtallam is often called the Spa of South India
+            because of its mineral-rich waterfalls flowing down the Western Ghats. Main
+            Falls, Five Falls, and Old Courtallam Falls are the best-known stops,
+            surrounded by dense greenery. It is among the most convenient places to begin
+            a trip, especially during the monsoon and post-monsoon months when the falls
+            are at their liveliest.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Because the distance from the city is short, Courtallam is one of the easiest
+            weekend getaways from Tirunelveli, ideal for families who want nature without
+            long hours on the road. Pair a morning at the falls with a relaxed lunch of
+            local cuisine and a slow drive through the foothills. Always follow local
+            safety notices and bathing restrictions when water levels are high.
+          </>
+        ),
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "2. Munnar – Tea Gardens in the Heart of the Western Ghats",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Munnar is where the Western Ghats show their softest side, with rolling tea
+            estates, cool breezes, and mist drifting across the valleys. Eravikulam
+            National Park, Mattupetty Dam, and the tea museum make it ideal for couples
+            and families alike. Many travelers now look for a Munnar tour package that
+            includes comfortable stays and flexible sightseeing instead of rushed stops.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            The drive up through the ghat roads is part of the experience, with
+            viewpoints, spice shops, and waterfalls along the way. Plan at least two
+            nights so you can enjoy the sunrise views and the plantations without
+            hurrying. Early mornings are best for photography, while evenings suit a quiet
+            walk through the tea gardens.
+          </>
+        ),
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "3. Kodaikanal – A Quiet Hill Station Escape",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Kodaikanal offers cooler weather, pine forests, and scenic viewpoints such as
+            Coaker's Walk and Pillar Rocks. The lake invites slow evenings, while homemade
+            chocolates and local markets add small delights. Couples often ask for a
+            honeymoon tour package that blends privacy, soft weather, and unhurried days,
+            and Kodaikanal fits that wish well.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            The route up the hills climbs steadily, so a comfortable vehicle and an
+            experienced driver make a real difference. Allow a full day to explore the
+            main viewpoints and gardens without feeling rushed, and carry a light jacket
+            for the evenings.
+          </>
+        ),
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "4. Kanyakumari – Sunrise Where Three Seas Meet",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Your journey reaches its high point at Kanyakumari, the southern tip of the
+            mainland, where the Arabian Sea, Bay of Bengal, and Indian Ocean meet.
+            Vivekananda Rock Memorial, the Thiruvalluvar Statue, and Bhagavathy Amman
+            Temple add cultural depth, while the coastal viewpoints reward early risers.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Starting from Tirunelveli, the drive to Kanyakumari is short and scenic, which
+            makes it perfect for a relaxed family holiday package. Catch the sunrise from
+            the shore, take a ferry ride when services operate, and spend the afternoon at
+            local markets sampling fresh coastal cuisine.
+          </>
+        ),
+      },
+
+      {
+        type: "image",
+        path: "/images/western-ghats-kanyakumari-getaway.webp",
+        alt: "Sunrise over the sea at Kanyakumari at the end of a Western Ghats road trip",
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "How to Plan Your Western Ghats to Kanyakumari Getaway",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Start by deciding how many days you have and what kind of holiday you want:
+            relaxing, romantic, or adventurous. Then build a route that avoids long,
+            tiring detours. For a first-time visit, the best time to visit South India is
+            generally between October and March, when the weather suits both hills and
+            coast.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            A thoughtfully designed itinerary also protects your energy. Keep hill-station
+            nights unhurried, leave buffer time for ghat roads, and book stays early
+            during festival weeks. Whether you prefer a small private trip or a larger
+            group outing, choosing a trusted travel partner helps every day run smoothly.
+          </>
+        ),
+      },
+
+      {
+        type: "list",
+        items: [
+          "Pick destinations that match your interests and available days.",
+          "Keep daily driving to a comfortable limit.",
+          "Book accommodation early for weekends and holidays.",
+          "Check weather and attraction timings before leaving.",
+          "Carry identification, medicines, and light woollens for hill stations.",
+          "Choose a comfortable, well-maintained vehicle for family or group travel.",
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Why Choose Redinn Travels for Your Next Getaway?",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Redinn Travels is a premium travel company in Tirunelveli that plans journeys
+            around your schedule rather than a fixed template. From chauffeur-driven
+            luxury car rental to well-chosen stays and flexible stops, every detail is
+            arranged for comfort. Our team listens first, then designs the route.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            Whether you are planning a family holiday, a couple's escape, or a pilgrimage
+            with relatives, you can discuss your dates, passenger count, and preferred
+            places in advance. Our approach to luxury tours in Tamil Nadu is simple:
+            comfort, punctuality, and respect for your time.
+          </>
+        ),
+      },
+
+      {
+        type: "table",
+        headers: ["Destination", "Best Known For", "Ideal Trip"],
+        rows: [
+          ["Courtallam", "Seasonal waterfalls", "Weekend nature escape"],
+          ["Munnar", "Tea gardens and misty valleys", "Couples and families"],
+          ["Kodaikanal", "Lake and pine forests", "Quiet hill break"],
+          ["Kanyakumari", "Sunrise and sea views", "Family holiday"],
+        ],
+      },
+
+      {
+        type: "faq",
+        content: [
+          {
+            question: "Which places are included in a Western Ghats to Kanyakumari trip?",
+            answer:
+              "A typical route includes Courtallam, Munnar, Kodaikanal, and Kanyakumari, and it can be adjusted to suit your days and interests.",
+          },
+          {
+            question: "How many days are ideal for this trip?",
+            answer:
+              "Five to seven days allow a comfortable pace, though shorter weekend plans can focus on Courtallam and Kanyakumari.",
+          },
+          {
+            question: "Can the itinerary be customized?",
+            answer:
+              "Yes. Redinn Travels can prepare customized tour packages based on your dates, group size, preferred stays, and travel pace.",
+          },
+          {
+            question: "What is the best season for this route?",
+            answer:
+              "October to March is generally pleasant for both hills and coast, but waterfall conditions depend on rainfall, so check before travelling.",
+          },
+        ],
+      },
+
+      {
+        type: "heading",
+        level: 2,
+        text: "Plan Your Curated Getaway with Redinn Travels",
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            From the cool ridges of the Western Ghats to the sunrise shores of
+            Kanyakumari, this route proves that a holiday can be both varied and relaxing.
+            Every stop adds a different mood, and the right plan lets you enjoy each one
+            without pressure.
+          </>
+        ),
+      },
+
+      {
+        type: "paragraph",
+        text: (
+          <>
+            If you are comparing options for a Kanyakumari tour package from Tirunelveli,
+            connect with Redinn Travels to share your travel dates, group size, and
+            preferred destinations. Start planning today and turn your next holiday into a
+            comfortable, memorable journey.
+          </>
+        ),
+      },
+    ],
+  },
 ];
 
 // use 16th blog for reference
